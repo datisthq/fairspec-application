@@ -18,6 +18,10 @@ msgstr ""
 msgid ", but it is"
 msgstr ", mas é"
 
+#: components/layout/Banner.tsx:29
+msgid "."
+msgstr "."
+
 #: components/report/Error.tsx:328
 msgid "A required cell in column"
 msgstr "Uma célula obrigatória na coluna"
@@ -146,7 +150,7 @@ msgstr "Falha ao Inferir o Esquema"
 msgid "Failed to Load Preview"
 msgstr "Falha ao Carregar Pré-visualização"
 
-#: components/layout/Banner.tsx:19
+#: components/layout/Banner.tsx:27
 msgid "feedback and ideas"
 msgstr "sugestões e ideias"
 
@@ -372,9 +376,13 @@ msgstr "máximo"
 msgid "of row"
 msgstr "da linha"
 
+#: components/layout/Banner.tsx:21
+msgid "on GitHub and share your"
+msgstr "no GitHub e compartilhe seu"
+
 #: components/layout/Banner.tsx:13
-msgid "phase. Please share your"
-msgstr "fase. Por favor, compartilhe seu"
+msgid "phase. Please"
+msgstr "fase. Por favor"
 
 #: components/layout/Menu.tsx:52
 #: routes/{-$languageSlug}/table/preview.tsx:21
@@ -429,6 +437,10 @@ msgstr "Selecione as ferramentas abaixo"
 #: components/layout/Share.tsx:36
 msgid "Share Page"
 msgstr "Compartilhar página"
+
+#: components/layout/Banner.tsx:19
+msgid "star the project"
+msgstr "dê uma estrela no projeto"
 
 #: components/layout/Menu.tsx:49
 #: routes/{-$languageSlug}/dataset/infer.tsx:125

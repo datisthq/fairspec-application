@@ -10,7 +10,15 @@ export function Banner() {
           <strong>
             <Trans>research preview</Trans>
           </strong>{" "}
-          <Trans>phase. Please share your</Trans>{" "}
+          <Trans>phase. Please</Trans>{" "}
+          <Link
+            to="https://github.com/fairspec/fairspec"
+            rel="noopener noreferrer"
+            className="font-bold underline"
+          >
+            <Trans>star the project</Trans>
+          </Link>{" "}
+          <Trans>on GitHub and share your</Trans>{" "}
           <Link
             to="https://github.com/fairspec/fairspec/issues/new"
             rel="noopener noreferrer"
@@ -18,6 +26,7 @@ export function Banner() {
           >
             <Trans>feedback and ideas</Trans>
           </Link>
+          <Trans>.</Trans>
         </p>
       </div>
     </div>

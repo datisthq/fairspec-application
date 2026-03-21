@@ -18,6 +18,10 @@ msgstr ""
 msgid ", but it is"
 msgstr ", але це"
 
+#: components/layout/Banner.tsx:29
+msgid "."
+msgstr "."
+
 #: components/report/Error.tsx:328
 msgid "A required cell in column"
 msgstr "Обов'язкова клітина у стовпці"
@@ -146,7 +150,7 @@ msgstr "Не вдалося визначити схему"
 msgid "Failed to Load Preview"
 msgstr "Не вдалося завантажити попередній перегляд"
 
-#: components/layout/Banner.tsx:19
+#: components/layout/Banner.tsx:27
 msgid "feedback and ideas"
 msgstr "відгуки та ідеї"
 
@@ -372,9 +376,13 @@ msgstr "максимум"
 msgid "of row"
 msgstr "рядка"
 
+#: components/layout/Banner.tsx:21
+msgid "on GitHub and share your"
+msgstr "на GitHub і поділіться своїм"
+
 #: components/layout/Banner.tsx:13
-msgid "phase. Please share your"
-msgstr "етап. Будь ласка, поділіться своїми"
+msgid "phase. Please"
+msgstr "етап. Будь ласка,"
 
 #: components/layout/Menu.tsx:52
 #: routes/{-$languageSlug}/table/preview.tsx:21
@@ -429,6 +437,10 @@ msgstr "Оберіть інструменти нижче"
 #: components/layout/Share.tsx:36
 msgid "Share Page"
 msgstr "Поділитися сторінкою"
+
+#: components/layout/Banner.tsx:19
+msgid "star the project"
+msgstr "позначте проект зірочкою"
 
 #: components/layout/Menu.tsx:49
 #: routes/{-$languageSlug}/dataset/infer.tsx:125

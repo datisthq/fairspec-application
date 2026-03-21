@@ -18,6 +18,10 @@ msgstr ""
 msgid ", but it is"
 msgstr ", but it is"
 
+#: components/layout/Banner.tsx:29
+msgid "."
+msgstr "."
+
 #: components/layout/Menu.tsx:94
 #: components/layout/Menu.tsx:106
 #~ msgid "{0}"
@@ -164,7 +168,7 @@ msgstr "Failed to Infer Schema"
 msgid "Failed to Load Preview"
 msgstr "Failed to Load Preview"
 
-#: components/layout/Banner.tsx:19
+#: components/layout/Banner.tsx:27
 msgid "feedback and ideas"
 msgstr "feedback and ideas"
 
@@ -398,9 +402,17 @@ msgstr "maximum"
 msgid "of row"
 msgstr "of row"
 
+#: components/layout/Banner.tsx:21
+msgid "on GitHub and share your"
+msgstr "on GitHub and share your"
+
 #: components/layout/Banner.tsx:13
-msgid "phase. Please share your"
-msgstr "phase. Please share your"
+msgid "phase. Please"
+msgstr "phase. Please"
+
+#: components/layout/Banner.tsx:13
+#~ msgid "phase. Please share your"
+#~ msgstr "phase. Please share your"
 
 #: components/layout/Menu.tsx:52
 #: routes/{-$languageSlug}/table/preview.tsx:21
@@ -459,6 +471,10 @@ msgstr "Select tools below"
 #: components/layout/Share.tsx:36
 msgid "Share Page"
 msgstr "Share Page"
+
+#: components/layout/Banner.tsx:19
+msgid "star the project"
+msgstr "star the project"
 
 #: components/layout/Menu.tsx:49
 #: routes/{-$languageSlug}/dataset/infer.tsx:125
