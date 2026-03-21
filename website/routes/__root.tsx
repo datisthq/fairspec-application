@@ -35,7 +35,10 @@ export const Route = createRootRoute({
     const makeLink = (languageSlug?: string) => {
       const replacement = languageSlug ? `/${languageSlug}` : ""
       const compiledPath = path?.replace("/{-$languageSlug}", replacement)
-      return `${settings.HOST}${compiledPath}`
+      const trailingPath = compiledPath?.endsWith("/")
+        ? compiledPath
+        : `${compiledPath}/`
+      return `${settings.HOST}${trailingPath}`
     }
 
     return {

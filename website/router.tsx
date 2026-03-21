@@ -15,6 +15,7 @@ export function getRouter() {
     defaultViewTransition: true,
     defaultErrorComponent: DefaultCatchBoundary,
     defaultNotFoundComponent: () => <NotFound />,
+    trailingSlash: "always",
     scrollRestoration: true,
   })
 
