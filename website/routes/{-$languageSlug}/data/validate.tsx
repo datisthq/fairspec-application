@@ -148,7 +148,7 @@ function Form() {
               className="mt-4 w-full text-xl h-12"
               disabled={!data}
             >
-              Validate
+              <Trans>Validate</Trans>
             </Button>
           )}
         />

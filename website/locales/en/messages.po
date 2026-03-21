@@ -233,6 +233,13 @@ msgstr "in column"
 msgid "in resource"
 msgstr "in resource"
 
+#: routes/{-$languageSlug}/data/infer-schema.tsx:142
+#: routes/{-$languageSlug}/dataset/infer.tsx:144
+#: routes/{-$languageSlug}/file/infer-dialect.tsx:143
+#: routes/{-$languageSlug}/table/infer-schema.tsx:155
+msgid "Infer"
+msgstr "Infer"
+
 #: components/layout/Breadcrumbs.tsx:43
 msgid "Infer data schema"
 msgstr "Infer data schema"
@@ -414,6 +421,10 @@ msgstr "phase. Please"
 #~ msgid "phase. Please share your"
 #~ msgstr "phase. Please share your"
 
+#: routes/{-$languageSlug}/table/preview.tsx:161
+msgid "Preview"
+msgstr "Preview"
+
 #: components/layout/Menu.tsx:52
 #: routes/{-$languageSlug}/table/preview.tsx:21
 #: routes/{-$languageSlug}/table/preview.tsx:49
@@ -578,6 +589,13 @@ msgstr "Valid File"
 #: routes/{-$languageSlug}/table/validate.tsx:175
 msgid "Valid Table"
 msgstr "Valid Table"
+
+#: routes/{-$languageSlug}/data/validate.tsx:151
+#: routes/{-$languageSlug}/dataset/validate.tsx:140
+#: routes/{-$languageSlug}/file/validate.tsx:209
+#: routes/{-$languageSlug}/table/validate.tsx:163
+msgid "Validate"
+msgstr "Validate"
 
 #: components/layout/Menu.tsx:69
 #: routes/{-$languageSlug}/data/validate.tsx:21

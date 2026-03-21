@@ -140,7 +140,7 @@ function Form() {
               className="mt-4 w-full text-xl h-12"
               disabled={!file}
             >
-              Infer
+              <Trans>Infer</Trans>
             </Button>
           )}
         />

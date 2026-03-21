@@ -158,7 +158,7 @@ function Form() {
               className="mt-4 w-full text-xl h-12"
               disabled={!table}
             >
-              Preview
+              <Trans>Preview</Trans>
             </Button>
           )}
         />
