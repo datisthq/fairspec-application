@@ -16,7 +16,7 @@
     "preview": "vite preview --port 8000",
     "start": "vite dev --port 8000",
     "translate": "node @translate.ts",
-    "type": "tsc --noEmit",
+    "type": "tsgo --noEmit",
     "ui": "shadcn"
   },
   "devDependencies": {

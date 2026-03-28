@@ -16,7 +16,7 @@
     "build": "node @build.ts",
     "compile": "electron-builder --publish never",
     "start": "electron-vite dev",
-    "type": "tsc --noEmit"
+    "type": "tsgo --noEmit"
   },
   "dependencies": {
     "@electron-toolkit/preload": "3.0.2",
