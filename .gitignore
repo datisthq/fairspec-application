@@ -64,9 +64,7 @@ render/
 dist/
 .astro/
 /docs/content/docs/reference/
-.cursor/
 .serena/
-.mcp.json
 .env.local
 messages.js
 .user/
