@@ -1,14 +1,14 @@
 {
   "name": "@fairspec/engine",
-  "type": "module",
   "version": "0.0.0-dev",
   "private": true,
+  "type": "module",
+  "imports": {
+    "#*": "./*"
+  },
   "exports": {
     ".": "./index.ts",
     "./handlers/electron": "./handlers/electron.ts"
-  },
-  "imports": {
-    "#*": "./*"
   },
   "scripts": {
     "start": "NODE_ENV=development node --watch main.ts",

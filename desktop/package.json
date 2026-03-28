@@ -1,17 +1,17 @@
 {
   "name": "@fairspec/desktop",
-  "type": "module",
   "version": "0.0.0-dev",
   "private": true,
+  "description": "Fairspec Application is a visual tool for managing and validating tabular and structured data",
+  "homepage": "https://application.fairspec.org",
+  "license": "MIT",
+  "author": "Evgeny Karev",
+  "repository": "https://github.com/fairspec/fairspec-application",
+  "type": "module",
   "main": "build/main/main.js",
   "imports": {
     "#*": "./*"
   },
-  "license": "MIT",
-  "author": "Evgeny Karev",
-  "repository": "https://github.com/fairspec/fairspec-application",
-  "homepage": "https://application.fairspec.org",
-  "description": "Fairspec Application is a visual tool for managing and validating tabular and structured data",
   "scripts": {
     "build": "node @build.ts",
     "compile": "electron-builder --publish never",

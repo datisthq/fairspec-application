@@ -6,9 +6,9 @@
   "compatibility_flags": ["nodejs_compat"],
   "upload_source_maps": true,
   "placement": {
-    "mode": "smart"
+    "mode": "smart",
   },
   "observability": {
-    "enabled": true
-  }
+    "enabled": true,
+  },
 }

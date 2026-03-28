@@ -5,9 +5,11 @@ import type { LanguageSlug } from "@fairspec/website"
 contextBridge.exposeInMainWorld("desktop", {
   engineIpc: settings.ENGINE_IPC,
 
-  openFileDialog: async (options: { filters?: {
-    name: string;
-    extensions: string[] }[]
+  openFileDialog: async (options: {
+    filters?: {
+      name: string
+      extensions: string[]
+    }[]
   }) => {
     return await ipcRenderer.invoke("dialog:openFile", options)
   },
@@ -19,10 +21,7 @@ contextBridge.exposeInMainWorld("desktop", {
     return await ipcRenderer.invoke("dialog:saveFile", options)
   },
 
-  writeFile: async (options: {
-    filePath: string
-    content: string
-  }) => {
+  writeFile: async (options: { filePath: string; content: string }) => {
     return await ipcRenderer.invoke("file:write", options)
   },
 
@@ -43,7 +42,7 @@ contextBridge.exposeInMainWorld("desktop", {
   },
 })
 
-window.addEventListener("message", (event) => {
+window.addEventListener("message", event => {
   if (event.data === settings.ENGINE_IPC) {
     const [serverPort] = event.ports
 

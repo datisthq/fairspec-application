@@ -1,15 +1,15 @@
 {
   "name": "@fairspec/logger",
-  "type": "module",
   "version": "0.0.0-dev",
-  "exports": "./index.ts",
   "private": true,
+  "type": "module",
+  "exports": "./index.ts",
+  "scripts": {
+    "type": "tsgo --noEmit"
+  },
   "dependencies": {
     "@loglayer/transport-tslog": "3.0.4",
     "loglayer": "6.9.1",
     "tslog": "4.10.2"
-  },
-  "scripts": {
-    "type": "tsgo --noEmit"
   }
 }
