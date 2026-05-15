@@ -29,9 +29,6 @@ importers:
       execa:
         specifier: 9.6.0
         version: 9.6.0
-      is-ci:
-        specifier: 4.1.0
-        version: 4.1.0
       lefthook:
         specifier: 2.1.1
         version: 2.1.1
@@ -5717,10 +5714,6 @@ packages:
 
   is-ci@3.0.1:
     resolution: {integrity: sha512-ZYvCgrefwqoQ6yTyYUbQu64HsITZ3NfKX1lzaEYdkTDcfKzzCI/wthRRYKkdjHKFVgNiXKAKm65Zo1pk2as/QQ==}
-    hasBin: true
-
-  is-ci@4.1.0:
-    resolution: {integrity: sha512-Ab9bQDQ11lWootZUI5qxgN2ZXwxNI5hTwnsvOc1wyxQ7zQ8OkEDw79mI0+9jI3x432NfwbVRru+3noJfXF6lSQ==}
     hasBin: true
 
   is-core-module@2.16.1:
@@ -15032,10 +15025,6 @@ snapshots:
     dependencies:
       ci-info: 3.9.0
 
-  is-ci@4.1.0:
-    dependencies:
-      ci-info: 4.3.1
-
   is-core-module@2.16.1:
     dependencies:
       hasown: 2.0.2
@@ -16091,7 +16080,7 @@ snapshots:
       statuses: 2.0.2
       strict-event-emitter: 0.5.1
       tough-cookie: 6.0.0
-      type-fest: 5.4.1
+      type-fest: 5.5.0
       until-async: 3.0.2
       yargs: 17.7.2
     optionalDependencies:
@@ -17874,7 +17863,7 @@ snapshots:
 
   tsx@4.21.0:
     dependencies:
-      esbuild: 0.27.2
+      esbuild: 0.27.3
       get-tsconfig: 4.13.0
     optionalDependencies:
       fsevents: 2.3.3
@@ -18322,7 +18311,7 @@ snapshots:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.6
+      postcss: 8.5.8
       rollup: 4.55.3
       tinyglobby: 0.2.15
     optionalDependencies:

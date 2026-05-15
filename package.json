@@ -11,14 +11,17 @@
     "coverage": "sensible-browser coverage/index.html",
     "generate": "pnpm --parallel generate",
     "format": "vp fmt",
+    "leaks": "gitleaks git --config=.gitleaks.toml --verbose --redact",
     "lint": "vp fmt --check && vp lint",
-    "prepare": "is-ci || lefthook install",
+    "prepare": "lefthook install",
+    "scan": "pnpm leaks && pnpm vulns",
     "unit": "vp test",
     "start:desktop": "pnpm --parallel -F website -F desktop start",
     "start:website": "pnpm --parallel -F engine -F website start",
     "test": "pnpm lint && pnpm type && pnpm unit",
     "type": "pnpm -r type",
-    "setversion": "pnpm --include-workspace-root -r exec pnpm version --no-git-tag-version"
+    "vers": "pnpm --include-workspace-root -r exec pnpm version --no-git-tag-version",
+    "vulns": "semgrep --config=p/typescript --config=p/nodejs --config=p/owasp-top-ten --config=p/secrets --metrics=off"
   },
   "devDependencies": {
     "@semantic-release/exec": "7.1.0",
@@ -28,7 +31,6 @@
     "conventional-changelog-conventionalcommits": "9.1.0",
     "dotenv": "17.2.3",
     "execa": "9.6.0",
-    "is-ci": "4.1.0",
     "lefthook": "2.1.1",
     "npm-check-updates": "18.0.1",
     "semantic-release": "24.2.9",

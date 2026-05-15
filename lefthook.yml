@@ -1,4 +1,0 @@
-pre-push:
-  jobs:
-    - name: test
-      run: pnpm test
