@@ -1,6 +1,17 @@
-dangerouslyAllowAllBuilds: true
+saveExact: true
+
 packages:
   - desktop
   - engine
   - logger
   - website
+
+allowBuilds:
+  "@parcel/watcher": true
+  electron: true
+  electron-winstaller: true
+  esbuild: true
+  lefthook: true
+  msw: true
+  sharp: true
+  workerd: true
