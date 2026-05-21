@@ -1,5 +1,6 @@
 import { cloudflare } from "@cloudflare/vite-plugin"
-import { lingui } from "@lingui/vite-plugin"
+import { lingui, linguiTransformerBabelPreset } from "@lingui/vite-plugin"
+import babel from "@rolldown/plugin-babel"
 import tailwind from "@tailwindcss/vite"
 import { devtools } from "@tanstack/devtools-vite"
 import { tanstackStart } from "@tanstack/react-start/plugin/vite"
@@ -19,12 +20,11 @@ export default defineConfig({
       prerender: { enabled: true },
       sitemap: { enabled: true, host: settings.HOST },
     }),
-    react({
-      babel: {
-        plugins: ["@lingui/babel-plugin-lingui-macro"],
-      },
-    }),
+    react(),
     lingui(),
+    babel({
+      presets: [linguiTransformerBabelPreset()],
+    }),
     svgr(),
   ],
 })
