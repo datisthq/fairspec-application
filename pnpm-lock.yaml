@@ -162,8 +162,8 @@ importers:
         specifier: workspace:*
         version: link:../logger
       '@fairspec/metadata':
-        specifier: 0.10.0
-        version: 0.10.0
+        specifier: 0.12.1
+        version: 0.12.1
       '@lingui/babel-plugin-lingui-macro':
         specifier: 5.8.0
         version: 5.8.0(typescript@6.0.3)
@@ -1311,9 +1311,6 @@ packages:
   '@fairspec/library@0.12.1':
     resolution: {integrity: sha512-SiMbUzV0TJagTKxlshgXgXki8UeW2jlADW0zP+/8ooaAH41rvbz7InnVGV2QTQC0ds44BE+Sy0T2/33tS0fn5A==}
     version: 0.12.1
-
-  '@fairspec/metadata@0.10.0':
-    resolution: {integrity: sha512-x0CjhnAemDcOk5+i7BO3ecHX1nXU0loYVGQEQSWjLWsSJ3qxizFLUL//Iq86ybCR7p6Pgl9GN7LdfgkGgD9hOA==}
 
   '@fairspec/metadata@0.12.1':
     resolution: {integrity: sha512-rfJT0OInPop8uc6ucohpC0iyxgq6S1uUxKxwaoXpKWfEywBN3T0OKKFWeSXqqV8jz9rWkoPVFaUklG7+Z7VnkQ==}
@@ -9844,15 +9841,6 @@ snapshots:
       - supports-color
       - typescript
       - xlsx
-
-  '@fairspec/metadata@0.10.0':
-    dependencies:
-      '@sindresorhus/slugify': 0.9.1
-      '@types/json-schema': 7.0.15
-      ajv: 8.20.0
-      quick-lru: 7.3.0
-      ts-extras: 0.16.1
-      zod: 4.3.6
 
   '@fairspec/metadata@0.12.1':
     dependencies:
