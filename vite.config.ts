@@ -16,6 +16,9 @@ export default defineConfig({
       typeAware: false,
       typeCheck: false,
     },
+    rules: {
+      "unicorn/no-single-promise-in-promise-methods": "off",
+    },
   },
   test: {
     include: ["**/*.unit.(ts|tsx)"],

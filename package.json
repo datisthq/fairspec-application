@@ -15,6 +15,7 @@
     "prepare": "lefthook install",
     "scan": "pnpm leaks && pnpm vulns",
     "unit": "vp test",
+    "start": "pnpm start:website",
     "start:desktop": "pnpm --parallel -F website -F desktop start",
     "start:website": "pnpm --parallel -F engine -F website start",
     "test": "pnpm lint && pnpm type && pnpm unit",
