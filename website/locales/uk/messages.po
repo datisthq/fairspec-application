@@ -18,10 +18,6 @@ msgstr ""
 msgid ", but it is"
 msgstr ", але це"
 
-#: components/layout/Banner.tsx:29
-msgid "."
-msgstr "."
-
 #: components/report/Error.tsx:328
 msgid "A required cell in column"
 msgstr "Обов'язкова клітина у стовпці"
@@ -54,32 +50,27 @@ msgstr "Автоматично визначайте метадані та стр
 msgid "Automatically infer file formats, encoding specifications, and dialect parameters"
 msgstr "Автоматично визначайте формати файлів, специфікації кодування та параметри діалекту"
 
-#: components/layout/Credits.tsx:11
-msgid "Brought to you by"
-msgstr "Представлено вам"
-
-#: components/layout/Language.tsx:73
+#: components/layout/Language.tsx:57
 msgid "Change Language"
 msgstr "Змінити мову"
 
-#: components/layout/Theme.tsx:21
+#: components/layout/Theme.tsx:23
 msgid "Change Theme"
 msgstr "Змінити тему"
 
-#: components/layout/Close.tsx:27
 #: components/result/Result.tsx:38
 msgid "Close"
 msgstr "Закрити"
-
-#: components/layout/Close.tsx:21
-msgid "Close Application"
-msgstr "Закрити застосунок"
 
 #: components/report/Error.tsx:398
 msgid "Column"
 msgstr "Стовпець"
 
-#: components/layout/Menu.tsx:66
+#: components/layout/Theme.tsx:35
+msgid "Dark Theme"
+msgstr "Темна тема"
+
+#: components/layout/Menu.tsx:76
 #: routes/{-$languageSlug}/data/infer-schema.tsx:124
 #: routes/{-$languageSlug}/data/validate.tsx:122
 #: routes/{-$languageSlug}/index.tsx:37
@@ -90,7 +81,11 @@ msgstr "Дані"
 msgid "Data error at"
 msgstr "Помилка даних у"
 
-#: components/layout/Menu.tsx:37
+#: components/layout/Logo.tsx:7
+msgid "Data management application"
+msgstr "Додаток для керування даними"
+
+#: components/layout/Menu.tsx:47
 #: routes/{-$languageSlug}/dataset/validate.tsx:121
 #: routes/{-$languageSlug}/index.tsx:21
 msgid "Dataset"
@@ -150,11 +145,11 @@ msgstr "Не вдалося визначити схему"
 msgid "Failed to Load Preview"
 msgstr "Не вдалося завантажити попередній перегляд"
 
-#: components/layout/Banner.tsx:27
-msgid "feedback and ideas"
-msgstr "відгуки та ідеї"
+#: components/layout/Logo.tsx:6
+msgid "Fairspec Application"
+msgstr "Додаток Fairspec"
 
-#: components/layout/Menu.tsx:79
+#: components/layout/Menu.tsx:89
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:125
 #: routes/{-$languageSlug}/file/validate.tsx:136
 #: routes/{-$languageSlug}/index.tsx:45
@@ -218,41 +213,29 @@ msgstr "у ресурсі"
 msgid "Infer"
 msgstr "Вивести"
 
-#: components/layout/Breadcrumbs.tsx:43
-msgid "Infer data schema"
-msgstr "Визначити схему даних"
-
 #: routes/{-$languageSlug}/data/infer-schema.tsx:22
 #: routes/{-$languageSlug}/data/infer-schema.tsx:50
 msgid "Infer Data Schema"
 msgstr "Визначити схему даних"
 
-#: components/layout/Menu.tsx:44
+#: components/layout/Menu.tsx:54
 #: routes/{-$languageSlug}/dataset/infer.tsx:22
 #: routes/{-$languageSlug}/dataset/infer.tsx:50
 msgid "Infer Dataset"
 msgstr "Вивести набір даних"
 
-#: components/layout/Breadcrumbs.tsx:41
-msgid "Infer dialect"
-msgstr "Визначити діалект"
-
-#: components/layout/Menu.tsx:59
-#: components/layout/Menu.tsx:72
-#: components/layout/Menu.tsx:84
+#: components/layout/Menu.tsx:69
+#: components/layout/Menu.tsx:82
+#: components/layout/Menu.tsx:94
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:22
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:50
 msgid "Infer Dialect"
 msgstr "Вивести діалект"
 
-#: components/layout/Menu.tsx:55
-#: components/layout/Menu.tsx:70
+#: components/layout/Menu.tsx:65
+#: components/layout/Menu.tsx:80
 msgid "Infer Schema"
 msgstr "Вивести схему"
-
-#: components/layout/Breadcrumbs.tsx:45
-msgid "Infer table schema"
-msgstr "Визначити схему таблиці"
 
 #: routes/{-$languageSlug}/table/infer-schema.tsx:22
 #: routes/{-$languageSlug}/table/infer-schema.tsx:50
@@ -346,10 +329,18 @@ msgstr "не унікальний"
 msgid "items"
 msgstr "елементи"
 
+#: components/layout/Language.tsx:64
+msgid "Language"
+msgstr "Мова"
+
 #: components/report/Error.tsx:197
 #: components/report/Error.tsx:254
 msgid "Length of the cell"
 msgstr "Довжина клітини"
+
+#: components/layout/Theme.tsx:28
+msgid "Light Theme"
+msgstr "Світла тема"
 
 #: routes/{-$languageSlug}/table/preview.tsx:22
 #: routes/{-$languageSlug}/table/preview.tsx:52
@@ -383,19 +374,11 @@ msgstr "максимум"
 msgid "of row"
 msgstr "рядка"
 
-#: components/layout/Banner.tsx:21
-msgid "on GitHub and share your"
-msgstr "на GitHub і поділіться своїм"
-
-#: components/layout/Banner.tsx:13
-msgid "phase. Please"
-msgstr "етап. Будь ласка,"
-
 #: routes/{-$languageSlug}/table/preview.tsx:161
 msgid "Preview"
 msgstr "Попередній перегляд"
 
-#: components/layout/Menu.tsx:52
+#: components/layout/Menu.tsx:62
 #: routes/{-$languageSlug}/table/preview.tsx:21
 #: routes/{-$languageSlug}/table/preview.tsx:49
 msgid "Preview Table"
@@ -404,10 +387,6 @@ msgstr "Попередній перегляд таблиці"
 #: components/report/Error.tsx:382
 msgid "Required column"
 msgstr "Обов'язковий стовпець"
-
-#: components/layout/Banner.tsx:11
-msgid "research preview"
-msgstr "попередній перегляд дослідження"
 
 #: components/report/Error.tsx:504
 #: components/report/Error.tsx:521
@@ -441,19 +420,15 @@ msgstr "Схему визначено"
 msgid "Select hash algorithm and enter hash value"
 msgstr "Оберіть алгоритм хешування та введіть значення хеша"
 
-#: components/layout/Breadcrumbs.tsx:47
-msgid "Select tools below"
-msgstr "Оберіть інструменти нижче"
+#: components/layout/Share.tsx:34
+msgid "Share"
+msgstr "Поділитися"
 
-#: components/layout/Share.tsx:36
+#: components/layout/Share.tsx:27
 msgid "Share Page"
 msgstr "Поділитися сторінкою"
 
-#: components/layout/Banner.tsx:19
-msgid "star the project"
-msgstr "позначте проект зірочкою"
-
-#: components/layout/Menu.tsx:49
+#: components/layout/Menu.tsx:59
 #: routes/{-$languageSlug}/dataset/infer.tsx:125
 #: routes/{-$languageSlug}/index.tsx:29
 #: routes/{-$languageSlug}/table/infer-schema.tsx:126
@@ -466,15 +441,15 @@ msgstr "Таблиця"
 msgid "Table Preview"
 msgstr "Попередній перегляд таблиці"
 
+#: routes/{-$languageSlug}/index.tsx:57
+msgid "Technical preview"
+msgstr "Технічний попередній перегляд"
+
 #: components/desktop/Alert.tsx:20
 msgid "This functionality is only available in the <0>desktop application</0>"
 msgstr "Ця функція доступна лише в <0>десктопному застосунку</0>"
 
-#: components/layout/Banner.tsx:9
-msgid "This project is in"
-msgstr "Цей проєкт перебуває в"
-
-#: components/layout/Breadcrumbs.tsx:25
+#: components/layout/Menu.tsx:104
 msgid "Tools"
 msgstr "Інструменти"
 
@@ -550,7 +525,7 @@ msgstr "Коректна таблиця"
 msgid "Validate"
 msgstr "Перевірити"
 
-#: components/layout/Menu.tsx:69
+#: components/layout/Menu.tsx:79
 #: routes/{-$languageSlug}/data/validate.tsx:21
 #: routes/{-$languageSlug}/data/validate.tsx:49
 msgid "Validate Data"
@@ -562,11 +537,7 @@ msgstr "Перевірити дані"
 msgid "Validate data quality, check for inconsistencies and errors, and automatically infer comprehensive data schemas from your datasets"
 msgstr "Перевіряйте якість даних, виявляйте невідповідності та помилки й автоматично виводьте комплексні схеми даних із ваших наборів даних"
 
-#: components/layout/Breadcrumbs.tsx:37
-msgid "Validate dataset"
-msgstr "Перевірити набір даних"
-
-#: components/layout/Menu.tsx:41
+#: components/layout/Menu.tsx:51
 #: routes/{-$languageSlug}/dataset/validate.tsx:21
 #: routes/{-$languageSlug}/dataset/validate.tsx:49
 msgid "Validate Dataset"
@@ -578,17 +549,13 @@ msgstr "Перевірити набір даних"
 msgid "Validate dataset metadata against specifications and automatically infer dataset structure from your data files"
 msgstr "Перевіряйте метадані набору даних відповідно до специфікацій і автоматично виводьте структуру набору даних із ваших файлів даних"
 
-#: components/layout/Menu.tsx:82
+#: components/layout/Menu.tsx:92
 #: routes/{-$languageSlug}/file/validate.tsx:34
 #: routes/{-$languageSlug}/file/validate.tsx:62
 msgid "Validate File"
 msgstr "Перевірити файл"
 
-#: components/layout/Breadcrumbs.tsx:39
-msgid "Validate table"
-msgstr "Перевірити таблицю"
-
-#: components/layout/Menu.tsx:53
+#: components/layout/Menu.tsx:63
 #: routes/{-$languageSlug}/table/validate.tsx:21
 #: routes/{-$languageSlug}/table/validate.tsx:49
 msgid "Validate Table"
@@ -647,10 +614,6 @@ msgstr "порушує обмеження первинного ключа на �
 msgid "violates unique key constraint on columns"
 msgstr "порушує обмеження унікального ключа на стовпцях"
 
-#: routes/{-$languageSlug}/index.tsx:57
+#: routes/{-$languageSlug}/index.tsx:61
 msgid "Visual tool for managing and validating tabular and structured data"
 msgstr "Візуальний інструмент для керування та перевірки табличних і структурованих даних"
-
-#: components/layout/Credits.tsx:32
-msgid "We are bringing technological innovation and consultancy services to the open data field"
-msgstr "Ми впроваджуємо технологічні інновації та консалтингові послуги у сферу відкритих даних"

@@ -18,10 +18,6 @@ msgstr ""
 msgid ", but it is"
 msgstr "aber es ist"
 
-#: components/layout/Banner.tsx:29
-msgid "."
-msgstr "."
-
 #: components/report/Error.tsx:328
 msgid "A required cell in column"
 msgstr "Eine erforderliche Zelle in Spalte"
@@ -54,32 +50,27 @@ msgstr "Metadaten und Struktur von Datensätzen automatisch aus Ihren Datendatei
 msgid "Automatically infer file formats, encoding specifications, and dialect parameters"
 msgstr "Dateiformate, Kodierungsspezifikationen und Dialektparameter automatisch ableiten"
 
-#: components/layout/Credits.tsx:11
-msgid "Brought to you by"
-msgstr "Präsentiert von"
-
-#: components/layout/Language.tsx:73
+#: components/layout/Language.tsx:57
 msgid "Change Language"
 msgstr "Sprache ändern"
 
-#: components/layout/Theme.tsx:21
+#: components/layout/Theme.tsx:23
 msgid "Change Theme"
 msgstr "Thema ändern"
 
-#: components/layout/Close.tsx:27
 #: components/result/Result.tsx:38
 msgid "Close"
 msgstr "Schließen"
-
-#: components/layout/Close.tsx:21
-msgid "Close Application"
-msgstr "Anwendung schließen"
 
 #: components/report/Error.tsx:398
 msgid "Column"
 msgstr "Spalte"
 
-#: components/layout/Menu.tsx:66
+#: components/layout/Theme.tsx:35
+msgid "Dark Theme"
+msgstr "Dunkles Design"
+
+#: components/layout/Menu.tsx:76
 #: routes/{-$languageSlug}/data/infer-schema.tsx:124
 #: routes/{-$languageSlug}/data/validate.tsx:122
 #: routes/{-$languageSlug}/index.tsx:37
@@ -90,7 +81,11 @@ msgstr "Daten"
 msgid "Data error at"
 msgstr "Datenfehler bei"
 
-#: components/layout/Menu.tsx:37
+#: components/layout/Logo.tsx:7
+msgid "Data management application"
+msgstr "Datenverwaltungsanwendung"
+
+#: components/layout/Menu.tsx:47
 #: routes/{-$languageSlug}/dataset/validate.tsx:121
 #: routes/{-$languageSlug}/index.tsx:21
 msgid "Dataset"
@@ -150,11 +145,11 @@ msgstr "Schema konnte nicht abgeleitet werden"
 msgid "Failed to Load Preview"
 msgstr "Vorschau konnte nicht geladen werden"
 
-#: components/layout/Banner.tsx:27
-msgid "feedback and ideas"
-msgstr "Feedback und Ideen"
+#: components/layout/Logo.tsx:6
+msgid "Fairspec Application"
+msgstr "Fairspec-Anwendung"
 
-#: components/layout/Menu.tsx:79
+#: components/layout/Menu.tsx:89
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:125
 #: routes/{-$languageSlug}/file/validate.tsx:136
 #: routes/{-$languageSlug}/index.tsx:45
@@ -218,41 +213,29 @@ msgstr "in Ressource"
 msgid "Infer"
 msgstr "Ableiten"
 
-#: components/layout/Breadcrumbs.tsx:43
-msgid "Infer data schema"
-msgstr "Datenschema ableiten"
-
 #: routes/{-$languageSlug}/data/infer-schema.tsx:22
 #: routes/{-$languageSlug}/data/infer-schema.tsx:50
 msgid "Infer Data Schema"
 msgstr "Datenschema ableiten"
 
-#: components/layout/Menu.tsx:44
+#: components/layout/Menu.tsx:54
 #: routes/{-$languageSlug}/dataset/infer.tsx:22
 #: routes/{-$languageSlug}/dataset/infer.tsx:50
 msgid "Infer Dataset"
 msgstr "Datensatz ableiten"
 
-#: components/layout/Breadcrumbs.tsx:41
-msgid "Infer dialect"
-msgstr "Dialekt ableiten"
-
-#: components/layout/Menu.tsx:59
-#: components/layout/Menu.tsx:72
-#: components/layout/Menu.tsx:84
+#: components/layout/Menu.tsx:69
+#: components/layout/Menu.tsx:82
+#: components/layout/Menu.tsx:94
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:22
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:50
 msgid "Infer Dialect"
 msgstr "Dialekt ableiten"
 
-#: components/layout/Menu.tsx:55
-#: components/layout/Menu.tsx:70
+#: components/layout/Menu.tsx:65
+#: components/layout/Menu.tsx:80
 msgid "Infer Schema"
 msgstr "Schema ableiten"
-
-#: components/layout/Breadcrumbs.tsx:45
-msgid "Infer table schema"
-msgstr "Tabellenschema ableiten"
 
 #: routes/{-$languageSlug}/table/infer-schema.tsx:22
 #: routes/{-$languageSlug}/table/infer-schema.tsx:50
@@ -346,10 +329,18 @@ msgstr "ist nicht eindeutig"
 msgid "items"
 msgstr "Elemente"
 
+#: components/layout/Language.tsx:64
+msgid "Language"
+msgstr "Sprache"
+
 #: components/report/Error.tsx:197
 #: components/report/Error.tsx:254
 msgid "Length of the cell"
 msgstr "Länge der Zelle"
+
+#: components/layout/Theme.tsx:28
+msgid "Light Theme"
+msgstr "Helles Design"
 
 #: routes/{-$languageSlug}/table/preview.tsx:22
 #: routes/{-$languageSlug}/table/preview.tsx:52
@@ -383,19 +374,11 @@ msgstr "Maximum"
 msgid "of row"
 msgstr "der Zeile"
 
-#: components/layout/Banner.tsx:21
-msgid "on GitHub and share your"
-msgstr "auf GitHub und teile deine"
-
-#: components/layout/Banner.tsx:13
-msgid "phase. Please"
-msgstr "Phase. Bitte"
-
 #: routes/{-$languageSlug}/table/preview.tsx:161
 msgid "Preview"
 msgstr "Vorschau"
 
-#: components/layout/Menu.tsx:52
+#: components/layout/Menu.tsx:62
 #: routes/{-$languageSlug}/table/preview.tsx:21
 #: routes/{-$languageSlug}/table/preview.tsx:49
 msgid "Preview Table"
@@ -404,10 +387,6 @@ msgstr "Tabelle Vorschau"
 #: components/report/Error.tsx:382
 msgid "Required column"
 msgstr "Erforderliche Spalte"
-
-#: components/layout/Banner.tsx:11
-msgid "research preview"
-msgstr "Forschungs-Vorschau"
 
 #: components/report/Error.tsx:504
 #: components/report/Error.tsx:521
@@ -441,19 +420,15 @@ msgstr "Schema abgeleitet"
 msgid "Select hash algorithm and enter hash value"
 msgstr "Hash-Algorithmus auswählen und Hash-Wert eingeben"
 
-#: components/layout/Breadcrumbs.tsx:47
-msgid "Select tools below"
-msgstr "Unten Werkzeuge auswählen"
+#: components/layout/Share.tsx:34
+msgid "Share"
+msgstr "Teilen"
 
-#: components/layout/Share.tsx:36
+#: components/layout/Share.tsx:27
 msgid "Share Page"
 msgstr "Seite teilen"
 
-#: components/layout/Banner.tsx:19
-msgid "star the project"
-msgstr "markiere das Projekt mit einem Stern"
-
-#: components/layout/Menu.tsx:49
+#: components/layout/Menu.tsx:59
 #: routes/{-$languageSlug}/dataset/infer.tsx:125
 #: routes/{-$languageSlug}/index.tsx:29
 #: routes/{-$languageSlug}/table/infer-schema.tsx:126
@@ -466,15 +441,15 @@ msgstr "Tabelle"
 msgid "Table Preview"
 msgstr "Tabellenvorschau"
 
+#: routes/{-$languageSlug}/index.tsx:57
+msgid "Technical preview"
+msgstr "Technische Vorschau"
+
 #: components/desktop/Alert.tsx:20
 msgid "This functionality is only available in the <0>desktop application</0>"
 msgstr "Diese Funktion ist nur in der <0>Desktop-Anwendung</0> verfügbar"
 
-#: components/layout/Banner.tsx:9
-msgid "This project is in"
-msgstr "Dieses Projekt befindet sich in der"
-
-#: components/layout/Breadcrumbs.tsx:25
+#: components/layout/Menu.tsx:104
 msgid "Tools"
 msgstr "Werkzeuge"
 
@@ -550,7 +525,7 @@ msgstr "Gültige Tabelle"
 msgid "Validate"
 msgstr "Validieren"
 
-#: components/layout/Menu.tsx:69
+#: components/layout/Menu.tsx:79
 #: routes/{-$languageSlug}/data/validate.tsx:21
 #: routes/{-$languageSlug}/data/validate.tsx:49
 msgid "Validate Data"
@@ -562,11 +537,7 @@ msgstr "Daten validieren"
 msgid "Validate data quality, check for inconsistencies and errors, and automatically infer comprehensive data schemas from your datasets"
 msgstr "Überprüfen Sie die Datenqualität, prüfen Sie auf Inkonsistenzen und Fehler und leiten Sie automatisch umfassende Datenschemata aus Ihren Datensätzen ab."
 
-#: components/layout/Breadcrumbs.tsx:37
-msgid "Validate dataset"
-msgstr "Datensatz validieren"
-
-#: components/layout/Menu.tsx:41
+#: components/layout/Menu.tsx:51
 #: routes/{-$languageSlug}/dataset/validate.tsx:21
 #: routes/{-$languageSlug}/dataset/validate.tsx:49
 msgid "Validate Dataset"
@@ -578,17 +549,13 @@ msgstr "Datensatz validieren"
 msgid "Validate dataset metadata against specifications and automatically infer dataset structure from your data files"
 msgstr "Validieren Sie die Metadaten des Datensatzes gemäß den Spezifikationen und erkennen Sie automatisch die Datenstruktur aus Ihren Dateien."
 
-#: components/layout/Menu.tsx:82
+#: components/layout/Menu.tsx:92
 #: routes/{-$languageSlug}/file/validate.tsx:34
 #: routes/{-$languageSlug}/file/validate.tsx:62
 msgid "Validate File"
 msgstr "Datei validieren"
 
-#: components/layout/Breadcrumbs.tsx:39
-msgid "Validate table"
-msgstr "Tabelle validieren"
-
-#: components/layout/Menu.tsx:53
+#: components/layout/Menu.tsx:63
 #: routes/{-$languageSlug}/table/validate.tsx:21
 #: routes/{-$languageSlug}/table/validate.tsx:49
 msgid "Validate Table"
@@ -647,10 +614,6 @@ msgstr "verstößt gegen die Primärschlüsselbedingung in Spalten"
 msgid "violates unique key constraint on columns"
 msgstr "verstößt gegen die Eindeutigkeitsbedingung in Spalten"
 
-#: routes/{-$languageSlug}/index.tsx:57
+#: routes/{-$languageSlug}/index.tsx:61
 msgid "Visual tool for managing and validating tabular and structured data"
 msgstr "Visuelles Werkzeug zur Verwaltung und Validierung von tabellarischen und strukturierten Daten"
-
-#: components/layout/Credits.tsx:32
-msgid "We are bringing technological innovation and consultancy services to the open data field"
-msgstr "Wir bringen technologische Innovation und Beratungsdienstleistungen in den Bereich Open Data"
