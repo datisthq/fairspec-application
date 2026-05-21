@@ -47,38 +47,42 @@ export function Language() {
     }
   }
 
-  const items = Object.values(Languages).map(language => {
-    const Flag = LANGUAGE_FLAGS[language.id]
-    return (
-      <DropdownMenuItem
-        key={language.id}
-        onClick={() => onLanguageChange(language)}
-        className="cursor-pointer"
-      >
-        <div className="flex gap-2 flex-nowrap items-center cursor-pointer">
-          <Flag fontSize={settings.ICON_SIZE} />
-          {language.title}
-        </div>
-      </DropdownMenuItem>
-    )
-  })
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
         render={
           <Button
-            variant="outline"
-            size="default"
+            variant="ghost"
+            size="sm"
             title={t`Change Language`}
-            className="rounded-xl cursor-pointer"
+            className="w-full h-auto rounded-xl cursor-pointer text-xs font-normal justify-start text-muted-foreground bg-sidebar-accent/70 border border-border shadow-xs hover:!bg-background px-3 py-2"
           />
         }
       >
-        <icons.Language strokeWidth={settings.ICON_STROKE_WIDTH} />
+        <div className="flex flex-1 gap-2 items-center">
+          <icons.Language className="size-4" />
+          <span className="flex-1 text-left">{t`Language`}</span>
+        </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="flex flex-col gap-4 p-2">
-        {items}
+      <DropdownMenuContent
+        align="start"
+        className="flex flex-col gap-1 p-2 w-(--radix-dropdown-menu-trigger-width)"
+      >
+        {Object.values(Languages).map(language => {
+          const ItemFlag = LANGUAGE_FLAGS[language.id]
+          return (
+            <DropdownMenuItem
+              key={language.id}
+              onClick={() => onLanguageChange(language)}
+              className="cursor-pointer"
+            >
+              <div className="flex gap-2 flex-nowrap items-center cursor-pointer">
+                <ItemFlag fontSize={settings.ICON_SIZE} />
+                {language.title}
+              </div>
+            </DropdownMenuItem>
+          )
+        })}
       </DropdownMenuContent>
     </DropdownMenu>
   )

@@ -17,31 +17,35 @@ export function Share() {
   const location = useLocation()
   const currentUrl = `${settings.HOST}${location.href}`
 
-  const items = SHARE_PROVIDERS.map(provider => {
-    const Component = provider.component
-    return (
-      <DropdownMenuItem key={provider.name} className="cursor-pointer">
-        <Component url={currentUrl} />
-      </DropdownMenuItem>
-    )
-  })
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
         render={
           <Button
-            variant="outline"
-            size="default"
+            variant="ghost"
+            size="sm"
             title={t`Share Page`}
-            className="rounded-xl cursor-pointer"
+            className="w-full h-auto rounded-xl cursor-pointer text-xs font-normal justify-start text-muted-foreground bg-sidebar-accent/70 border border-border shadow-xs hover:!bg-background px-3 py-2"
           />
         }
       >
-        <icons.Share strokeWidth={settings.ICON_STROKE_WIDTH} />
+        <div className="flex flex-1 gap-2 items-center">
+          <icons.Share className="size-4" />
+          <span className="flex-1 text-left">{t`Share`}</span>
+        </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="flex flex-col gap-4 p-2">
-        {items}
+      <DropdownMenuContent
+        align="start"
+        className="flex flex-col gap-1 p-2 w-(--radix-dropdown-menu-trigger-width)"
+      >
+        {SHARE_PROVIDERS.map(provider => {
+          const Component = provider.component
+          return (
+            <DropdownMenuItem key={provider.name} className="cursor-pointer">
+              <Component url={currentUrl} />
+            </DropdownMenuItem>
+          )
+        })}
       </DropdownMenuContent>
     </DropdownMenu>
   )
@@ -51,7 +55,6 @@ function Facebook(props: { url: string }) {
   return (
     <share.FacebookShareButton
       url={props.url}
-      className="w-full block cursor-pointer"
       style={{
         all: "unset",
         cursor: "pointer",
@@ -71,7 +74,6 @@ function Twitter(props: { url: string }) {
   return (
     <share.TwitterShareButton
       url={props.url}
-      className="w-full block cursor-pointer"
       style={{
         all: "unset",
         cursor: "pointer",
@@ -91,7 +93,6 @@ function LinkedIn(props: { url: string }) {
   return (
     <share.LinkedinShareButton
       url={props.url}
-      className="w-full block cursor-pointer"
       style={{
         all: "unset",
         cursor: "pointer",
@@ -111,7 +112,6 @@ function WhatsApp(props: { url: string }) {
   return (
     <share.WhatsappShareButton
       url={props.url}
-      className="w-full block cursor-pointer"
       style={{
         all: "unset",
         cursor: "pointer",
@@ -131,7 +131,6 @@ function Telegram(props: { url: string }) {
   return (
     <share.TelegramShareButton
       url={props.url}
-      className="w-full block cursor-pointer"
       style={{
         all: "unset",
         cursor: "pointer",
@@ -151,7 +150,6 @@ function Reddit(props: { url: string }) {
   return (
     <share.RedditShareButton
       url={props.url}
-      className="w-full block cursor-pointer"
       style={{
         all: "unset",
         cursor: "pointer",
@@ -171,7 +169,6 @@ function Email(props: { url: string }) {
   return (
     <share.EmailShareButton
       url={props.url}
-      className="w-full block cursor-pointer"
       style={{
         all: "unset",
         cursor: "pointer",

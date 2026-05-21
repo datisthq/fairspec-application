@@ -1,29 +1,128 @@
-import { ClientOnly } from "@tanstack/react-router"
-import { Breadcrumbs } from "./Breadcrumbs.tsx"
-import { Close } from "./Close.tsx"
-import { Language } from "./Language.tsx"
-import { Links } from "./Links.tsx"
+import { Link } from "@tanstack/react-router"
+import { Button } from "#elements/button.tsx"
+import { useSidebar } from "#elements/sidebar.tsx"
+import * as icons from "#icons.ts"
 import { Logo } from "./Logo.tsx"
-import { Share } from "./Share.tsx"
-import { Theme } from "./Theme.tsx"
+
+function MenuToggle() {
+  const { toggleSidebar } = useSidebar()
+  return (
+    <Button
+      data-sidebar="trigger"
+      variant="ghost"
+      size="icon-sm"
+      onClick={toggleSidebar}
+      aria-label="Toggle Sidebar"
+    >
+      <icons.Menu />
+      <span className="sr-only">Toggle Sidebar</span>
+    </Button>
+  )
+}
+
+type IconComponent = React.ComponentType<{ className?: string }>
+
+interface HeaderSection {
+  key: string
+  title: string
+  icon?: IconComponent
+  href: string
+  external: boolean
+  active?: boolean
+}
+
+const sections: readonly HeaderSection[] = [
+  {
+    key: "fairspec",
+    title: "Fairspec",
+    icon: icons.House,
+    href: "https://fairspec.org",
+    external: true,
+  },
+  {
+    key: "standard",
+    title: "Standard",
+    icon: icons.Book,
+    href: "https://fairspec.org/overview/",
+    external: true,
+  },
+  {
+    key: "python",
+    title: "Python",
+    icon: icons.Code,
+    href: "https://python.fairspec.org",
+    external: true,
+  },
+  {
+    key: "typescript",
+    title: "TypeScript",
+    icon: icons.CodeXml,
+    href: "https://typescript.fairspec.org",
+    external: true,
+  },
+  {
+    key: "mcp",
+    title: "MCP Server",
+    icon: icons.Sparkles,
+    href: "https://fairspec.org/mcp-server/",
+    external: true,
+  },
+  {
+    key: "application",
+    title: "Application",
+    icon: icons.AppWindow,
+    href: "/",
+    external: false,
+    active: true,
+  },
+  {
+    key: "github",
+    title: "GitHub",
+    icon: icons.GitHub,
+    href: "https://github.com/fairspec",
+    external: true,
+  },
+]
+
+function activeClass(active: boolean) {
+  return active
+    ? "font-medium border-b-2 border-foreground pb-0.5 -mb-0.5"
+    : "opacity-80 hover:opacity-100 transition-opacity"
+}
 
 export function Header() {
   return (
-    <header className="flex bg-gray-50 dark:bg-gray-800 gap-4 h-16 border-gray-200 dark:border-gray-700 px-2 md:px-4">
-      <div className="mx-auto w-full flex gap-4 items-center justify-between">
-        <Logo />
-        <div className="hidden md:block">
-          <Breadcrumbs />
+    <header className="sticky top-0 z-20 flex h-16 shrink-0 items-center border-b bg-background">
+      <div className="flex items-center self-stretch pl-4 pr-4">
+        <div className="hidden lg:flex">
+          <MenuToggle />
         </div>
-        <div className="flex gap-4 items-center">
-          <Links />
-          <Theme />
-          <Language />
-          <Share />
-          <ClientOnly>
-            <Close />
-          </ClientOnly>
-        </div>
+        <Link to="/{-$languageSlug}" className="lg:hidden flex items-center">
+          <Logo />
+        </Link>
+      </div>
+      <div className="hidden lg:flex flex-1 items-center gap-8 self-stretch px-6 text-sm">
+        {sections.map(section => {
+          const Icon = section.icon
+          const classes = `inline-flex items-center gap-1.5 text-foreground ${activeClass(!!section.active)}`
+          if (section.external) {
+            return (
+              <a key={section.key} href={section.href} className={classes}>
+                {Icon && <Icon className="size-3.5" />}
+                <span>{section.title}</span>
+              </a>
+            )
+          }
+          return (
+            <Link key={section.key} to={section.href} className={classes}>
+              {Icon && <Icon className="size-3.5" />}
+              <span>{section.title}</span>
+            </Link>
+          )
+        })}
+      </div>
+      <div className="lg:hidden ml-auto pr-2">
+        <MenuToggle />
       </div>
     </header>
   )

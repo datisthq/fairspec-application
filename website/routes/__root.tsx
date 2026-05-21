@@ -65,7 +65,7 @@ export const Route = createRootRoute({
         {
           rel: "icon",
           type: "image/png",
-          href: "/fairspec-logo.png",
+          href: "/logo.png",
         },
         {
           rel: "canonical",

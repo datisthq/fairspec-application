@@ -1,5 +1,5 @@
 import { useLingui } from "@lingui/react/macro"
-import { Link } from "@tanstack/react-router"
+import { Link, useLocation, useParams } from "@tanstack/react-router"
 import { ChevronRight } from "lucide-react"
 import { useState } from "react"
 import {
@@ -10,6 +10,7 @@ import {
 import {
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -23,6 +24,15 @@ import * as icons from "#icons.ts"
 export function Menu() {
   const { t } = useLingui()
   const { setOpenMobile } = useSidebar()
+  const pathname = useLocation({ select: l => l.pathname })
+  const { languageSlug } = useParams({ strict: false })
+  const prefix = languageSlug ? `/${languageSlug}` : ""
+
+  const isActive = (itemPath: string) => {
+    const bare = itemPath.replace("/{-$languageSlug}", "")
+    const target = `${prefix}${bare}`
+    return pathname === target || pathname === `${target}/`
+  }
 
   const [openStates, setOpenStates] = useState<Record<string, boolean>>({
     dataset: true,
@@ -89,7 +99,10 @@ export function Menu() {
   ]
 
   return (
-    <SidebarGroup className="p-4">
+    <SidebarGroup>
+      <SidebarGroupLabel className="uppercase font-mono text-xs tracking-widest">
+        {t`Tools`}
+      </SidebarGroupLabel>
       <SidebarGroupContent>
         <SidebarMenu>
           {menuItems.map(menuItem => {
@@ -105,29 +118,33 @@ export function Menu() {
               >
                 <SidebarMenuItem>
                   <CollapsibleTrigger
-                    render={<SidebarMenuButton className="font-bold text-lg" />}
+                    render={<SidebarMenuButton className="opacity-75" />}
                   >
-                    <Icon />
+                    <Icon className="size-4" />
                     <span>{menuItem.label}</span>
                     <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <SidebarMenuSub>
-                      {menuItem.items.map(item => (
-                        <SidebarMenuSubItem key={item.path}>
-                          <SidebarMenuSubButton
-                            className="text-base"
-                            render={
-                              <Link
-                                to={item.path}
-                                onClick={() => setOpenMobile(false)}
-                              />
-                            }
-                          >
-                            <span>{item.label}</span>
-                          </SidebarMenuSubButton>
-                        </SidebarMenuSubItem>
-                      ))}
+                      {menuItem.items.map(item => {
+                        const active = isActive(item.path)
+                        return (
+                          <SidebarMenuSubItem key={item.path}>
+                            <SidebarMenuSubButton
+                              isActive={active}
+                              className={active ? "" : "opacity-75"}
+                              render={
+                                <Link
+                                  to={item.path}
+                                  onClick={() => setOpenMobile(false)}
+                                />
+                              }
+                            >
+                              <span>{item.label}</span>
+                            </SidebarMenuSubButton>
+                          </SidebarMenuSubItem>
+                        )
+                      })}
                     </SidebarMenuSub>
                   </CollapsibleContent>
                 </SidebarMenuItem>

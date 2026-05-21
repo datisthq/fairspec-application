@@ -52,6 +52,10 @@ function Component() {
 
   return (
     <div className="pt-8 flex flex-col gap-4">
+      <div className="inline-flex self-start items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-foreground">
+        <icons.Sparkles className="size-3.5 text-primary" />
+        <Trans>Technical preview</Trans>
+      </div>
       <h1 className="text-3xl font-bold">Fairspec Application</h1>
       <p className="text-lg">
         <Trans>

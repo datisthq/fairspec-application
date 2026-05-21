@@ -1,50 +1,66 @@
+import { useHotkey } from "@tanstack/react-hotkeys"
+import { Link } from "@tanstack/react-router"
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
+  SidebarHeader,
   SidebarInset,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
   SidebarProvider,
-  SidebarTrigger,
+  SidebarRail,
+  useSidebar,
 } from "#elements/sidebar.tsx"
-import { Banner } from "./Banner.tsx"
-import { Breadcrumbs } from "./Breadcrumbs.tsx"
 import { Content } from "./Content.tsx"
 import { Footer } from "./Footer.tsx"
 import { Header } from "./Header.tsx"
+import { Language } from "./Language.tsx"
+import { Logo } from "./Logo.tsx"
 import { Menu } from "./Menu.tsx"
+import { Share } from "./Share.tsx"
+import { Theme } from "./Theme.tsx"
+
+function SidebarHotkey() {
+  const { toggleSidebar } = useSidebar()
+  useHotkey("S", toggleSidebar)
+  return null
+}
 
 export function Layout(props: { children?: React.ReactNode }) {
   return (
-    <SidebarProvider
-      defaultOpen={true}
-      style={
-        {
-          "--sidebar-width": "20rem",
-          "--sidebar-width-mobile": "20rem",
-        } as React.CSSProperties
-      }
-    >
+    <SidebarProvider defaultOpen={true}>
+      <SidebarHotkey />
       <Sidebar collapsible="offcanvas" side="left">
-        <SidebarContent className="md:pt-28">
+        <SidebarHeader>
+          <SidebarMenu>
+            <SidebarMenuItem>
+              <SidebarMenuButton
+                size="lg"
+                render={<Link to="/{-$languageSlug}" />}
+              >
+                <Logo />
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarHeader>
+        <SidebarContent>
           <Menu />
         </SidebarContent>
+        <SidebarFooter className="p-4 space-y-2">
+          <Share />
+          <Language />
+          <Theme />
+        </SidebarFooter>
+        <SidebarRail />
       </Sidebar>
       <SidebarInset>
-        <div className="fixed top-0 left-0 right-0 z-10">
-          <Header />
-        </div>
-        <div className="fixed top-16 left-0 right-0 z-20">
-          <div className="flex bg-gray-50 dark:bg-gray-800 gap-4 h-12 border-t border-gray-200 dark:border-gray-700 px-2 items-center border-b md:hidden">
-            <SidebarTrigger />
-            <Breadcrumbs />
-          </div>
-          <div className="hidden md:block">
-            <Banner />
-          </div>
-        </div>
-        <div className="mt-28">
+        <Header />
+        <main className="flex-1">
           <Content>{props.children}</Content>
-          <Footer />
-        </div>
+        </main>
+        <Footer />
       </SidebarInset>
     </SidebarProvider>
   )
