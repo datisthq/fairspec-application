@@ -32,8 +32,8 @@ export function Error(props: { error: fairspec.FairspecError }) {
       return <CellMultipleOfError error={error} />
     case "cell/pattern":
       return <CellPatternError error={error} />
-    case "cell/required":
-      return <CellRequiredError error={error} />
+    case "cell/missing":
+      return <CellMissingError error={error} />
     case "cell/type":
       return <CellTypeError error={error} />
     case "cell/unique":
@@ -316,7 +316,7 @@ function CellPatternError(props: { error: fairspec.CellPatternError }) {
   )
 }
 
-function CellRequiredError(props: { error: fairspec.CellRequiredError }) {
+function CellMissingError(props: { error: fairspec.CellMissingError }) {
   const { error } = props
 
   const columnName = <Code>{error.columnName}</Code>
