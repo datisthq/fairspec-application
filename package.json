@@ -20,7 +20,7 @@
     "start:website": "pnpm --parallel -F engine -F website start",
     "test": "pnpm lint && pnpm type && pnpm unit",
     "type": "pnpm -r type",
-    "vers": "pnpm --include-workspace-root -r exec pnpm version --no-git-tag-version",
+    "vers": "pnpm -r exec pnpm version --no-git-tag-version --no-git-checks",
     "vulns": "semgrep --config=p/typescript --config=p/nodejs --config=p/owasp-top-ten --config=p/secrets --metrics=off"
   },
   "devDependencies": {
