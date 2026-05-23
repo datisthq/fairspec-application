@@ -23,7 +23,7 @@ export function createWindow() {
   const urlPath = languageSlug ? `/${languageSlug}` : "/"
 
   if (is.dev) {
-    mainWindow.loadURL(`http://localhost:5000${urlPath}`)
+    mainWindow.loadURL(`http://localhost:8000${urlPath}`)
   } else {
     // See proxy config
     mainWindow.loadFile(urlPath)

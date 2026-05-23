@@ -5,10 +5,6 @@ export default defineConfig({
     build: {
       lib: { entry: "processes/main/main.ts" },
       outDir: "build/main",
-      externalizeDeps: false,
-      rollupOptions: {
-        external: ["nodejs-polars"],
-      },
     },
   },
   preload: {
@@ -20,6 +16,7 @@ export default defineConfig({
       outDir: "build/preload",
       externalizeDeps: false,
       rollupOptions: {
+        external: ["electron"],
         output: {
           entryFileNames: "preload.js",
         },
@@ -28,7 +25,7 @@ export default defineConfig({
   },
   renderer: {
     root: "processes/renderer",
-    server: { port: 5500 },
+    server: { port: 8100 },
     build: {
       outDir: "build/renderer",
       rollupOptions: {
