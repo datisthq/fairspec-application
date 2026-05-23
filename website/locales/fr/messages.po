@@ -22,6 +22,10 @@ msgstr ", mais il est"
 msgid "A required cell in column"
 msgstr "Une cellule requise dans la colonne"
 
+#: components/layout/PageToolbar.tsx:17
+msgid "Actions"
+msgstr "Actions"
+
 #: components/report/Report.tsx:40
 msgid "All Errors"
 msgstr "Toutes les erreurs"
@@ -30,16 +34,22 @@ msgstr "Toutes les erreurs"
 msgid "at"
 msgstr "à"
 
+#: routes/{-$languageSlug}/data/index.tsx:32
+msgid "Automatically derive a comprehensive JSON Schema definition from your data's structure and values"
+msgstr "Déduisez automatiquement une définition complète de schéma JSON à partir de la structure et des valeurs de vos données"
+
 #: routes/{-$languageSlug}/data/infer-schema.tsx:23
 #: routes/{-$languageSlug}/data/infer-schema.tsx:53
 msgid "Automatically infer comprehensive data schemas from your datasets"
 msgstr "Déduisez automatiquement des schémas de données complets à partir de vos ensembles de données"
 
+#: routes/{-$languageSlug}/table/index.tsx:40
 #: routes/{-$languageSlug}/table/infer-schema.tsx:23
 #: routes/{-$languageSlug}/table/infer-schema.tsx:53
 msgid "Automatically infer comprehensive table schema definitions from your tabular data"
 msgstr "Déduisez automatiquement des définitions complètes de schémas de table à partir de vos données tabulaires"
 
+#: routes/{-$languageSlug}/dataset/index.tsx:32
 #: routes/{-$languageSlug}/dataset/infer.tsx:23
 #: routes/{-$languageSlug}/dataset/infer.tsx:53
 msgid "Automatically infer dataset metadata and structure from your data files"
@@ -58,19 +68,35 @@ msgstr "Changer de langue"
 msgid "Change Theme"
 msgstr "Changer de thème"
 
+#: routes/{-$languageSlug}/data/index.tsx:24
+msgid "Check data values against schema specifications for quality, consistency, and constraint violations"
+msgstr "Vérifiez les valeurs des données par rapport aux spécifications du schéma pour la qualité, la cohérence et les violations de contraintes"
+
 #: components/result/Result.tsx:38
 msgid "Close"
 msgstr "Fermer"
+
+#: components/layout/Close.tsx:20
+#: components/layout/Close.tsx:21
+msgid "Close Application"
+msgstr "Fermer l'application"
 
 #: components/report/Error.tsx:398
 msgid "Column"
 msgstr "Colonne"
 
+#: components/layout/Toc.tsx:18
+#: components/layout/Toc.tsx:64
+#: components/layout/Toc.tsx:89
+msgid "Contents"
+msgstr "Contenu"
+
 #: components/layout/Theme.tsx:35
 msgid "Dark Theme"
 msgstr "Thème sombre"
 
-#: components/layout/Menu.tsx:76
+#: components/layout/Menu.tsx:78
+#: routes/{-$languageSlug}/data/index.tsx:49
 #: routes/{-$languageSlug}/data/infer-schema.tsx:124
 #: routes/{-$languageSlug}/data/validate.tsx:122
 #: routes/{-$languageSlug}/index.tsx:37
@@ -86,6 +112,7 @@ msgid "Data management application"
 msgstr "Application de gestion des données"
 
 #: components/layout/Menu.tsx:47
+#: routes/{-$languageSlug}/dataset/index.tsx:41
 #: routes/{-$languageSlug}/dataset/validate.tsx:121
 #: routes/{-$languageSlug}/index.tsx:21
 msgid "Dataset"
@@ -95,6 +122,7 @@ msgstr "Jeu de données"
 msgid "Dataset Inferred"
 msgstr "Jeu de données inféré"
 
+#: routes/{-$languageSlug}/file/index.tsx:24
 #: routes/{-$languageSlug}/file/validate.tsx:35
 #: routes/{-$languageSlug}/file/validate.tsx:65
 #: routes/{-$languageSlug}/index.tsx:48
@@ -106,8 +134,14 @@ msgstr "Décrivez en détail le contenu et la structure du fichier, et déduisez
 msgid "Desktop Application"
 msgstr "Application de bureau"
 
+#: routes/{-$languageSlug}/data/index.tsx:40
+#: routes/{-$languageSlug}/file/index.tsx:32
+#: routes/{-$languageSlug}/table/index.tsx:48
+msgid "Detect file formats, encoding specifications, delimiters, and other dialect parameters automatically"
+msgstr "Détectez automatiquement les formats de fichiers, les spécifications d'encodage, les délimiteurs et d'autres paramètres de dialecte"
+
 #: routes/{-$languageSlug}/table/infer-schema.tsx:138
-#: routes/{-$languageSlug}/table/preview.tsx:144
+#: routes/{-$languageSlug}/table/preview.tsx:148
 #: routes/{-$languageSlug}/table/validate.tsx:146
 msgid "Dialect"
 msgstr "Dialecte"
@@ -141,7 +175,7 @@ msgstr "Échec de l'inférence du dialecte"
 msgid "Failed to Infer Schema"
 msgstr "Échec de l'inférence du schéma"
 
-#: routes/{-$languageSlug}/table/preview.tsx:174
+#: routes/{-$languageSlug}/table/preview.tsx:178
 msgid "Failed to Load Preview"
 msgstr "Échec du chargement de l’aperçu"
 
@@ -149,7 +183,8 @@ msgstr "Échec du chargement de l’aperçu"
 msgid "Fairspec Application"
 msgstr "Application Fairspec"
 
-#: components/layout/Menu.tsx:89
+#: components/layout/Menu.tsx:92
+#: routes/{-$languageSlug}/file/index.tsx:41
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:125
 #: routes/{-$languageSlug}/file/validate.tsx:136
 #: routes/{-$languageSlug}/index.tsx:45
@@ -218,22 +253,28 @@ msgstr "Inférer"
 msgid "Infer Data Schema"
 msgstr "Déduire le schéma des données"
 
-#: components/layout/Menu.tsx:54
+#: components/layout/Menu.tsx:55
+#: routes/{-$languageSlug}/dataset/index.tsx:29
 #: routes/{-$languageSlug}/dataset/infer.tsx:22
 #: routes/{-$languageSlug}/dataset/infer.tsx:50
 msgid "Infer Dataset"
 msgstr "Déduire l’ensemble de données"
 
-#: components/layout/Menu.tsx:69
-#: components/layout/Menu.tsx:82
-#: components/layout/Menu.tsx:94
+#: components/layout/Menu.tsx:71
+#: components/layout/Menu.tsx:85
+#: components/layout/Menu.tsx:98
+#: routes/{-$languageSlug}/data/index.tsx:37
+#: routes/{-$languageSlug}/file/index.tsx:29
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:22
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:50
+#: routes/{-$languageSlug}/table/index.tsx:45
 msgid "Infer Dialect"
 msgstr "Déduire le dialecte"
 
-#: components/layout/Menu.tsx:65
-#: components/layout/Menu.tsx:80
+#: components/layout/Menu.tsx:67
+#: components/layout/Menu.tsx:83
+#: routes/{-$languageSlug}/data/index.tsx:29
+#: routes/{-$languageSlug}/table/index.tsx:37
 msgid "Infer Schema"
 msgstr "Déduire le schéma"
 
@@ -343,11 +384,15 @@ msgid "Light Theme"
 msgstr "Thème clair"
 
 #: routes/{-$languageSlug}/table/preview.tsx:22
-#: routes/{-$languageSlug}/table/preview.tsx:52
 msgid "Load and preview your data table"
 msgstr "Charger et prévisualiser votre table de données"
 
-#: routes/{-$languageSlug}/table/preview.tsx:172
+#: routes/{-$languageSlug}/table/index.tsx:24
+#: routes/{-$languageSlug}/table/preview.tsx:52
+msgid "Load tabular data from your files and preview rows, columns, and overall structure to inspect contents"
+msgstr "Chargez des données tabulaires à partir de vos fichiers et prévisualisez les lignes, colonnes et la structure générale pour inspecter le contenu"
+
+#: routes/{-$languageSlug}/table/preview.tsx:176
 msgid "Loading Preview..."
 msgstr "Chargement de l’aperçu..."
 
@@ -374,15 +419,28 @@ msgstr "maximum"
 msgid "of row"
 msgstr "de la ligne"
 
-#: routes/{-$languageSlug}/table/preview.tsx:161
+#: components/layout/PageToolbar.tsx:24
+msgid "Open in ChatGPT"
+msgstr "Ouvrir dans ChatGPT"
+
+#: components/layout/PageToolbar.tsx:32
+msgid "Open in Claude"
+msgstr "Ouvrir dans Claude"
+
+#: routes/{-$languageSlug}/table/preview.tsx:165
 msgid "Preview"
 msgstr "Aperçu"
 
-#: components/layout/Menu.tsx:62
+#: components/layout/Menu.tsx:64
+#: routes/{-$languageSlug}/table/index.tsx:21
 #: routes/{-$languageSlug}/table/preview.tsx:21
 #: routes/{-$languageSlug}/table/preview.tsx:49
 msgid "Preview Table"
 msgstr "Aperçu du tableau"
+
+#: routes/{-$languageSlug}/table/index.tsx:60
+msgid "Preview, validate, and infer schemas for tabular data"
+msgstr "Prévisualisez, validez et déduisez les schémas pour les données tabulaires"
 
 #: components/report/Error.tsx:382
 msgid "Required column"
@@ -406,7 +464,7 @@ msgid "Save"
 msgstr "Enregistrer"
 
 #: routes/{-$languageSlug}/data/validate.tsx:134
-#: routes/{-$languageSlug}/table/preview.tsx:133
+#: routes/{-$languageSlug}/table/preview.tsx:137
 #: routes/{-$languageSlug}/table/validate.tsx:135
 msgid "Schema"
 msgstr "Schéma"
@@ -428,16 +486,17 @@ msgstr "Partager"
 msgid "Share Page"
 msgstr "Partager la page"
 
-#: components/layout/Menu.tsx:59
+#: components/layout/Menu.tsx:60
 #: routes/{-$languageSlug}/dataset/infer.tsx:125
 #: routes/{-$languageSlug}/index.tsx:29
+#: routes/{-$languageSlug}/table/index.tsx:57
 #: routes/{-$languageSlug}/table/infer-schema.tsx:126
-#: routes/{-$languageSlug}/table/preview.tsx:121
+#: routes/{-$languageSlug}/table/preview.tsx:125
 #: routes/{-$languageSlug}/table/validate.tsx:123
 msgid "Table"
 msgstr "Table"
 
-#: routes/{-$languageSlug}/table/preview.tsx:173
+#: routes/{-$languageSlug}/table/preview.tsx:177
 msgid "Table Preview"
 msgstr "Aperçu du tableau"
 
@@ -449,7 +508,7 @@ msgstr "Aperçu technique"
 msgid "This functionality is only available in the <0>desktop application</0>"
 msgstr "Cette fonctionnalité est uniquement disponible dans l’<0>application de bureau</0>"
 
-#: components/layout/Menu.tsx:104
+#: components/layout/Menu.tsx:108
 msgid "Tools"
 msgstr "Outils"
 
@@ -482,18 +541,18 @@ msgstr "Téléversez un fichier ou fournissez une URL vers un jeu de données"
 msgid "Upload a file or provide a URL to a file"
 msgstr "Téléversez un fichier ou fournissez une URL vers un fichier"
 
-#: routes/{-$languageSlug}/table/preview.tsx:145
+#: routes/{-$languageSlug}/table/preview.tsx:149
 #: routes/{-$languageSlug}/table/validate.tsx:147
 msgid "Upload a file or provide a URL to a table dialect"
 msgstr "Téléversez un fichier ou fournissez une URL vers un dialecte de tableau"
 
-#: routes/{-$languageSlug}/table/preview.tsx:134
+#: routes/{-$languageSlug}/table/preview.tsx:138
 #: routes/{-$languageSlug}/table/validate.tsx:136
 msgid "Upload a file or provide a URL to a table schema"
 msgstr "Téléversez un fichier ou fournissez une URL vers un schéma de tableau"
 
 #: routes/{-$languageSlug}/dataset/infer.tsx:126
-#: routes/{-$languageSlug}/table/preview.tsx:122
+#: routes/{-$languageSlug}/table/preview.tsx:126
 #: routes/{-$languageSlug}/table/validate.tsx:124
 msgid "Upload a file or provide a URL to a tabular data file"
 msgstr "Téléversez un fichier ou fournissez une URL vers un fichier de données tabulaires"
@@ -525,7 +584,8 @@ msgstr "Tableau valide"
 msgid "Validate"
 msgstr "Valider"
 
-#: components/layout/Menu.tsx:79
+#: components/layout/Menu.tsx:82
+#: routes/{-$languageSlug}/data/index.tsx:21
 #: routes/{-$languageSlug}/data/validate.tsx:21
 #: routes/{-$languageSlug}/data/validate.tsx:49
 msgid "Validate Data"
@@ -537,25 +597,41 @@ msgstr "Valider les données"
 msgid "Validate data quality, check for inconsistencies and errors, and automatically infer comprehensive data schemas from your datasets"
 msgstr "Validez la qualité des données, vérifiez les incohérences et les erreurs, et déduisez automatiquement des schémas de données complets à partir de vos jeux de données"
 
-#: components/layout/Menu.tsx:51
+#: routes/{-$languageSlug}/data/index.tsx:52
+msgid "Validate data values and infer JSON Schemas from your datasets"
+msgstr "Validez les valeurs des données et déduisez les schémas JSON à partir de vos ensembles de données"
+
+#: components/layout/Menu.tsx:52
+#: routes/{-$languageSlug}/dataset/index.tsx:21
 #: routes/{-$languageSlug}/dataset/validate.tsx:21
 #: routes/{-$languageSlug}/dataset/validate.tsx:49
 msgid "Validate Dataset"
 msgstr "Valider le jeu de données"
 
+#: routes/{-$languageSlug}/dataset/index.tsx:24
 #: routes/{-$languageSlug}/dataset/validate.tsx:22
 #: routes/{-$languageSlug}/dataset/validate.tsx:52
 #: routes/{-$languageSlug}/index.tsx:24
 msgid "Validate dataset metadata against specifications and automatically infer dataset structure from your data files"
 msgstr "Validez les métadonnées du jeu de données selon les spécifications et déduisez automatiquement la structure du jeu de données à partir de vos fichiers de données"
 
-#: components/layout/Menu.tsx:92
+#: routes/{-$languageSlug}/dataset/index.tsx:44
+msgid "Validate dataset metadata and infer dataset descriptors from your data files"
+msgstr "Validez les métadonnées de l'ensemble de données et déduisez les descripteurs depuis vos fichiers de données"
+
+#: components/layout/Menu.tsx:96
+#: routes/{-$languageSlug}/file/index.tsx:21
 #: routes/{-$languageSlug}/file/validate.tsx:34
 #: routes/{-$languageSlug}/file/validate.tsx:62
 msgid "Validate File"
 msgstr "Valider le fichier"
 
-#: components/layout/Menu.tsx:63
+#: routes/{-$languageSlug}/file/index.tsx:44
+msgid "Validate files and infer their dialects"
+msgstr "Validez les fichiers et déduisez leurs dialectes"
+
+#: components/layout/Menu.tsx:65
+#: routes/{-$languageSlug}/table/index.tsx:29
 #: routes/{-$languageSlug}/table/validate.tsx:21
 #: routes/{-$languageSlug}/table/validate.tsx:49
 msgid "Validate Table"
@@ -566,6 +642,7 @@ msgstr "Valider la table"
 msgid "Validate table structure for correctness and compliance, and automatically infer table schema definitions from your tabular data"
 msgstr "Validez la structure de la table pour la justesse et la conformité, et déduisez automatiquement les définitions du schéma de table à partir de vos données tabulaires"
 
+#: routes/{-$languageSlug}/table/index.tsx:32
 #: routes/{-$languageSlug}/table/validate.tsx:52
 msgid "Validate table structure for correctness and compliance, and automatically infer table schema from your tabular data"
 msgstr "Validez la structure du tableau pour l'exactitude et la conformité, et déduisez automatiquement le schéma à partir de vos données tabulaires"
@@ -614,6 +691,6 @@ msgstr "viole la contrainte de clé primaire sur les colonnes"
 msgid "violates unique key constraint on columns"
 msgstr "viole la contrainte de clé unique sur les colonnes"
 
-#: routes/{-$languageSlug}/index.tsx:61
+#: routes/{-$languageSlug}/index.tsx:62
 msgid "Visual tool for managing and validating tabular and structured data"
 msgstr "Outil visuel pour gérer et valider des données tabulaires et structurées"

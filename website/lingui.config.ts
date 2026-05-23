@@ -4,6 +4,7 @@ import { LanguageIdDefault, Languages } from "#constants/language.ts"
 export default defineConfig({
   sourceLocale: LanguageIdDefault,
   locales: Object.keys(Languages),
+  fallbackLocales: { default: LanguageIdDefault },
   catalogs: [
     {
       path: "<rootDir>/locales/{locale}/messages",
