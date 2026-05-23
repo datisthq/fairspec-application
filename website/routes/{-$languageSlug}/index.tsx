@@ -56,15 +56,15 @@ function Component() {
         <icons.Sparkles className="size-3.5 text-primary" />
         <Trans>Technical preview</Trans>
       </div>
-      <h1 id="top" className="text-3xl font-bold">
-        Fairspec Application
-      </h1>
-      <p className="text-lg">
-        <Trans>
-          Visual tool for managing and validating tabular and structured data
-        </Trans>
-        .
-      </p>
+      <div className="text-content">
+        <h1 id="top">Fairspec Application</h1>
+        <p>
+          <Trans>
+            Visual tool for managing and validating tabular and structured data
+          </Trans>
+          .
+        </p>
+      </div>
       <div className="py-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {gridItems.map(item => {

@@ -57,11 +57,11 @@ function Component() {
 
 function Intro() {
   return (
-    <div className="flex flex-col gap-4">
-      <h1 id="top" className="text-3xl font-bold">
+    <div className="text-content">
+      <h1 id="top">
         <Trans>Validate File</Trans>
       </h1>
-      <p className="text-lg">
+      <p>
         <Trans>
           Describe file contents and structure in detail, and automatically
           infer file formats and encoding specifications

@@ -44,11 +44,11 @@ function Component() {
 
 function Intro() {
   return (
-    <div className="flex flex-col gap-4">
-      <h1 id="top" className="text-3xl font-bold">
+    <div className="text-content">
+      <h1 id="top">
         <Trans>Validate Dataset</Trans>
       </h1>
-      <p className="text-lg">
+      <p>
         <Trans>
           Validate dataset metadata against specifications and automatically
           infer dataset structure from your data files

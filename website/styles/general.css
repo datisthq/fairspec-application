@@ -134,3 +134,57 @@
     cursor: pointer;
   }
 }
+
+@layer components {
+  .text-content {
+    color: oklch(0.373 0.034 259.733);
+  }
+  .dark .text-content {
+    color: oklch(0.872 0.01 258.338);
+  }
+  .text-content :is(h1, h2, h3, h4, h5, h6) {
+    color: oklch(0.21 0.034 264.665);
+  }
+  .dark .text-content :is(h1, h2, h3, h4, h5, h6) {
+    color: oklch(0.985 0 0);
+  }
+  .text-content :is(h1, h2, h3) {
+    @apply scroll-mt-20;
+  }
+  .text-content h1 {
+    @apply text-4xl font-medium mt-0 mb-8;
+  }
+  .text-content h2 {
+    @apply text-2xl font-bold mt-10 mb-4;
+  }
+  .text-content h3 {
+    @apply text-xl font-semibold mt-8 mb-3;
+  }
+  .text-content p {
+    @apply leading-7 my-5;
+  }
+  .text-content :is(p, li):first-child {
+    @apply mt-0;
+  }
+  .text-content :is(p, li):last-child {
+    @apply mb-0;
+  }
+  .text-content a {
+    @apply text-primary underline underline-offset-2 hover:opacity-80;
+  }
+  .text-content :not(pre) > code {
+    @apply bg-muted/70 border border-border rounded px-1.5 py-0.5 text-sm font-mono;
+  }
+  .text-content :is(ul, ol) {
+    @apply my-5 pl-6 space-y-1.5;
+  }
+  .text-content ul {
+    @apply list-disc;
+  }
+  .text-content ol {
+    @apply list-decimal;
+  }
+  .text-content strong {
+    @apply font-semibold;
+  }
+}
