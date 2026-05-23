@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router"
 import { Button } from "#elements/button.tsx"
 import { useSidebar } from "#elements/sidebar.tsx"
 import * as icons from "#icons.ts"
+import { Close } from "./Close.tsx"
 import { Logo } from "./Logo.tsx"
 
 function MenuToggle() {
@@ -123,6 +124,9 @@ export function Header() {
       </div>
       <div className="lg:hidden ml-auto pr-2">
         <MenuToggle />
+      </div>
+      <div className="hidden lg:flex items-center pr-4">
+        <Close />
       </div>
     </header>
   )
