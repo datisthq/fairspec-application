@@ -35,7 +35,7 @@ export const Route = createFileRoute("/{-$languageSlug}/table/infer-schema")({
 
 function Component() {
   return (
-    <div className="py-8 flex flex-col gap-8">
+    <div className="flex flex-col gap-8">
       <Intro />
       <Form />
       <DesktopAlert />
@@ -46,7 +46,7 @@ function Component() {
 function Intro() {
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="text-3xl font-bold">
+      <h1 id="top" className="text-3xl font-bold">
         <Trans>Infer Table Schema</Trans>
       </h1>
       <p className="text-lg">
