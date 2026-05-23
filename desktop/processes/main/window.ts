@@ -1,10 +1,14 @@
 import { join } from "node:path"
 import { is } from "@electron-toolkit/utils"
-import { BrowserWindow } from "electron"
+import { BrowserWindow, shell } from "electron"
 // @ts-expect-error
 import iconPath from "#assets/fairspec-logo.svg?asset"
 import * as settings from "#settings.ts"
 import { store } from "./store.ts"
+
+function isInternalUrl(url: string) {
+  return url.startsWith("http://localhost:8000") || url.startsWith("file://")
+}
 
 export function createWindow() {
   const preloadFolder = join(import.meta.dirname, "..", "preload")
@@ -28,6 +32,21 @@ export function createWindow() {
     // See proxy config
     mainWindow.loadFile(urlPath)
   }
+
+  mainWindow.webContents.setWindowOpenHandler(({ url }) => {
+    if (!isInternalUrl(url)) {
+      shell.openExternal(url)
+      return { action: "deny" }
+    }
+    return { action: "allow" }
+  })
+
+  mainWindow.webContents.on("will-navigate", (event, url) => {
+    if (!isInternalUrl(url)) {
+      event.preventDefault()
+      shell.openExternal(url)
+    }
+  })
 
   const zoomFactor = store.get("zoomFactor") ?? 1.0
   const zoomLevels = [0.5, 0.67, 0.75, 0.8, 0.9, 1.0, 1.1, 1.25, 1.5, 1.75, 2.0]
