@@ -194,6 +194,9 @@ importers:
       '@orpc/tanstack-query':
         specifier: 1.14.3
         version: 1.14.3(@opentelemetry/api@1.9.0)(@orpc/client@1.14.3(@opentelemetry/api@1.9.0))(@tanstack/query-core@5.100.13)
+      '@plausible-analytics/tracker':
+        specifier: 0.4.5
+        version: 0.4.5
       '@rolldown/plugin-babel':
         specifier: 0.2.3
         version: 0.2.3(@babel/core@7.29.0)(@babel/runtime@7.29.2)(rolldown@1.0.2)(vite@8.0.14(@types/node@24.12.4)(esbuild@0.28.0)(jiti@2.7.0)(sass@1.100.0)(terser@5.48.0)(tsx@4.22.3))
@@ -2480,6 +2483,9 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@plausible-analytics/tracker@0.4.5':
+    resolution: {integrity: sha512-6BfAGejXY+YA3Cw6LYT2Zpn4hTxDtPQAawFsYUsQCOg78wIS5C4deAGXTfJffa5VleMWITv5lpJ/EYuQBl1tPA==}
 
   '@pnpm/config.env-replace@1.1.0':
     resolution: {integrity: sha512-htyl8TWnKL7K/ESFa1oW2UB5lVDxuF5DpM7tBi6Hu2LNL3mWkIzNLG6N4zoCUP1lCKNxWy/3iu8mS8MvToGd6w==}
@@ -10719,6 +10725,8 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@plausible-analytics/tracker@0.4.5': {}
 
   '@pnpm/config.env-replace@1.1.0': {}
 

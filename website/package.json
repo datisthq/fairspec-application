@@ -36,6 +36,7 @@
     "@lingui/react": "6.1.0",
     "@lingui/vite-plugin": "6.1.0",
     "@orpc/tanstack-query": "1.14.3",
+    "@plausible-analytics/tracker": "0.4.5",
     "@rolldown/plugin-babel": "0.2.3",
     "@tailwindcss/vite": "4.3.0",
     "@tanstack/devtools-vite": "0.7.0",

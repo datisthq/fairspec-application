@@ -82,13 +82,6 @@ export const Route = createRootRoute({
           href: makeLink(language.slug),
         })),
       ],
-      scripts: [
-        {
-          src: "https://plausible.io/js/script.js",
-          "data-domain": "fairspec.org",
-          defer: true,
-        },
-      ],
     }
   },
   // TODO: improve NotFound page in this case
