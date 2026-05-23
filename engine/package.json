@@ -18,16 +18,16 @@
     "@fairspec/library": "0.12.1",
     "@fairspec/logger": "workspace:*",
     "@hono/node-server": "1.19.9",
-    "@orpc/client": "1.13.4",
-    "@orpc/server": "1.13.4",
-    "@orpc/zod": "1.13.4",
+    "@orpc/client": "1.14.3",
+    "@orpc/server": "1.14.3",
+    "@orpc/zod": "1.14.3",
     "hono": "4.11.4",
     "tempy": "3.1.2",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
     "zod": "4.3.6"
   },
   "devDependencies": {
-    "@orpc/openapi": "1.13.4",
-    "@orpc/openapi-client": "1.13.4"
+    "@orpc/openapi": "1.14.3",
+    "@orpc/openapi-client": "1.14.3"
   }
 }
