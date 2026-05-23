@@ -5,6 +5,9 @@ export default defineConfig({
     build: {
       lib: { entry: "processes/main/main.ts" },
       outDir: "build/main",
+      externalizeDeps: {
+        exclude: ["@fairspec/engine", "@fairspec/logger", "@fairspec/website"],
+      },
     },
   },
   preload: {
