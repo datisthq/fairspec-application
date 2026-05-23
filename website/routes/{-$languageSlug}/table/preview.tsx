@@ -49,7 +49,11 @@ function Intro() {
         <Trans>Preview Table</Trans>
       </h1>
       <p>
-        <Trans>Load and preview your data table</Trans>.
+        <Trans>
+          Load tabular data from your files and preview rows, columns, and
+          overall structure to inspect contents
+        </Trans>
+        .
       </p>
     </div>
   )

@@ -14,29 +14,31 @@ export const Route = createFileRoute("/{-$languageSlug}/data/")({
 
 function Component() {
   const { t } = useLingui()
-  const color = "text-purple-500"
 
   const items = [
     {
       id: "validate",
       title: t`Validate Data`,
-      icon: icons.Data,
+      icon: icons.Validate,
       path: "/{-$languageSlug}/data/validate",
-      description: t`Validate data quality, check for inconsistencies and errors, and automatically infer comprehensive data schemas from your datasets`,
+      description: t`Check data values against schema specifications for quality, consistency, and constraint violations`,
+      color: "text-blue-500",
     },
     {
       id: "infer-schema",
       title: t`Infer Schema`,
-      icon: icons.Data,
+      icon: icons.Infer,
       path: "/{-$languageSlug}/data/infer-schema",
-      description: t`Automatically infer comprehensive data schemas from your datasets`,
+      description: t`Automatically derive a comprehensive JSON Schema definition from your data's structure and values`,
+      color: "text-green-500",
     },
     {
       id: "infer-dialect",
       title: t`Infer Dialect`,
-      icon: icons.Data,
+      icon: icons.Infer,
       path: "/{-$languageSlug}/file/infer-dialect",
-      description: t`Automatically infer file formats, encoding specifications, and dialect parameters`,
+      description: t`Detect file formats, encoding specifications, delimiters, and other dialect parameters automatically`,
+      color: "text-purple-500",
     },
   ]
 
@@ -63,7 +65,7 @@ function Component() {
                   <CardHeader>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
-                        <div className={color}>
+                        <div className={item.color}>
                           <Icon className="w-8 h-8 group-hover:animate-[spin_0.5s_ease-in-out_1]" />
                         </div>
                         <CardTitle className="text-2xl">{item.title}</CardTitle>

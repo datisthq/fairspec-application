@@ -14,36 +14,39 @@ export const Route = createFileRoute("/{-$languageSlug}/table/")({
 
 function Component() {
   const { t } = useLingui()
-  const color = "text-green-500"
 
   const items = [
     {
       id: "preview",
       title: t`Preview Table`,
-      icon: icons.Table,
+      icon: icons.Preview,
       path: "/{-$languageSlug}/table/preview",
-      description: t`Load and preview your data table`,
+      description: t`Load tabular data from your files and preview rows, columns, and overall structure to inspect contents`,
+      color: "text-blue-500",
     },
     {
       id: "validate",
       title: t`Validate Table`,
-      icon: icons.Table,
+      icon: icons.Validate,
       path: "/{-$languageSlug}/table/validate",
       description: t`Validate table structure for correctness and compliance, and automatically infer table schema from your tabular data`,
+      color: "text-green-500",
     },
     {
       id: "infer-schema",
       title: t`Infer Schema`,
-      icon: icons.Table,
+      icon: icons.Infer,
       path: "/{-$languageSlug}/table/infer-schema",
       description: t`Automatically infer comprehensive table schema definitions from your tabular data`,
+      color: "text-purple-500",
     },
     {
       id: "infer-dialect",
       title: t`Infer Dialect`,
-      icon: icons.Table,
+      icon: icons.Infer,
       path: "/{-$languageSlug}/file/infer-dialect",
-      description: t`Automatically infer file formats, encoding specifications, and dialect parameters`,
+      description: t`Detect file formats, encoding specifications, delimiters, and other dialect parameters automatically`,
+      color: "text-orange-500",
     },
   ]
 
@@ -67,7 +70,7 @@ function Component() {
                   <CardHeader>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
-                        <div className={color}>
+                        <div className={item.color}>
                           <Icon className="w-8 h-8 group-hover:animate-[spin_0.5s_ease-in-out_1]" />
                         </div>
                         <CardTitle className="text-2xl">{item.title}</CardTitle>

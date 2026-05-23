@@ -14,22 +14,23 @@ export const Route = createFileRoute("/{-$languageSlug}/file/")({
 
 function Component() {
   const { t } = useLingui()
-  const color = "text-orange-500"
 
   const items = [
     {
       id: "validate",
       title: t`Validate File`,
-      icon: icons.File,
+      icon: icons.Validate,
       path: "/{-$languageSlug}/file/validate",
       description: t`Describe file contents and structure in detail, and automatically infer file formats and encoding specifications`,
+      color: "text-blue-500",
     },
     {
       id: "infer-dialect",
       title: t`Infer Dialect`,
-      icon: icons.File,
+      icon: icons.Infer,
       path: "/{-$languageSlug}/file/infer-dialect",
-      description: t`Automatically infer file formats, encoding specifications, and dialect parameters`,
+      description: t`Detect file formats, encoding specifications, delimiters, and other dialect parameters automatically`,
+      color: "text-green-500",
     },
   ]
 
@@ -53,7 +54,7 @@ function Component() {
                   <CardHeader>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
-                        <div className={color}>
+                        <div className={item.color}>
                           <Icon className="w-8 h-8 group-hover:animate-[spin_0.5s_ease-in-out_1]" />
                         </div>
                         <CardTitle className="text-2xl">{item.title}</CardTitle>

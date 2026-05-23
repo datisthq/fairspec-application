@@ -14,22 +14,23 @@ export const Route = createFileRoute("/{-$languageSlug}/dataset/")({
 
 function Component() {
   const { t } = useLingui()
-  const color = "text-blue-500"
 
   const items = [
     {
       id: "validate",
       title: t`Validate Dataset`,
-      icon: icons.Dataset,
+      icon: icons.Validate,
       path: "/{-$languageSlug}/dataset/validate",
       description: t`Validate dataset metadata against specifications and automatically infer dataset structure from your data files`,
+      color: "text-blue-500",
     },
     {
       id: "infer",
       title: t`Infer Dataset`,
-      icon: icons.Dataset,
+      icon: icons.Infer,
       path: "/{-$languageSlug}/dataset/infer",
       description: t`Automatically infer dataset metadata and structure from your data files`,
+      color: "text-green-500",
     },
   ]
 
@@ -57,7 +58,7 @@ function Component() {
                   <CardHeader>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
-                        <div className={color}>
+                        <div className={item.color}>
                           <Icon className="w-8 h-8 group-hover:animate-[spin_0.5s_ease-in-out_1]" />
                         </div>
                         <CardTitle className="text-2xl">{item.title}</CardTitle>
