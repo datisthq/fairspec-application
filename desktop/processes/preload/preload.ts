@@ -40,6 +40,23 @@ contextBridge.exposeInMainWorld("desktop", {
   setLanguage: async (languageSlug: LanguageSlug): Promise<LanguageSlug> => {
     return await ipcRenderer.invoke("language:set", languageSlug)
   },
+
+  toggleMaximize: async () => {
+    await ipcRenderer.invoke("window:toggleMaximize")
+  },
+
+  isFullScreen: async (): Promise<boolean> => {
+    return await ipcRenderer.invoke("window:isFullScreen")
+  },
+
+  onFullScreenChange: (callback: (isFullScreen: boolean) => void) => {
+    const listener = (_: unknown, isFullScreen: boolean) =>
+      callback(isFullScreen)
+    ipcRenderer.on("window:fullScreenChanged", listener)
+    return () => {
+      ipcRenderer.removeListener("window:fullScreenChanged", listener)
+    }
+  },
 })
 
 window.addEventListener("message", event => {

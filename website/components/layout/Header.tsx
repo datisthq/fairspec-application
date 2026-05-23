@@ -4,6 +4,7 @@ import { useSidebar } from "#elements/sidebar.tsx"
 import * as icons from "#icons.ts"
 import { Close } from "./Close.tsx"
 import { Logo } from "./Logo.tsx"
+import { Maximize } from "./Maximize.tsx"
 
 function MenuToggle() {
   const { toggleSidebar } = useSidebar()
@@ -125,7 +126,8 @@ export function Header() {
       <div className="lg:hidden ml-auto pr-2">
         <MenuToggle />
       </div>
-      <div className="hidden lg:flex items-center pr-4">
+      <div className="hidden lg:flex items-center gap-1 pr-4">
+        <Maximize />
         <Close />
       </div>
     </header>

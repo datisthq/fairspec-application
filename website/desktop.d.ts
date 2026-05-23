@@ -22,6 +22,10 @@ export interface DesktopAPI {
 
   getLanguage: () => Promise<LanguageId>
   setLanguage: (languageSlug: LanguageSlug) => Promise<LanguageSlug>
+
+  toggleMaximize: () => Promise<void>
+  isFullScreen: () => Promise<boolean>
+  onFullScreenChange: (callback: (isFullScreen: boolean) => void) => () => void
 }
 
 declare global {

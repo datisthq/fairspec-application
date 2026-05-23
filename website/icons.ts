@@ -49,6 +49,8 @@ export {
   Rss as Feed,
   Search,
   Settings,
+  Maximize,
+  Minimize as Restore,
   SlidersHorizontal as Filter,
   Sparkles,
   Star,

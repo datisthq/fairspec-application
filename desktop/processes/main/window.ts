@@ -48,6 +48,13 @@ export function createWindow() {
     }
   })
 
+  mainWindow.on("enter-full-screen", () => {
+    mainWindow.webContents.send("window:fullScreenChanged", true)
+  })
+  mainWindow.on("leave-full-screen", () => {
+    mainWindow.webContents.send("window:fullScreenChanged", false)
+  })
+
   const zoomFactor = store.get("zoomFactor") ?? 1.0
   const zoomLevels = [0.5, 0.67, 0.75, 0.8, 0.9, 1.0, 1.1, 1.25, 1.5, 1.75, 2.0]
 

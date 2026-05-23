@@ -2,7 +2,7 @@ import { writeFile } from "node:fs/promises"
 import { basename, dirname, join } from "node:path"
 import { electronRpcHandler } from "@fairspec/engine/handlers/electron"
 import type { LanguageSlug } from "@fairspec/website"
-import { dialog, ipcMain } from "electron"
+import { BrowserWindow, dialog, ipcMain } from "electron"
 import { store } from "#processes/main/store.ts"
 import * as settings from "#settings.ts"
 
@@ -104,5 +104,15 @@ export function createBridge() {
   ipcMain.handle("language:set", async (_, languageSlug: LanguageSlug) => {
     store.set("languageSlug", languageSlug ?? null)
     return languageSlug
+  })
+
+  ipcMain.handle("window:toggleMaximize", event => {
+    const win = BrowserWindow.fromWebContents(event.sender)
+    if (!win) return
+    win.setFullScreen(!win.isFullScreen())
+  })
+
+  ipcMain.handle("window:isFullScreen", event => {
+    return BrowserWindow.fromWebContents(event.sender)?.isFullScreen() ?? false
   })
 }

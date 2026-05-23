@@ -126,7 +126,7 @@
   html {
     scroll-behavior: smooth;
     scrollbar-color: #ddd transparent;
-    scrollbar-gutter: stable;
+    /* scrollbar-gutter: stable; */
   }
 
   /* Buttons */
