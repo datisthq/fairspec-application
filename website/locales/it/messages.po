@@ -46,14 +46,14 @@ msgstr "Deduci automaticamente schemi di dati completi dai tuoi dataset"
 #: routes/{-$languageSlug}/table/index.tsx:40
 #: routes/{-$languageSlug}/table/infer-schema.tsx:23
 #: routes/{-$languageSlug}/table/infer-schema.tsx:53
-msgid "Automatically infer comprehensive table schema definitions from your tabular data"
-msgstr "Deduci automaticamente definizioni complete di schemi di tabelle dai tuoi dati tabellari"
+msgid "Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data"
+msgstr "Deduci automaticamente definizioni complete dello schema della tabella con tipi di colonna e vincoli dai tuoi dati tabellari"
 
 #: routes/{-$languageSlug}/dataset/index.tsx:32
 #: routes/{-$languageSlug}/dataset/infer.tsx:23
 #: routes/{-$languageSlug}/dataset/infer.tsx:53
-msgid "Automatically infer dataset metadata and structure from your data files"
-msgstr "Deduci automaticamente i metadati e la struttura del dataset dai tuoi file di dati"
+msgid "Automatically infer dataset metadata, table resources, and the overall structure from your raw data files"
+msgstr "Deduci automaticamente i metadati del dataset, le risorse della tabella e la struttura complessiva dai tuoi file di dati grezzi"
 
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:23
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:53
@@ -158,9 +158,17 @@ msgstr "non fanno riferimento ai valori esistenti"
 msgid "does not match the"
 msgstr "non corrisponde a"
 
+#: components/layout/Maximize.tsx:25
+msgid "Enter Fullscreen"
+msgstr "Entra in modalità schermo intero"
+
 #: routes/{-$languageSlug}/file/validate.tsx:180
 msgid "Enter hash value"
 msgstr "Inserisci il valore hash"
+
+#: components/layout/Maximize.tsx:25
+msgid "Exit Fullscreen"
+msgstr "Esci dalla modalità schermo intero"
 
 #: routes/{-$languageSlug}/dataset/infer.tsx:157
 msgid "Failed to Infer Dataset"

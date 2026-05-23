@@ -46,14 +46,14 @@ msgstr "Inferir automaticamente esquemas de dados abrangentes a partir dos seus 
 #: routes/{-$languageSlug}/table/index.tsx:40
 #: routes/{-$languageSlug}/table/infer-schema.tsx:23
 #: routes/{-$languageSlug}/table/infer-schema.tsx:53
-msgid "Automatically infer comprehensive table schema definitions from your tabular data"
-msgstr "Inferir automaticamente definições abrangentes de esquema de tabela a partir dos seus dados tabulares"
+msgid "Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data"
+msgstr "Inferir automaticamente definições abrangentes de esquemas de tabela com tipos de colunas e restrições a partir dos seus dados tabulares"
 
 #: routes/{-$languageSlug}/dataset/index.tsx:32
 #: routes/{-$languageSlug}/dataset/infer.tsx:23
 #: routes/{-$languageSlug}/dataset/infer.tsx:53
-msgid "Automatically infer dataset metadata and structure from your data files"
-msgstr "Inferir automaticamente os metadados e a estrutura do conjunto de dados a partir dos seus arquivos de dados"
+msgid "Automatically infer dataset metadata, table resources, and the overall structure from your raw data files"
+msgstr "Inferir automaticamente metadados de datasets, recursos de tabela e a estrutura geral a partir dos seus arquivos de dados brutos"
 
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:23
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:53
@@ -158,9 +158,17 @@ msgstr "não fazem referência a valores existentes"
 msgid "does not match the"
 msgstr "não corresponde ao"
 
+#: components/layout/Maximize.tsx:25
+msgid "Enter Fullscreen"
+msgstr "Entrar em tela cheia"
+
 #: routes/{-$languageSlug}/file/validate.tsx:180
 msgid "Enter hash value"
 msgstr "Digite o valor de hash"
+
+#: components/layout/Maximize.tsx:25
+msgid "Exit Fullscreen"
+msgstr "Sair da tela cheia"
 
 #: routes/{-$languageSlug}/dataset/infer.tsx:157
 msgid "Failed to Infer Dataset"

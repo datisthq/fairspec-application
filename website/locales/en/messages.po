@@ -55,14 +55,26 @@ msgstr "Automatically infer comprehensive data schemas from your datasets"
 #: routes/{-$languageSlug}/table/index.tsx:40
 #: routes/{-$languageSlug}/table/infer-schema.tsx:23
 #: routes/{-$languageSlug}/table/infer-schema.tsx:53
-msgid "Automatically infer comprehensive table schema definitions from your tabular data"
-msgstr "Automatically infer comprehensive table schema definitions from your tabular data"
+#~ msgid "Automatically infer comprehensive table schema definitions from your tabular data"
+#~ msgstr "Automatically infer comprehensive table schema definitions from your tabular data"
+
+#: routes/{-$languageSlug}/table/index.tsx:40
+#: routes/{-$languageSlug}/table/infer-schema.tsx:23
+#: routes/{-$languageSlug}/table/infer-schema.tsx:53
+msgid "Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data"
+msgstr "Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data"
 
 #: routes/{-$languageSlug}/dataset/index.tsx:32
 #: routes/{-$languageSlug}/dataset/infer.tsx:23
 #: routes/{-$languageSlug}/dataset/infer.tsx:53
-msgid "Automatically infer dataset metadata and structure from your data files"
-msgstr "Automatically infer dataset metadata and structure from your data files"
+#~ msgid "Automatically infer dataset metadata and structure from your data files"
+#~ msgstr "Automatically infer dataset metadata and structure from your data files"
+
+#: routes/{-$languageSlug}/dataset/index.tsx:32
+#: routes/{-$languageSlug}/dataset/infer.tsx:23
+#: routes/{-$languageSlug}/dataset/infer.tsx:53
+msgid "Automatically infer dataset metadata, table resources, and the overall structure from your raw data files"
+msgstr "Automatically infer dataset metadata, table resources, and the overall structure from your raw data files"
 
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:23
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:53
@@ -184,9 +196,17 @@ msgstr "do not reference existing values"
 msgid "does not match the"
 msgstr "does not match the"
 
+#: components/layout/Maximize.tsx:25
+msgid "Enter Fullscreen"
+msgstr "Enter Fullscreen"
+
 #: routes/{-$languageSlug}/file/validate.tsx:180
 msgid "Enter hash value"
 msgstr "Enter hash value"
+
+#: components/layout/Maximize.tsx:25
+msgid "Exit Fullscreen"
+msgstr "Exit Fullscreen"
 
 #: routes/{-$languageSlug}/dataset/infer.tsx:157
 msgid "Failed to Infer Dataset"

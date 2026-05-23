@@ -46,14 +46,14 @@ msgstr "Автоматично визначайте комплексні схе�
 #: routes/{-$languageSlug}/table/index.tsx:40
 #: routes/{-$languageSlug}/table/infer-schema.tsx:23
 #: routes/{-$languageSlug}/table/infer-schema.tsx:53
-msgid "Automatically infer comprehensive table schema definitions from your tabular data"
-msgstr "Автоматично визначайте комплексні схеми таблиць з ваших табличних даних"
+msgid "Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data"
+msgstr "Автоматично визначайте повні схеми таблиць з типами стовпців і обмеженнями на основі ваших табличних даних"
 
 #: routes/{-$languageSlug}/dataset/index.tsx:32
 #: routes/{-$languageSlug}/dataset/infer.tsx:23
 #: routes/{-$languageSlug}/dataset/infer.tsx:53
-msgid "Automatically infer dataset metadata and structure from your data files"
-msgstr "Автоматично визначайте метадані та структуру набору даних з ваших файлів даних"
+msgid "Automatically infer dataset metadata, table resources, and the overall structure from your raw data files"
+msgstr "Автоматично визначайте метадані набору даних, ресурси таблиці та загальну структуру з ваших необроблених файлів даних"
 
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:23
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:53
@@ -158,9 +158,17 @@ msgstr "не відповідають існуючим значенням"
 msgid "does not match the"
 msgstr "не відповідає"
 
+#: components/layout/Maximize.tsx:25
+msgid "Enter Fullscreen"
+msgstr "Увійти в повноекранний режим"
+
 #: routes/{-$languageSlug}/file/validate.tsx:180
 msgid "Enter hash value"
 msgstr "Введіть значення хеша"
+
+#: components/layout/Maximize.tsx:25
+msgid "Exit Fullscreen"
+msgstr "Вийти з повноекранного режиму"
 
 #: routes/{-$languageSlug}/dataset/infer.tsx:157
 msgid "Failed to Infer Dataset"
