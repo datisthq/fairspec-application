@@ -7,27 +7,48 @@ export interface TocItem {
   depth: number
 }
 
+const DEPTH_BY_TAG: Record<string, number> = { H1: 1, H2: 2, H3: 3 }
+
 export function useDomToc(): TocItem[] {
   const pathname = useLocation({ select: l => l.pathname })
   const [items, setItems] = useState<TocItem[]>([])
 
   useEffect(() => {
-    const handle = setTimeout(() => {
-      const elements = document.querySelectorAll<HTMLElement>(
-        "main h1[id], main h2[id], main h3[id]",
+    const main = document.querySelector("main")
+    if (!main) return
+
+    let last = ""
+    const scan = () => {
+      const elements = main.querySelectorAll<HTMLElement>(
+        "h1[id], h2[id], h3[id]",
       )
-      const depthByTag: Record<string, number> = { H1: 1, H2: 2, H3: 3 }
       const next: TocItem[] = []
       for (const element of elements) {
         next.push({
           url: `#${element.id}`,
           title: element.textContent ?? "",
-          depth: depthByTag[element.tagName] ?? 3,
+          depth: DEPTH_BY_TAG[element.tagName] ?? 3,
         })
       }
-      setItems(next)
-    }, 0)
-    return () => clearTimeout(handle)
+      const signature = next
+        .map(i => `${i.depth}:${i.url}:${i.title}`)
+        .join("|")
+      if (signature !== last) {
+        last = signature
+        setItems(next)
+      }
+    }
+
+    scan()
+
+    const observer = new MutationObserver(scan)
+    observer.observe(main, {
+      childList: true,
+      subtree: true,
+      characterData: true,
+    })
+
+    return () => observer.disconnect()
   }, [pathname])
 
   return items
