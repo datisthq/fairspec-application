@@ -29,7 +29,7 @@ function Component() {
       title: t`Infer Dataset`,
       icon: icons.Infer,
       path: "/{-$languageSlug}/dataset/infer",
-      description: t`Automatically infer dataset metadata and structure from your data files`,
+      description: t`Automatically infer dataset metadata, table resources, and the overall structure from your raw data files`,
       color: "text-green-500",
     },
   ]
@@ -59,9 +59,9 @@ function Component() {
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <div className={item.color}>
-                          <Icon className="w-8 h-8 group-hover:animate-[spin_0.5s_ease-in-out_1]" />
+                          <Icon className="w-6 h-6 group-hover:animate-[spin_0.5s_ease-in-out_1]" />
                         </div>
-                        <CardTitle className="text-2xl">{item.title}</CardTitle>
+                        <CardTitle className="text-xl">{item.title}</CardTitle>
                       </div>
                       <CardDescription className="text-base">
                         {item.description}

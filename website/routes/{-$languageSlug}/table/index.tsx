@@ -37,7 +37,7 @@ function Component() {
       title: t`Infer Schema`,
       icon: icons.Infer,
       path: "/{-$languageSlug}/table/infer-schema",
-      description: t`Automatically infer comprehensive table schema definitions from your tabular data`,
+      description: t`Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data`,
       color: "text-purple-500",
     },
     {
@@ -71,9 +71,9 @@ function Component() {
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <div className={item.color}>
-                          <Icon className="w-8 h-8 group-hover:animate-[spin_0.5s_ease-in-out_1]" />
+                          <Icon className="w-6 h-6 group-hover:animate-[spin_0.5s_ease-in-out_1]" />
                         </div>
-                        <CardTitle className="text-2xl">{item.title}</CardTitle>
+                        <CardTitle className="text-xl">{item.title}</CardTitle>
                       </div>
                       <CardDescription className="text-base">
                         {item.description}

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/{-$languageSlug}/dataset/infer")({
   component: Component,
   head: () => {
     const title = t`Infer Dataset`
-    const description = t`Automatically infer dataset metadata and structure from your data files`
+    const description = t`Automatically infer dataset metadata, table resources, and the overall structure from your raw data files`
 
     return {
       meta: [
@@ -51,8 +51,8 @@ function Intro() {
       </h1>
       <p>
         <Trans>
-          Automatically infer dataset metadata and structure from your data
-          files
+          Automatically infer dataset metadata, table resources, and the overall
+          structure from your raw data files
         </Trans>
         .
       </p>
