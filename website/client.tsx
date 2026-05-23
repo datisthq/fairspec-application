@@ -5,7 +5,7 @@ import { hydrateRoot } from "react-dom/client"
 import { activateLocale, detectClientLanguage } from "#helpers/locale.ts"
 import { activateTheme, detectClientTheme } from "#helpers/theme.ts"
 
-if (location.hostname !== "localhost") {
+if (location.hostname !== "localhost" && !globalThis.desktop) {
   plausible.init({
     domain: "fairspec.org",
     outboundLinks: true,
