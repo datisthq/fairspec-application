@@ -10,6 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as Char123LanguageSlugChar125IndexRouteImport } from './routes/{-$languageSlug}/index'
+import { Route as Char123LanguageSlugChar125TableIndexRouteImport } from './routes/{-$languageSlug}/table/index'
+import { Route as Char123LanguageSlugChar125FileIndexRouteImport } from './routes/{-$languageSlug}/file/index'
+import { Route as Char123LanguageSlugChar125DatasetIndexRouteImport } from './routes/{-$languageSlug}/dataset/index'
+import { Route as Char123LanguageSlugChar125DataIndexRouteImport } from './routes/{-$languageSlug}/data/index'
 import { Route as Char123LanguageSlugChar125TableValidateRouteImport } from './routes/{-$languageSlug}/table/validate'
 import { Route as Char123LanguageSlugChar125TablePreviewRouteImport } from './routes/{-$languageSlug}/table/preview'
 import { Route as Char123LanguageSlugChar125TableInferSchemaRouteImport } from './routes/{-$languageSlug}/table/infer-schema'
@@ -24,6 +28,30 @@ const Char123LanguageSlugChar125IndexRoute =
   Char123LanguageSlugChar125IndexRouteImport.update({
     id: '/{-$languageSlug}/',
     path: '/{-$languageSlug}/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LanguageSlugChar125TableIndexRoute =
+  Char123LanguageSlugChar125TableIndexRouteImport.update({
+    id: '/{-$languageSlug}/table/',
+    path: '/{-$languageSlug}/table/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LanguageSlugChar125FileIndexRoute =
+  Char123LanguageSlugChar125FileIndexRouteImport.update({
+    id: '/{-$languageSlug}/file/',
+    path: '/{-$languageSlug}/file/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LanguageSlugChar125DatasetIndexRoute =
+  Char123LanguageSlugChar125DatasetIndexRouteImport.update({
+    id: '/{-$languageSlug}/dataset/',
+    path: '/{-$languageSlug}/dataset/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LanguageSlugChar125DataIndexRoute =
+  Char123LanguageSlugChar125DataIndexRouteImport.update({
+    id: '/{-$languageSlug}/data/',
+    path: '/{-$languageSlug}/data/',
     getParentRoute: () => rootRouteImport,
   } as any)
 const Char123LanguageSlugChar125TableValidateRoute =
@@ -92,6 +120,10 @@ export interface FileRoutesByFullPath {
   '/{-$languageSlug}/table/infer-schema': typeof Char123LanguageSlugChar125TableInferSchemaRoute
   '/{-$languageSlug}/table/preview': typeof Char123LanguageSlugChar125TablePreviewRoute
   '/{-$languageSlug}/table/validate': typeof Char123LanguageSlugChar125TableValidateRoute
+  '/{-$languageSlug}/data/': typeof Char123LanguageSlugChar125DataIndexRoute
+  '/{-$languageSlug}/dataset/': typeof Char123LanguageSlugChar125DatasetIndexRoute
+  '/{-$languageSlug}/file/': typeof Char123LanguageSlugChar125FileIndexRoute
+  '/{-$languageSlug}/table/': typeof Char123LanguageSlugChar125TableIndexRoute
 }
 export interface FileRoutesByTo {
   '/{-$languageSlug}': typeof Char123LanguageSlugChar125IndexRoute
@@ -104,6 +136,10 @@ export interface FileRoutesByTo {
   '/{-$languageSlug}/table/infer-schema': typeof Char123LanguageSlugChar125TableInferSchemaRoute
   '/{-$languageSlug}/table/preview': typeof Char123LanguageSlugChar125TablePreviewRoute
   '/{-$languageSlug}/table/validate': typeof Char123LanguageSlugChar125TableValidateRoute
+  '/{-$languageSlug}/data': typeof Char123LanguageSlugChar125DataIndexRoute
+  '/{-$languageSlug}/dataset': typeof Char123LanguageSlugChar125DatasetIndexRoute
+  '/{-$languageSlug}/file': typeof Char123LanguageSlugChar125FileIndexRoute
+  '/{-$languageSlug}/table': typeof Char123LanguageSlugChar125TableIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -117,6 +153,10 @@ export interface FileRoutesById {
   '/{-$languageSlug}/table/infer-schema': typeof Char123LanguageSlugChar125TableInferSchemaRoute
   '/{-$languageSlug}/table/preview': typeof Char123LanguageSlugChar125TablePreviewRoute
   '/{-$languageSlug}/table/validate': typeof Char123LanguageSlugChar125TableValidateRoute
+  '/{-$languageSlug}/data/': typeof Char123LanguageSlugChar125DataIndexRoute
+  '/{-$languageSlug}/dataset/': typeof Char123LanguageSlugChar125DatasetIndexRoute
+  '/{-$languageSlug}/file/': typeof Char123LanguageSlugChar125FileIndexRoute
+  '/{-$languageSlug}/table/': typeof Char123LanguageSlugChar125TableIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -131,6 +171,10 @@ export interface FileRouteTypes {
     | '/{-$languageSlug}/table/infer-schema'
     | '/{-$languageSlug}/table/preview'
     | '/{-$languageSlug}/table/validate'
+    | '/{-$languageSlug}/data/'
+    | '/{-$languageSlug}/dataset/'
+    | '/{-$languageSlug}/file/'
+    | '/{-$languageSlug}/table/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/{-$languageSlug}'
@@ -143,6 +187,10 @@ export interface FileRouteTypes {
     | '/{-$languageSlug}/table/infer-schema'
     | '/{-$languageSlug}/table/preview'
     | '/{-$languageSlug}/table/validate'
+    | '/{-$languageSlug}/data'
+    | '/{-$languageSlug}/dataset'
+    | '/{-$languageSlug}/file'
+    | '/{-$languageSlug}/table'
   id:
     | '__root__'
     | '/{-$languageSlug}/'
@@ -155,6 +203,10 @@ export interface FileRouteTypes {
     | '/{-$languageSlug}/table/infer-schema'
     | '/{-$languageSlug}/table/preview'
     | '/{-$languageSlug}/table/validate'
+    | '/{-$languageSlug}/data/'
+    | '/{-$languageSlug}/dataset/'
+    | '/{-$languageSlug}/file/'
+    | '/{-$languageSlug}/table/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -168,6 +220,10 @@ export interface RootRouteChildren {
   Char123LanguageSlugChar125TableInferSchemaRoute: typeof Char123LanguageSlugChar125TableInferSchemaRoute
   Char123LanguageSlugChar125TablePreviewRoute: typeof Char123LanguageSlugChar125TablePreviewRoute
   Char123LanguageSlugChar125TableValidateRoute: typeof Char123LanguageSlugChar125TableValidateRoute
+  Char123LanguageSlugChar125DataIndexRoute: typeof Char123LanguageSlugChar125DataIndexRoute
+  Char123LanguageSlugChar125DatasetIndexRoute: typeof Char123LanguageSlugChar125DatasetIndexRoute
+  Char123LanguageSlugChar125FileIndexRoute: typeof Char123LanguageSlugChar125FileIndexRoute
+  Char123LanguageSlugChar125TableIndexRoute: typeof Char123LanguageSlugChar125TableIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -177,6 +233,34 @@ declare module '@tanstack/react-router' {
       path: '/{-$languageSlug}'
       fullPath: '/{-$languageSlug}/'
       preLoaderRoute: typeof Char123LanguageSlugChar125IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/{-$languageSlug}/table/': {
+      id: '/{-$languageSlug}/table/'
+      path: '/{-$languageSlug}/table'
+      fullPath: '/{-$languageSlug}/table/'
+      preLoaderRoute: typeof Char123LanguageSlugChar125TableIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/{-$languageSlug}/file/': {
+      id: '/{-$languageSlug}/file/'
+      path: '/{-$languageSlug}/file'
+      fullPath: '/{-$languageSlug}/file/'
+      preLoaderRoute: typeof Char123LanguageSlugChar125FileIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/{-$languageSlug}/dataset/': {
+      id: '/{-$languageSlug}/dataset/'
+      path: '/{-$languageSlug}/dataset'
+      fullPath: '/{-$languageSlug}/dataset/'
+      preLoaderRoute: typeof Char123LanguageSlugChar125DatasetIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/{-$languageSlug}/data/': {
+      id: '/{-$languageSlug}/data/'
+      path: '/{-$languageSlug}/data'
+      fullPath: '/{-$languageSlug}/data/'
+      preLoaderRoute: typeof Char123LanguageSlugChar125DataIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/{-$languageSlug}/table/validate': {
@@ -265,6 +349,14 @@ const rootRouteChildren: RootRouteChildren = {
     Char123LanguageSlugChar125TablePreviewRoute,
   Char123LanguageSlugChar125TableValidateRoute:
     Char123LanguageSlugChar125TableValidateRoute,
+  Char123LanguageSlugChar125DataIndexRoute:
+    Char123LanguageSlugChar125DataIndexRoute,
+  Char123LanguageSlugChar125DatasetIndexRoute:
+    Char123LanguageSlugChar125DatasetIndexRoute,
+  Char123LanguageSlugChar125FileIndexRoute:
+    Char123LanguageSlugChar125FileIndexRoute,
+  Char123LanguageSlugChar125TableIndexRoute:
+    Char123LanguageSlugChar125TableIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

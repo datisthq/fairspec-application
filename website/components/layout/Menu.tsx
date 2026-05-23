@@ -46,6 +46,7 @@ export function Menu() {
       id: "dataset",
       label: t`Dataset`,
       icon: icons.Dataset,
+      path: "/{-$languageSlug}/dataset",
       items: [
         {
           label: t`Validate Dataset`,
@@ -58,6 +59,7 @@ export function Menu() {
       id: "table",
       label: t`Table`,
       icon: icons.Table,
+      path: "/{-$languageSlug}/table",
       items: [
         { label: t`Preview Table`, path: "/{-$languageSlug}/table/preview" },
         { label: t`Validate Table`, path: "/{-$languageSlug}/table/validate" },
@@ -75,6 +77,7 @@ export function Menu() {
       id: "data",
       label: t`Data`,
       icon: icons.Data,
+      path: "/{-$languageSlug}/data",
       items: [
         { label: t`Validate Data`, path: "/{-$languageSlug}/data/validate" },
         { label: t`Infer Schema`, path: "/{-$languageSlug}/data/infer-schema" },
@@ -88,6 +91,7 @@ export function Menu() {
       id: "file",
       label: t`File`,
       icon: icons.File,
+      path: "/{-$languageSlug}/file",
       items: [
         { label: t`Validate File`, path: "/{-$languageSlug}/file/validate" },
         {
@@ -107,6 +111,7 @@ export function Menu() {
         <SidebarMenu>
           {menuItems.map(menuItem => {
             const Icon = menuItem.icon
+            const parentActive = isActive(menuItem.path)
             return (
               <Collapsible
                 key={menuItem.id}
@@ -117,12 +122,24 @@ export function Menu() {
                 className="group/collapsible"
               >
                 <SidebarMenuItem>
-                  <CollapsibleTrigger
-                    render={<SidebarMenuButton className="opacity-75" />}
+                  <SidebarMenuButton
+                    isActive={parentActive}
+                    className={parentActive ? "" : "opacity-75"}
+                    render={
+                      <Link
+                        to={menuItem.path}
+                        onClick={() => setOpenMobile(false)}
+                      />
+                    }
                   >
                     <Icon className="size-4" />
                     <span>{menuItem.label}</span>
-                    <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
+                  </SidebarMenuButton>
+                  <CollapsibleTrigger
+                    aria-label={`Toggle ${menuItem.label} submenu`}
+                    className="absolute right-1 top-1.5 p-1 rounded-md hover:bg-sidebar-accent"
+                  >
+                    <ChevronRight className="size-3.5 transition-transform group-data-[state=open]/collapsible:rotate-90" />
                   </CollapsibleTrigger>
                   <CollapsibleContent>
                     <SidebarMenuSub>
