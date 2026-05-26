@@ -7,13 +7,6 @@ export const ValidateFileInput = z.object({
   hashValue: z.string(),
 })
 
-export const FileType = z.enum([
-  "file",
-  "data",
-  "table",
-  "schema",
-  "dialect",
-  "dataset",
-])
+export const FileType = z.enum(["file", "data", "table", "schema", "dialect", "dataset"])
 
 export type FileType = z.infer<typeof FileType>

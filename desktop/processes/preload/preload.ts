@@ -50,8 +50,7 @@ contextBridge.exposeInMainWorld("desktop", {
   },
 
   onFullScreenChange: (callback: (isFullScreen: boolean) => void) => {
-    const listener = (_: unknown, isFullScreen: boolean) =>
-      callback(isFullScreen)
+    const listener = (_: unknown, isFullScreen: boolean) => callback(isFullScreen)
     ipcRenderer.on("window:fullScreenChanged", listener)
     return () => {
       ipcRenderer.removeListener("window:fullScreenChanged", listener)

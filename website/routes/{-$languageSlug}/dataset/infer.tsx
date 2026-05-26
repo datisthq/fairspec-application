@@ -51,8 +51,8 @@ function Intro() {
       </h1>
       <p>
         <Trans>
-          Automatically infer dataset metadata, table resources, and the overall
-          structure from your raw data files
+          Automatically infer dataset metadata, table resources, and the overall structure
+          from your raw data files
         </Trans>
         .
       </p>

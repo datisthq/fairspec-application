@@ -50,8 +50,8 @@ function Intro() {
       </h1>
       <p>
         <Trans>
-          Validate data quality, check for inconsistencies and errors, and
-          automatically infer comprehensive data schemas from your datasets
+          Validate data quality, check for inconsistencies and errors, and automatically
+          infer comprehensive data schemas from your datasets
         </Trans>
         .
       </p>

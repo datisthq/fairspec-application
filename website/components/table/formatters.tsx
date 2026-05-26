@@ -12,16 +12,12 @@ function isMissing(
   const missing = [...(globalMissing ?? []), ...fieldMissing]
 
   return missing.some(missingItem => {
-    const missingValue =
-      typeof missingItem === "object" ? missingItem.value : missingItem
+    const missingValue = typeof missingItem === "object" ? missingItem.value : missingItem
     return missingValue === value || String(missingValue) === String(value)
   })
 }
 
-function formatBoolean(
-  value: any,
-  column: Column & { type: "boolean" },
-): ReactNode {
+function formatBoolean(value: any, column: Column & { type: "boolean" }): ReactNode {
   const { trueValues = ["true"], falseValues = ["false"] } = column.property
   if (value === true) return trueValues[0]
   if (value === false) return falseValues[0]
@@ -80,11 +76,7 @@ export function formatCell(
       )
     case "url":
       return (
-        <a
-          href={value}
-          target="_blank"
-          className="text-blue-600 hover:underline"
-        >
+        <a href={value} target="_blank" className="text-blue-600 hover:underline">
           {value}
         </a>
       )

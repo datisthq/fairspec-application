@@ -36,10 +36,7 @@ export function Layout(props: { children?: React.ReactNode }) {
         <SidebarHeader>
           <SidebarMenu>
             <SidebarMenuItem>
-              <SidebarMenuButton
-                size="lg"
-                render={<Link to="/{-$languageSlug}" />}
-              >
+              <SidebarMenuButton size="lg" render={<Link to="/{-$languageSlug}" />}>
                 <Logo />
               </SidebarMenuButton>
             </SidebarMenuItem>

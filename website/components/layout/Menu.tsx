@@ -126,10 +126,7 @@ export function Menu() {
                     isActive={parentActive}
                     className={parentActive ? "" : "opacity-75"}
                     render={
-                      <Link
-                        to={menuItem.path}
-                        onClick={() => setOpenMobile(false)}
-                      />
+                      <Link to={menuItem.path} onClick={() => setOpenMobile(false)} />
                     }
                   >
                     <Icon className="size-4" />

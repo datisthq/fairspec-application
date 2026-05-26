@@ -19,9 +19,7 @@ export function useDomToc(): TocItem[] {
 
     let last = ""
     const scan = () => {
-      const elements = main.querySelectorAll<HTMLElement>(
-        "h1[id], h2[id], h3[id]",
-      )
+      const elements = main.querySelectorAll<HTMLElement>("h1[id], h2[id], h3[id]")
       const next: TocItem[] = []
       for (const element of elements) {
         next.push({
@@ -30,9 +28,7 @@ export function useDomToc(): TocItem[] {
           depth: DEPTH_BY_TAG[element.tagName] ?? 3,
         })
       }
-      const signature = next
-        .map(i => `${i.depth}:${i.url}:${i.title}`)
-        .join("|")
+      const signature = next.map(i => `${i.depth}:${i.url}:${i.title}`).join("|")
       if (signature !== last) {
         last = signature
         setItems(next)

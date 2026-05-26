@@ -6,7 +6,7 @@ const ignorePatterns = ["**/*.d.ts", "**/*.gen.*", "**/generated/**"]
 export default defineConfig({
   fmt: {
     semi: false,
-    printWidth: 80,
+    printWidth: 90,
     arrowParens: "avoid",
     ignorePatterns,
   },

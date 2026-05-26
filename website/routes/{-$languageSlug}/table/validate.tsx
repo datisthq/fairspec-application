@@ -50,8 +50,8 @@ function Intro() {
       </h1>
       <p>
         <Trans>
-          Validate table structure for correctness and compliance, and
-          automatically infer table schema from your tabular data
+          Validate table structure for correctness and compliance, and automatically infer
+          table schema from your tabular data
         </Trans>
         .
       </p>

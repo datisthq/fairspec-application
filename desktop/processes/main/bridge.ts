@@ -18,13 +18,8 @@ export function createBridge() {
 
   ipcMain.handle(
     "dialog:openFile",
-    async (
-      _,
-      options: { filters?: { name: string; extensions: string[] }[] },
-    ) => {
-      const lastOpenedFolder = store.get("lastOpenedFolder") as
-        | string
-        | undefined
+    async (_, options: { filters?: { name: string; extensions: string[] }[] }) => {
+      const lastOpenedFolder = store.get("lastOpenedFolder") as string | undefined
 
       const result = await dialog.showOpenDialog({
         properties: ["openFile"],
@@ -55,9 +50,7 @@ export function createBridge() {
         filters?: { name: string; extensions: string[] }[]
       },
     ) => {
-      const lastOpenedFolder = store.get("lastOpenedFolder") as
-        | string
-        | undefined
+      const lastOpenedFolder = store.get("lastOpenedFolder") as string | undefined
 
       const result = await dialog.showSaveDialog({
         defaultPath: options.defaultPath

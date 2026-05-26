@@ -1,12 +1,7 @@
 import type { FileType } from "@fairspec/engine"
 import { Trans, useLingui } from "@lingui/react/macro"
 import { useRef } from "react"
-import {
-  Field,
-  FieldDescription,
-  FieldError,
-  FieldLabel,
-} from "#elements/field.tsx"
+import { Field, FieldDescription, FieldError, FieldLabel } from "#elements/field.tsx"
 import {
   InputGroup,
   InputGroupAddon,
@@ -78,8 +73,7 @@ export function FileOrPathField(props: {
   return (
     <Field data-invalid={isInvalid}>
       <FieldLabel htmlFor={field.name} className="text-xl">
-        {props.label}{" "}
-        {props.required && <span className="text-destructive">*</span>}
+        {props.label} {props.required && <span className="text-destructive">*</span>}
       </FieldLabel>
       {props.description && (
         <FieldDescription className="text-base text-inherit">
@@ -119,9 +113,7 @@ export function FileOrPathField(props: {
         <InputGroupAddon align="inline-start">
           <InputGroupButton
             onClick={
-              isDesktop
-                ? handleDesktopFileSelect
-                : () => fileInputRef.current?.click()
+              isDesktop ? handleDesktopFileSelect : () => fileInputRef.current?.click()
             }
             variant="secondary"
             disabled={props.disabled}

@@ -17,9 +17,7 @@ export function Report(props: { report: fairspec.Report }) {
   }
 
   const errorTypes = objectKeys(errorsByType)
-  const [selectedType, setSelectedType] = useState<string>(
-    errorTypes?.[0] ?? "all",
-  )
+  const [selectedType, setSelectedType] = useState<string>(errorTypes?.[0] ?? "all")
 
   if (!report.errors?.length) {
     return null
@@ -37,8 +35,7 @@ export function Report(props: { report: fairspec.Report }) {
                   value={type}
                   className={`w-full sm:w-auto uppercase ${selectedType === type ? "font-bold" : "font-normal"}`}
                 >
-                  {type === "all" ? t`All Errors` : type} (
-                  {errorsByType[type].length})
+                  {type === "all" ? t`All Errors` : type} ({errorsByType[type].length})
                 </TabsTrigger>
               )
             })}

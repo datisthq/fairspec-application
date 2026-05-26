@@ -1,11 +1,6 @@
 import { Trans, useLingui } from "@lingui/react/macro"
 import { createFileRoute, Link } from "@tanstack/react-router"
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "#elements/card.tsx"
+import { Card, CardDescription, CardHeader, CardTitle } from "#elements/card.tsx"
 import * as icons from "#icons.ts"
 
 export const Route = createFileRoute("/{-$languageSlug}/dataset/")({
@@ -42,8 +37,7 @@ function Component() {
         </h1>
         <p>
           <Trans>
-            Validate dataset metadata and infer dataset descriptors from your
-            data files
+            Validate dataset metadata and infer dataset descriptors from your data files
           </Trans>
           .
         </p>

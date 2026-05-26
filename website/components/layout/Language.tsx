@@ -1,10 +1,7 @@
 import { useLingui } from "@lingui/react/macro"
 import { useMatches, useNavigate } from "@tanstack/react-router"
 import { De, Es, Fr, Gb, It, Pt, Ru, Ua } from "react-flags-select"
-import {
-  Languages,
-  type Language as LanguageType,
-} from "#constants/language.ts"
+import { Languages, type Language as LanguageType } from "#constants/language.ts"
 import { Button } from "#elements/button.tsx"
 import {
   DropdownMenu,

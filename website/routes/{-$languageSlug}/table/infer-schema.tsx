@@ -51,8 +51,8 @@ function Intro() {
       </h1>
       <p>
         <Trans>
-          Automatically infer comprehensive table schema definitions with column
-          types and constraints from your tabular data
+          Automatically infer comprehensive table schema definitions with column types and
+          constraints from your tabular data
         </Trans>
         .
       </p>

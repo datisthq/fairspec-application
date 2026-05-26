@@ -12,12 +12,7 @@ import { Report } from "#components/report/Report.tsx"
 import { Result } from "#components/result/Result.tsx"
 import { Status, type StatusType } from "#components/result/Status.tsx"
 import { Button } from "#elements/button.tsx"
-import {
-  Field,
-  FieldDescription,
-  FieldGroup,
-  FieldLabel,
-} from "#elements/field.tsx"
+import { Field, FieldDescription, FieldGroup, FieldLabel } from "#elements/field.tsx"
 import {
   InputGroup,
   InputGroupAddon,
@@ -63,8 +58,8 @@ function Intro() {
       </h1>
       <p>
         <Trans>
-          Describe file contents and structure in detail, and automatically
-          infer file formats and encoding specifications
+          Describe file contents and structure in detail, and automatically infer file
+          formats and encoding specifications
         </Trans>
         .
       </p>

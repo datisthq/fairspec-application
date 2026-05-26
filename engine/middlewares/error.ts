@@ -6,11 +6,9 @@ export const errorMiddleware = os.middleware(async ({ next }) => {
   try {
     return await next()
   } catch (exception) {
-    const message =
-      exception instanceof Error ? exception.message : String(exception)
+    const message = exception instanceof Error ? exception.message : String(exception)
 
-    const report =
-      exception instanceof FairspecException ? exception.report : undefined
+    const report = exception instanceof FairspecException ? exception.report : undefined
     if (!report) {
       logger.withError(exception).error(message)
     }
