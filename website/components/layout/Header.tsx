@@ -81,7 +81,7 @@ const sections: readonly HeaderSection[] = [
     key: "github",
     title: "GitHub",
     icon: icons.GitHub,
-    href: "https://github.com/fairspec",
+    href: "https://github.com/datisthq",
     external: true,
   },
 ]

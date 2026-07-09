@@ -16,7 +16,7 @@ export function DesktopAlert({ desktopRequired = false }: { desktopRequired?: bo
           <Trans>
             This functionality is only available in the{" "}
             <a
-              href="https://github.com/fairspec/fairspec-application/releases"
+              href="https://github.com/datisthq/fairspec-application/releases"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -41,7 +41,7 @@ export function DesktopAlert({ desktopRequired = false }: { desktopRequired?: bo
         <Trans>
           For faster and privacy-first work, download the{" "}
           <a
-            href="https://github.com/fairspec/fairspec-application/releases"
+            href="https://github.com/datisthq/fairspec-application/releases"
             target="_blank"
             rel="noopener noreferrer"
           >

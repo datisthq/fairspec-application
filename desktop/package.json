@@ -6,7 +6,7 @@
   "homepage": "https://application.fairspec.org",
   "license": "MIT",
   "author": "Evgeny Karev",
-  "repository": "https://github.com/fairspec/fairspec-application",
+  "repository": "https://github.com/datisthq/fairspec-application",
   "type": "module",
   "main": "build/main/main.js",
   "imports": {
