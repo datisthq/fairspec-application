@@ -17,7 +17,7 @@
   "dependencies": {
     "@fairspec/library": "0.12.1",
     "@fairspec/logger": "workspace:*",
-    "@hono/node-server": "1.19.13",
+    "@hono/node-server": "2.0.10",
     "@orpc/client": "1.14.3",
     "@orpc/server": "1.14.3",
     "@orpc/zod": "1.14.3",
