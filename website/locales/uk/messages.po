@@ -13,12 +13,12 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: components/report/Error.tsx:400
-#: components/report/Error.tsx:436
+#: components/report/Error.tsx:385
+#: components/report/Error.tsx:420
 msgid ", but it is"
 msgstr ", але це"
 
-#: components/report/Error.tsx:328
+#: components/report/Error.tsx:315
 msgid "A required cell in column"
 msgstr "Обов'язкова клітина у стовпці"
 
@@ -26,15 +26,15 @@ msgstr "Обов'язкова клітина у стовпці"
 msgid "Actions"
 msgstr "Дії"
 
-#: components/report/Report.tsx:40
+#: components/report/Report.tsx:38
 msgid "All Errors"
 msgstr "Усі помилки"
 
-#: components/report/Error.tsx:486
+#: components/report/Error.tsx:468
 msgid "at"
 msgstr "на"
 
-#: routes/{-$languageSlug}/data/index.tsx:32
+#: routes/{-$languageSlug}/data/index.tsx:27
 msgid "Automatically derive a comprehensive JSON Schema definition from your data's structure and values"
 msgstr "Автоматично отримуйте повне визначення схеми JSON із структури та значень ваших даних"
 
@@ -43,13 +43,13 @@ msgstr "Автоматично отримуйте повне визначенн�
 msgid "Automatically infer comprehensive data schemas from your datasets"
 msgstr "Автоматично визначайте комплексні схеми даних з ваших наборів даних"
 
-#: routes/{-$languageSlug}/table/index.tsx:40
+#: routes/{-$languageSlug}/table/index.tsx:35
 #: routes/{-$languageSlug}/table/infer-schema.tsx:23
 #: routes/{-$languageSlug}/table/infer-schema.tsx:53
 msgid "Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data"
 msgstr "Автоматично визначайте повні схеми таблиць з типами стовпців і обмеженнями на основі ваших табличних даних"
 
-#: routes/{-$languageSlug}/dataset/index.tsx:32
+#: routes/{-$languageSlug}/dataset/index.tsx:27
 #: routes/{-$languageSlug}/dataset/infer.tsx:23
 #: routes/{-$languageSlug}/dataset/infer.tsx:53
 msgid "Automatically infer dataset metadata, table resources, and the overall structure from your raw data files"
@@ -60,7 +60,11 @@ msgstr "Автоматично визначайте метадані набор�
 msgid "Automatically infer file formats, encoding specifications, and dialect parameters"
 msgstr "Автоматично визначайте формати файлів, специфікації кодування та параметри діалекту"
 
-#: components/layout/Language.tsx:57
+#: routes/{-$languageSlug}/index.tsx:93
+msgid "Built by"
+msgstr "Розроблено компанією"
+
+#: components/layout/Language.tsx:54
 msgid "Change Language"
 msgstr "Змінити мову"
 
@@ -68,7 +72,7 @@ msgstr "Змінити мову"
 msgid "Change Theme"
 msgstr "Змінити тему"
 
-#: routes/{-$languageSlug}/data/index.tsx:24
+#: routes/{-$languageSlug}/data/index.tsx:19
 msgid "Check data values against schema specifications for quality, consistency, and constraint violations"
 msgstr "Перевірте значення даних відповідно до специфікацій схеми для забезпечення якості, узгодженості та відсутності порушень обмежень"
 
@@ -81,13 +85,13 @@ msgstr "Закрити"
 msgid "Close Application"
 msgstr "Закрити застосунок"
 
-#: components/report/Error.tsx:398
+#: components/report/Error.tsx:383
 msgid "Column"
 msgstr "Стовпець"
 
 #: components/layout/Toc.tsx:18
 #: components/layout/Toc.tsx:64
-#: components/layout/Toc.tsx:89
+#: components/layout/Toc.tsx:86
 msgid "Contents"
 msgstr "Зміст"
 
@@ -96,14 +100,14 @@ msgid "Dark Theme"
 msgstr "Темна тема"
 
 #: components/layout/Menu.tsx:78
-#: routes/{-$languageSlug}/data/index.tsx:49
-#: routes/{-$languageSlug}/data/infer-schema.tsx:124
+#: routes/{-$languageSlug}/data/index.tsx:44
+#: routes/{-$languageSlug}/data/infer-schema.tsx:121
 #: routes/{-$languageSlug}/data/validate.tsx:122
-#: routes/{-$languageSlug}/index.tsx:37
+#: routes/{-$languageSlug}/index.tsx:35
 msgid "Data"
 msgstr "Дані"
 
-#: components/report/Error.tsx:416
+#: components/report/Error.tsx:401
 msgid "Data error at"
 msgstr "Помилка даних у"
 
@@ -112,9 +116,9 @@ msgid "Data management application"
 msgstr "Додаток для керування даними"
 
 #: components/layout/Menu.tsx:47
-#: routes/{-$languageSlug}/dataset/index.tsx:41
+#: routes/{-$languageSlug}/dataset/index.tsx:36
 #: routes/{-$languageSlug}/dataset/validate.tsx:121
-#: routes/{-$languageSlug}/index.tsx:21
+#: routes/{-$languageSlug}/index.tsx:19
 msgid "Dataset"
 msgstr "Набір даних"
 
@@ -122,26 +126,30 @@ msgstr "Набір даних"
 msgid "Dataset Inferred"
 msgstr "Набір даних визначено"
 
-#: routes/{-$languageSlug}/file/index.tsx:24
-#: routes/{-$languageSlug}/file/validate.tsx:35
-#: routes/{-$languageSlug}/file/validate.tsx:65
-#: routes/{-$languageSlug}/index.tsx:48
+#: routes/{-$languageSlug}/index.tsx:100
+msgid "Datist — Software development, end to end."
+msgstr "Datist — Розробка програмного забезпечення під ключ."
+
+#: routes/{-$languageSlug}/file/index.tsx:19
+#: routes/{-$languageSlug}/file/validate.tsx:30
+#: routes/{-$languageSlug}/file/validate.tsx:60
+#: routes/{-$languageSlug}/index.tsx:46
 msgid "Describe file contents and structure in detail, and automatically infer file formats and encoding specifications"
 msgstr "Опишіть вміст і структуру файлу детально та автоматично визначте формати файлів і специфікації кодування"
 
-#: components/desktop/Alert.tsx:17
-#: components/desktop/Alert.tsx:42
+#: components/desktop/Alert.tsx:13
+#: components/desktop/Alert.tsx:38
 msgid "Desktop Application"
 msgstr "Десктопний застосунок"
 
-#: routes/{-$languageSlug}/data/index.tsx:40
-#: routes/{-$languageSlug}/file/index.tsx:32
-#: routes/{-$languageSlug}/table/index.tsx:48
+#: routes/{-$languageSlug}/data/index.tsx:35
+#: routes/{-$languageSlug}/file/index.tsx:27
+#: routes/{-$languageSlug}/table/index.tsx:43
 msgid "Detect file formats, encoding specifications, delimiters, and other dialect parameters automatically"
 msgstr "Автоматично визначайте формати файлів, специфікації кодування, роздільники та інші параметри діалекту"
 
 #: routes/{-$languageSlug}/table/infer-schema.tsx:138
-#: routes/{-$languageSlug}/table/preview.tsx:148
+#: routes/{-$languageSlug}/table/preview.tsx:146
 #: routes/{-$languageSlug}/table/validate.tsx:146
 msgid "Dialect"
 msgstr "Діалект"
@@ -150,11 +158,11 @@ msgstr "Діалект"
 msgid "Dialect Inferred"
 msgstr "Діалект визначено"
 
-#: components/report/Error.tsx:470
+#: components/report/Error.tsx:452
 msgid "do not reference existing values"
 msgstr "не відповідають існуючим значенням"
 
-#: components/report/Error.tsx:313
+#: components/report/Error.tsx:300
 msgid "does not match the"
 msgstr "не відповідає"
 
@@ -162,7 +170,7 @@ msgstr "не відповідає"
 msgid "Enter Fullscreen"
 msgstr "Увійти в повноекранний режим"
 
-#: routes/{-$languageSlug}/file/validate.tsx:180
+#: routes/{-$languageSlug}/file/validate.tsx:175
 msgid "Enter hash value"
 msgstr "Введіть значення хеша"
 
@@ -178,12 +186,12 @@ msgstr "Не вдалося визначити набір даних"
 msgid "Failed to Infer Dialect"
 msgstr "Не вдалося визначити діалект"
 
-#: routes/{-$languageSlug}/data/infer-schema.tsx:155
+#: routes/{-$languageSlug}/data/infer-schema.tsx:152
 #: routes/{-$languageSlug}/table/infer-schema.tsx:168
 msgid "Failed to Infer Schema"
 msgstr "Не вдалося визначити схему"
 
-#: routes/{-$languageSlug}/table/preview.tsx:178
+#: routes/{-$languageSlug}/table/preview.tsx:176
 msgid "Failed to Load Preview"
 msgstr "Не вдалося завантажити попередній перегляд"
 
@@ -192,64 +200,64 @@ msgid "Fairspec Application"
 msgstr "Додаток Fairspec"
 
 #: components/layout/Menu.tsx:92
-#: routes/{-$languageSlug}/file/index.tsx:41
+#: routes/{-$languageSlug}/file/index.tsx:36
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:125
-#: routes/{-$languageSlug}/file/validate.tsx:136
-#: routes/{-$languageSlug}/index.tsx:45
+#: routes/{-$languageSlug}/file/validate.tsx:131
+#: routes/{-$languageSlug}/index.tsx:43
 msgid "File"
 msgstr "Файл"
 
-#: components/report/Error.tsx:434
+#: components/report/Error.tsx:419
 msgid "File hash"
 msgstr "Хеш файлу"
 
-#: components/report/Error.tsx:450
+#: components/report/Error.tsx:434
 msgid "File is expected to be textual with utf-8 encoding but it is"
 msgstr "Очікується, що файл буде текстовим з кодуванням utf-8, але він"
 
-#: components/desktop/Alert.tsx:45
+#: components/desktop/Alert.tsx:41
 msgid "For faster and privacy-first work, download the <0>desktop application</0>"
 msgstr "Для швидкої та приватної роботи завантажте <0>десктопний застосунок</0>"
 
-#: components/report/Error.tsx:469
+#: components/report/Error.tsx:451
 msgid "Foreign key constraint violated as cells"
 msgstr "Порушено обмеження зовнішнього ключа, оскільки клітини"
 
-#: components/report/Error.tsx:237
+#: components/report/Error.tsx:227
 msgid "has less than"
 msgstr "має менше ніж"
 
-#: components/report/Error.tsx:180
+#: components/report/Error.tsx:172
 msgid "has more than"
 msgstr "має більше ніж"
 
-#: routes/{-$languageSlug}/file/validate.tsx:146
+#: routes/{-$languageSlug}/file/validate.tsx:141
 msgid "Hash"
 msgstr "Хеш"
 
 #: components/report/Error.tsx:79
-#: components/report/Error.tsx:98
-#: components/report/Error.tsx:119
-#: components/report/Error.tsx:140
-#: components/report/Error.tsx:159
-#: components/report/Error.tsx:178
-#: components/report/Error.tsx:197
-#: components/report/Error.tsx:216
-#: components/report/Error.tsx:235
-#: components/report/Error.tsx:254
-#: components/report/Error.tsx:273
-#: components/report/Error.tsx:292
-#: components/report/Error.tsx:311
-#: components/report/Error.tsx:346
-#: components/report/Error.tsx:364
+#: components/report/Error.tsx:97
+#: components/report/Error.tsx:116
+#: components/report/Error.tsx:134
+#: components/report/Error.tsx:152
+#: components/report/Error.tsx:171
+#: components/report/Error.tsx:190
+#: components/report/Error.tsx:208
+#: components/report/Error.tsx:226
+#: components/report/Error.tsx:245
+#: components/report/Error.tsx:263
+#: components/report/Error.tsx:281
+#: components/report/Error.tsx:299
+#: components/report/Error.tsx:333
+#: components/report/Error.tsx:350
 msgid "in column"
 msgstr "у стовпці"
 
-#: components/report/Error.tsx:574
+#: components/report/Error.tsx:556
 msgid "in resource"
 msgstr "у ресурсі"
 
-#: routes/{-$languageSlug}/data/infer-schema.tsx:142
+#: routes/{-$languageSlug}/data/infer-schema.tsx:139
 #: routes/{-$languageSlug}/dataset/infer.tsx:144
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:143
 #: routes/{-$languageSlug}/table/infer-schema.tsx:155
@@ -262,7 +270,7 @@ msgid "Infer Data Schema"
 msgstr "Визначити схему даних"
 
 #: components/layout/Menu.tsx:55
-#: routes/{-$languageSlug}/dataset/index.tsx:29
+#: routes/{-$languageSlug}/dataset/index.tsx:24
 #: routes/{-$languageSlug}/dataset/infer.tsx:22
 #: routes/{-$languageSlug}/dataset/infer.tsx:50
 msgid "Infer Dataset"
@@ -271,18 +279,18 @@ msgstr "Вивести набір даних"
 #: components/layout/Menu.tsx:71
 #: components/layout/Menu.tsx:85
 #: components/layout/Menu.tsx:98
-#: routes/{-$languageSlug}/data/index.tsx:37
-#: routes/{-$languageSlug}/file/index.tsx:29
+#: routes/{-$languageSlug}/data/index.tsx:32
+#: routes/{-$languageSlug}/file/index.tsx:24
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:22
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:50
-#: routes/{-$languageSlug}/table/index.tsx:45
+#: routes/{-$languageSlug}/table/index.tsx:40
 msgid "Infer Dialect"
 msgstr "Вивести діалект"
 
 #: components/layout/Menu.tsx:67
 #: components/layout/Menu.tsx:83
-#: routes/{-$languageSlug}/data/index.tsx:29
-#: routes/{-$languageSlug}/table/index.tsx:37
+#: routes/{-$languageSlug}/data/index.tsx:24
+#: routes/{-$languageSlug}/table/index.tsx:32
 msgid "Infer Schema"
 msgstr "Вивести схему"
 
@@ -299,7 +307,7 @@ msgstr "Визначення набору даних..."
 msgid "Inferring Dialect..."
 msgstr "Визначення діалекту..."
 
-#: routes/{-$languageSlug}/data/infer-schema.tsx:153
+#: routes/{-$languageSlug}/data/infer-schema.tsx:150
 #: routes/{-$languageSlug}/table/infer-schema.tsx:166
 msgid "Inferring Schema..."
 msgstr "Визначення схеми..."
@@ -312,7 +320,7 @@ msgstr "Некоректні дані"
 msgid "Invalid Dataset"
 msgstr "Некоректний набір даних"
 
-#: routes/{-$languageSlug}/file/validate.tsx:222
+#: routes/{-$languageSlug}/file/validate.tsx:217
 msgid "Invalid File"
 msgstr "Некоректний файл"
 
@@ -320,70 +328,70 @@ msgstr "Некоректний файл"
 msgid "Invalid Table"
 msgstr "Некоректна таблиця"
 
-#: components/report/Error.tsx:398
-#: components/report/Error.tsx:434
-#: components/report/Error.tsx:521
+#: components/report/Error.tsx:383
+#: components/report/Error.tsx:419
+#: components/report/Error.tsx:503
 msgid "is expected to be"
 msgstr "має бути"
 
-#: components/report/Error.tsx:121
+#: components/report/Error.tsx:117
 msgid "is greater or equal to"
 msgstr "більше або дорівнює"
 
-#: components/report/Error.tsx:142
+#: components/report/Error.tsx:135
 msgid "is less or equal to"
 msgstr "менше або дорівнює"
 
-#: components/report/Error.tsx:255
-#: components/report/Error.tsx:274
+#: components/report/Error.tsx:246
+#: components/report/Error.tsx:264
 msgid "is less than"
 msgstr "менше ніж"
 
-#: components/report/Error.tsx:329
-#: components/report/Error.tsx:382
+#: components/report/Error.tsx:316
+#: components/report/Error.tsx:367
 msgid "is missing"
 msgstr "відсутній"
 
-#: components/report/Error.tsx:505
+#: components/report/Error.tsx:486
 msgid "is missing, but expected"
 msgstr "відсутній, але очікується"
 
-#: components/report/Error.tsx:198
-#: components/report/Error.tsx:217
+#: components/report/Error.tsx:191
+#: components/report/Error.tsx:209
 msgid "is more than"
 msgstr "більше ніж"
 
-#: components/report/Error.tsx:347
+#: components/report/Error.tsx:334
 msgid "is not"
 msgstr "не є"
 
-#: components/report/Error.tsx:294
+#: components/report/Error.tsx:282
 msgid "is not a multiple of"
 msgstr "не є кратним"
 
-#: components/report/Error.tsx:81
+#: components/report/Error.tsx:80
 msgid "is not allowed value"
 msgstr "не дозволене значення"
 
-#: components/report/Error.tsx:100
+#: components/report/Error.tsx:98
 msgid "is not in the allowed values"
 msgstr "не входить до дозволених значень"
 
-#: components/report/Error.tsx:366
+#: components/report/Error.tsx:351
 msgid "is not unique"
 msgstr "не унікальний"
 
-#: components/report/Error.tsx:180
-#: components/report/Error.tsx:237
+#: components/report/Error.tsx:173
+#: components/report/Error.tsx:228
 msgid "items"
 msgstr "елементи"
 
-#: components/layout/Language.tsx:64
+#: components/layout/Language.tsx:61
 msgid "Language"
 msgstr "Мова"
 
-#: components/report/Error.tsx:197
-#: components/report/Error.tsx:254
+#: components/report/Error.tsx:190
+#: components/report/Error.tsx:245
 msgid "Length of the cell"
 msgstr "Довжина клітини"
 
@@ -395,35 +403,35 @@ msgstr "Світла тема"
 msgid "Load and preview your data table"
 msgstr "Завантажте та перегляньте вашу таблицю даних"
 
-#: routes/{-$languageSlug}/table/index.tsx:24
+#: routes/{-$languageSlug}/table/index.tsx:19
 #: routes/{-$languageSlug}/table/preview.tsx:52
 msgid "Load tabular data from your files and preview rows, columns, and overall structure to inspect contents"
 msgstr "Завантажуйте табличні дані з ваших файлів і переглядайте рядки, стовпці та загальну структуру для перевірки вмісту"
 
-#: routes/{-$languageSlug}/table/preview.tsx:176
+#: routes/{-$languageSlug}/table/preview.tsx:174
 msgid "Loading Preview..."
 msgstr "Завантаження попереднього перегляду..."
 
-#: components/form/FileOrPathField.tsx:41
+#: components/form/FileOrPathField.tsx:36
 msgid "maximum"
 msgstr "максимум"
 
 #: components/report/Error.tsx:80
-#: components/report/Error.tsx:99
-#: components/report/Error.tsx:120
-#: components/report/Error.tsx:141
-#: components/report/Error.tsx:160
-#: components/report/Error.tsx:179
-#: components/report/Error.tsx:198
-#: components/report/Error.tsx:217
-#: components/report/Error.tsx:236
-#: components/report/Error.tsx:255
-#: components/report/Error.tsx:274
-#: components/report/Error.tsx:293
-#: components/report/Error.tsx:312
-#: components/report/Error.tsx:329
-#: components/report/Error.tsx:347
-#: components/report/Error.tsx:365
+#: components/report/Error.tsx:98
+#: components/report/Error.tsx:117
+#: components/report/Error.tsx:135
+#: components/report/Error.tsx:153
+#: components/report/Error.tsx:172
+#: components/report/Error.tsx:191
+#: components/report/Error.tsx:209
+#: components/report/Error.tsx:227
+#: components/report/Error.tsx:246
+#: components/report/Error.tsx:264
+#: components/report/Error.tsx:282
+#: components/report/Error.tsx:300
+#: components/report/Error.tsx:315
+#: components/report/Error.tsx:334
+#: components/report/Error.tsx:351
 msgid "of row"
 msgstr "рядка"
 
@@ -435,36 +443,36 @@ msgstr "Відкрити в ChatGPT"
 msgid "Open in Claude"
 msgstr "Відкрити в Claude"
 
-#: routes/{-$languageSlug}/table/preview.tsx:165
+#: routes/{-$languageSlug}/table/preview.tsx:163
 msgid "Preview"
 msgstr "Попередній перегляд"
 
 #: components/layout/Menu.tsx:64
-#: routes/{-$languageSlug}/table/index.tsx:21
+#: routes/{-$languageSlug}/table/index.tsx:16
 #: routes/{-$languageSlug}/table/preview.tsx:21
 #: routes/{-$languageSlug}/table/preview.tsx:49
 msgid "Preview Table"
 msgstr "Попередній перегляд таблиці"
 
-#: routes/{-$languageSlug}/table/index.tsx:60
+#: routes/{-$languageSlug}/table/index.tsx:55
 msgid "Preview, validate, and infer schemas for tabular data"
 msgstr "Попередній перегляд, валідація та визначення схем для табличних даних"
 
-#: components/report/Error.tsx:382
+#: components/report/Error.tsx:367
 msgid "Required column"
 msgstr "Обов'язковий стовпець"
 
-#: components/report/Error.tsx:504
-#: components/report/Error.tsx:521
+#: components/report/Error.tsx:486
+#: components/report/Error.tsx:503
 msgid "Resource"
 msgstr "Ресурс"
 
-#: components/report/Error.tsx:539
-#: components/report/Error.tsx:555
+#: components/report/Error.tsx:521
+#: components/report/Error.tsx:537
 msgid "Row"
 msgstr "Рядок"
 
-#: routes/{-$languageSlug}/data/infer-schema.tsx:165
+#: routes/{-$languageSlug}/data/infer-schema.tsx:162
 #: routes/{-$languageSlug}/dataset/infer.tsx:167
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:166
 #: routes/{-$languageSlug}/table/infer-schema.tsx:178
@@ -472,17 +480,17 @@ msgid "Save"
 msgstr "Зберегти"
 
 #: routes/{-$languageSlug}/data/validate.tsx:134
-#: routes/{-$languageSlug}/table/preview.tsx:137
+#: routes/{-$languageSlug}/table/preview.tsx:135
 #: routes/{-$languageSlug}/table/validate.tsx:135
 msgid "Schema"
 msgstr "Схема"
 
-#: routes/{-$languageSlug}/data/infer-schema.tsx:154
+#: routes/{-$languageSlug}/data/infer-schema.tsx:151
 #: routes/{-$languageSlug}/table/infer-schema.tsx:167
 msgid "Schema Inferred"
 msgstr "Схему визначено"
 
-#: routes/{-$languageSlug}/file/validate.tsx:149
+#: routes/{-$languageSlug}/file/validate.tsx:144
 msgid "Select hash algorithm and enter hash value"
 msgstr "Оберіть алгоритм хешування та введіть значення хеша"
 
@@ -496,23 +504,23 @@ msgstr "Поділитися сторінкою"
 
 #: components/layout/Menu.tsx:60
 #: routes/{-$languageSlug}/dataset/infer.tsx:125
-#: routes/{-$languageSlug}/index.tsx:29
-#: routes/{-$languageSlug}/table/index.tsx:57
+#: routes/{-$languageSlug}/index.tsx:27
+#: routes/{-$languageSlug}/table/index.tsx:52
 #: routes/{-$languageSlug}/table/infer-schema.tsx:126
-#: routes/{-$languageSlug}/table/preview.tsx:125
+#: routes/{-$languageSlug}/table/preview.tsx:123
 #: routes/{-$languageSlug}/table/validate.tsx:123
 msgid "Table"
 msgstr "Таблиця"
 
-#: routes/{-$languageSlug}/table/preview.tsx:177
+#: routes/{-$languageSlug}/table/preview.tsx:175
 msgid "Table Preview"
 msgstr "Попередній перегляд таблиці"
 
-#: routes/{-$languageSlug}/index.tsx:57
+#: routes/{-$languageSlug}/index.tsx:55
 msgid "Technical preview"
 msgstr "Технічний попередній перегляд"
 
-#: components/desktop/Alert.tsx:20
+#: components/desktop/Alert.tsx:16
 msgid "This functionality is only available in the <0>desktop application</0>"
 msgstr "Ця функція доступна лише в <0>десктопному застосунку</0>"
 
@@ -520,11 +528,11 @@ msgstr "Ця функція доступна лише в <0>десктопном
 msgid "Tools"
 msgstr "Інструменти"
 
-#: components/form/FileOrPathField.tsx:130
+#: components/form/FileOrPathField.tsx:122
 msgid "Upload"
 msgstr "Завантажити"
 
-#: routes/{-$languageSlug}/data/infer-schema.tsx:125
+#: routes/{-$languageSlug}/data/infer-schema.tsx:122
 msgid "Upload a data file or provide a URL to a data file"
 msgstr "Завантажте файл з даними або вкажіть URL до файлу даних"
 
@@ -545,22 +553,22 @@ msgid "Upload a file or provide a URL to a dataset"
 msgstr "Завантажте файл або вкажіть URL-адресу набору даних"
 
 #: routes/{-$languageSlug}/file/infer-dialect.tsx:126
-#: routes/{-$languageSlug}/file/validate.tsx:137
+#: routes/{-$languageSlug}/file/validate.tsx:132
 msgid "Upload a file or provide a URL to a file"
 msgstr "Завантажте файл або вкажіть URL до файлу"
 
-#: routes/{-$languageSlug}/table/preview.tsx:149
+#: routes/{-$languageSlug}/table/preview.tsx:147
 #: routes/{-$languageSlug}/table/validate.tsx:147
 msgid "Upload a file or provide a URL to a table dialect"
 msgstr "Завантажте файл або вкажіть URL до діалекту таблиці"
 
-#: routes/{-$languageSlug}/table/preview.tsx:138
+#: routes/{-$languageSlug}/table/preview.tsx:136
 #: routes/{-$languageSlug}/table/validate.tsx:136
 msgid "Upload a file or provide a URL to a table schema"
 msgstr "Завантажте файл або вкажіть URL до схеми таблиці"
 
 #: routes/{-$languageSlug}/dataset/infer.tsx:126
-#: routes/{-$languageSlug}/table/preview.tsx:126
+#: routes/{-$languageSlug}/table/preview.tsx:124
 #: routes/{-$languageSlug}/table/validate.tsx:124
 msgid "Upload a file or provide a URL to a tabular data file"
 msgstr "Завантажте файл або вкажіть URL до табличного файлу даних"
@@ -577,7 +585,7 @@ msgstr "Коректні дані"
 msgid "Valid Dataset"
 msgstr "Коректний набір даних"
 
-#: routes/{-$languageSlug}/file/validate.tsx:221
+#: routes/{-$languageSlug}/file/validate.tsx:216
 msgid "Valid File"
 msgstr "Коректний файл"
 
@@ -587,13 +595,13 @@ msgstr "Коректна таблиця"
 
 #: routes/{-$languageSlug}/data/validate.tsx:151
 #: routes/{-$languageSlug}/dataset/validate.tsx:140
-#: routes/{-$languageSlug}/file/validate.tsx:209
+#: routes/{-$languageSlug}/file/validate.tsx:204
 #: routes/{-$languageSlug}/table/validate.tsx:163
 msgid "Validate"
 msgstr "Перевірити"
 
 #: components/layout/Menu.tsx:82
-#: routes/{-$languageSlug}/data/index.tsx:21
+#: routes/{-$languageSlug}/data/index.tsx:16
 #: routes/{-$languageSlug}/data/validate.tsx:21
 #: routes/{-$languageSlug}/data/validate.tsx:49
 msgid "Validate Data"
@@ -601,56 +609,56 @@ msgstr "Перевірити дані"
 
 #: routes/{-$languageSlug}/data/validate.tsx:22
 #: routes/{-$languageSlug}/data/validate.tsx:52
-#: routes/{-$languageSlug}/index.tsx:40
+#: routes/{-$languageSlug}/index.tsx:38
 msgid "Validate data quality, check for inconsistencies and errors, and automatically infer comprehensive data schemas from your datasets"
 msgstr "Перевіряйте якість даних, виявляйте невідповідності та помилки й автоматично виводьте комплексні схеми даних із ваших наборів даних"
 
-#: routes/{-$languageSlug}/data/index.tsx:52
+#: routes/{-$languageSlug}/data/index.tsx:47
 msgid "Validate data values and infer JSON Schemas from your datasets"
 msgstr "Валідуйте значення даних і визначайте JSON-схеми з ваших наборів даних"
 
 #: components/layout/Menu.tsx:52
-#: routes/{-$languageSlug}/dataset/index.tsx:21
+#: routes/{-$languageSlug}/dataset/index.tsx:16
 #: routes/{-$languageSlug}/dataset/validate.tsx:21
 #: routes/{-$languageSlug}/dataset/validate.tsx:49
 msgid "Validate Dataset"
 msgstr "Перевірити набір даних"
 
-#: routes/{-$languageSlug}/dataset/index.tsx:24
+#: routes/{-$languageSlug}/dataset/index.tsx:19
 #: routes/{-$languageSlug}/dataset/validate.tsx:22
 #: routes/{-$languageSlug}/dataset/validate.tsx:52
-#: routes/{-$languageSlug}/index.tsx:24
+#: routes/{-$languageSlug}/index.tsx:22
 msgid "Validate dataset metadata against specifications and automatically infer dataset structure from your data files"
 msgstr "Перевіряйте метадані набору даних відповідно до специфікацій і автоматично виводьте структуру набору даних із ваших файлів даних"
 
-#: routes/{-$languageSlug}/dataset/index.tsx:44
+#: routes/{-$languageSlug}/dataset/index.tsx:39
 msgid "Validate dataset metadata and infer dataset descriptors from your data files"
 msgstr "Валідуйте метадані наборів даних і визначайте дескриптори наборів даних з ваших файлів"
 
 #: components/layout/Menu.tsx:96
-#: routes/{-$languageSlug}/file/index.tsx:21
-#: routes/{-$languageSlug}/file/validate.tsx:34
-#: routes/{-$languageSlug}/file/validate.tsx:62
+#: routes/{-$languageSlug}/file/index.tsx:16
+#: routes/{-$languageSlug}/file/validate.tsx:29
+#: routes/{-$languageSlug}/file/validate.tsx:57
 msgid "Validate File"
 msgstr "Перевірити файл"
 
-#: routes/{-$languageSlug}/file/index.tsx:44
+#: routes/{-$languageSlug}/file/index.tsx:39
 msgid "Validate files and infer their dialects"
 msgstr "Валідуйте файли і визначайте їх діалекти"
 
 #: components/layout/Menu.tsx:65
-#: routes/{-$languageSlug}/table/index.tsx:29
+#: routes/{-$languageSlug}/table/index.tsx:24
 #: routes/{-$languageSlug}/table/validate.tsx:21
 #: routes/{-$languageSlug}/table/validate.tsx:49
 msgid "Validate Table"
 msgstr "Перевірити таблицю"
 
-#: routes/{-$languageSlug}/index.tsx:32
+#: routes/{-$languageSlug}/index.tsx:30
 #: routes/{-$languageSlug}/table/validate.tsx:22
 msgid "Validate table structure for correctness and compliance, and automatically infer table schema definitions from your tabular data"
 msgstr "Перевіряйте структуру таблиці на коректність і відповідність, а також автоматично виводьте визначення схем таблиці з ваших табличних даних"
 
-#: routes/{-$languageSlug}/table/index.tsx:32
+#: routes/{-$languageSlug}/table/index.tsx:27
 #: routes/{-$languageSlug}/table/validate.tsx:52
 msgid "Validate table structure for correctness and compliance, and automatically infer table schema from your tabular data"
 msgstr "Перевірте структуру таблиці на правильність і відповідність та автоматично визначте схему з ваших табличних даних"
@@ -663,7 +671,7 @@ msgstr "Перевірка даних..."
 msgid "Validating Dataset..."
 msgstr "Перевірка набору даних..."
 
-#: routes/{-$languageSlug}/file/validate.tsx:220
+#: routes/{-$languageSlug}/file/validate.tsx:215
 msgid "Validating File..."
 msgstr "Перевірка файлу..."
 
@@ -672,33 +680,33 @@ msgid "Validating Table..."
 msgstr "Перевірка таблиці..."
 
 #: components/report/Error.tsx:79
-#: components/report/Error.tsx:98
-#: components/report/Error.tsx:119
-#: components/report/Error.tsx:140
-#: components/report/Error.tsx:159
-#: components/report/Error.tsx:178
-#: components/report/Error.tsx:216
-#: components/report/Error.tsx:235
-#: components/report/Error.tsx:273
-#: components/report/Error.tsx:292
-#: components/report/Error.tsx:311
-#: components/report/Error.tsx:346
-#: components/report/Error.tsx:364
+#: components/report/Error.tsx:97
+#: components/report/Error.tsx:116
+#: components/report/Error.tsx:134
+#: components/report/Error.tsx:152
+#: components/report/Error.tsx:171
+#: components/report/Error.tsx:208
+#: components/report/Error.tsx:226
+#: components/report/Error.tsx:263
+#: components/report/Error.tsx:281
+#: components/report/Error.tsx:299
+#: components/report/Error.tsx:333
+#: components/report/Error.tsx:350
 msgid "Value of the cell"
 msgstr "Значення клітини"
 
-#: components/report/Error.tsx:161
+#: components/report/Error.tsx:153
 msgid "violates JSON schema at"
 msgstr "порушує схему JSON на"
 
-#: components/report/Error.tsx:540
+#: components/report/Error.tsx:522
 msgid "violates primary key constraint on columns"
 msgstr "порушує обмеження первинного ключа на стовпцях"
 
-#: components/report/Error.tsx:556
+#: components/report/Error.tsx:538
 msgid "violates unique key constraint on columns"
 msgstr "порушує обмеження унікального ключа на стовпцях"
 
-#: routes/{-$languageSlug}/index.tsx:62
+#: routes/{-$languageSlug}/index.tsx:60
 msgid "Visual tool for managing and validating tabular and structured data"
 msgstr "Візуальний інструмент для керування та перевірки табличних і структурованих даних"

@@ -9,6 +9,8 @@ export const Route = createFileRoute("/{-$languageSlug}/")({
 
 function Component() {
   const { t } = useLingui()
+  const { languageSlug } = Route.useParams()
+  const datistHref = languageSlug === "pt" ? "https://datist.io/pt" : "https://datist.io"
 
   const gridItems = [
     {
@@ -86,6 +88,17 @@ function Component() {
           })}
         </div>
       </div>
+      <p className="text-xs text-muted-foreground">
+        <Trans>Built by</Trans>{" "}
+        <a
+          href={datistHref}
+          target="_blank"
+          rel="noopener"
+          className="font-medium hover:text-foreground transition-colors"
+        >
+          <Trans>Datist — Software development, end to end.</Trans>
+        </a>
+      </p>
     </div>
   )
 }
