@@ -1,7 +1,7 @@
 import { electronApp, optimizer } from "@electron-toolkit/utils"
 import { app, BrowserWindow, dialog } from "electron"
 // @ts-expect-error
-import iconPath from "#assets/fairspec-logo.svg?asset"
+import iconPath from "#assets/logo.svg?asset"
 import packageJson from "#package.json" with { type: "json" }
 import { logger } from "#processes/main/logger.ts"
 import * as settings from "#settings.ts"

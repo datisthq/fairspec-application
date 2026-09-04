@@ -6,7 +6,7 @@ artifactName: fairspec-desktop-${os}-${version}.${ext}
 
 directories:
   output: compile
-  buildResources: build-resources
+  buildResources: assets
 
 files:
   - "build/main/**/*"

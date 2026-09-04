@@ -33,8 +33,9 @@ export default defineConfig({
     },
   },
   renderer: {
-    root,
+    root: resolve(root, "processes/renderer"),
     envDir: root,
+    publicDir: resolve(root, "public"),
     server: {
       port: 8100,
       watch: {
@@ -50,7 +51,7 @@ export default defineConfig({
     build: {
       outDir: "build/renderer",
       rollupOptions: {
-        input: { index: resolve(root, "index.html") },
+        input: { index: resolve(root, "processes/renderer/index.html") },
       },
     },
     plugins: [
@@ -58,8 +59,8 @@ export default defineConfig({
       tanstackRouter({
         target: "react",
         autoCodeSplitting: true,
-        routesDirectory: "routes",
-        generatedRouteTree: "routeTree.gen.ts",
+        routesDirectory: resolve(root, "routes"),
+        generatedRouteTree: resolve(root, "routeTree.gen.ts"),
       }),
       react(),
       lingui(),

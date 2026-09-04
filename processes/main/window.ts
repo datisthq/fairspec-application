@@ -1,7 +1,7 @@
 import { join } from "node:path"
 import { BrowserWindow, shell } from "electron"
 // @ts-expect-error
-import iconPath from "#assets/fairspec-logo.svg?asset"
+import iconPath from "#assets/logo.svg?asset"
 import * as settings from "#settings.ts"
 import { store } from "./store.ts"
 

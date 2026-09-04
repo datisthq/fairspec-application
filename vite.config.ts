@@ -23,12 +23,19 @@ export default defineConfig({
       {
         // The renderer must never reach into main-process code. The only legal
         // crossing is the type-only Router import in services/engine.ts.
-        files: ["routes/**", "components/**", "elements/**", "hooks/**", "helpers/**"],
+        files: [
+          "processes/renderer/**",
+          "routes/**",
+          "components/**",
+          "elements/**",
+          "hooks/**",
+          "helpers/**",
+        ],
         rules: {
           "no-restricted-imports": [
             "error",
             {
-              patterns: ["#processes/*", "electron", "node:*"],
+              patterns: ["#processes/main/**", "electron", "node:*"],
             },
           ],
         },
