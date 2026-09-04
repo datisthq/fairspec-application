@@ -35,7 +35,14 @@ export default defineConfig({
           "no-restricted-imports": [
             "error",
             {
-              patterns: ["#processes/main/**", "electron", "node:*"],
+              patterns: [
+                "#processes/main/**",
+                "#actions/**",
+                "#endpoints/**",
+                "#middlewares/**",
+                "electron",
+                "node:*",
+              ],
             },
           ],
         },

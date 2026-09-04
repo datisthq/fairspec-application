@@ -1,7 +1,7 @@
 import { validateData } from "@fairspec/library"
 import { temporaryDirectoryTask } from "tempy"
-import { prefetchFile } from "#processes/main/actions/prefetch.ts"
-import { publicEndpoint } from "#processes/main/endpoints/base/public.ts"
+import { prefetchFile } from "#actions/prefetch.ts"
+import { publicEndpoint } from "#endpoints/base/public.ts"
 import { ValidateDataInput } from "#models/data.ts"
 
 export const validateDataEndpoint = publicEndpoint
