@@ -1,0 +1,602 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-01-23 09:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: uk\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/report/Error.tsx
+msgid ", but it is"
+msgstr ", але це"
+
+#: components/report/Error.tsx
+msgid "A required cell in column"
+msgstr "Обов'язкова клітина у стовпці"
+
+#: components/report/Report.tsx
+msgid "All Errors"
+msgstr "Усі помилки"
+
+#: components/report/Error.tsx
+msgid "at"
+msgstr "на"
+
+#: routes/data/index.tsx
+msgid "Automatically derive a comprehensive JSON Schema definition from your data's structure and values"
+msgstr "Автоматично отримуйте повне визначення схеми JSON із структури та значень ваших даних"
+
+#: routes/data/infer-schema.tsx
+msgid "Automatically infer comprehensive data schemas from your datasets"
+msgstr "Автоматично визначайте комплексні схеми даних з ваших наборів даних"
+
+#: routes/table/index.tsx
+#: routes/table/infer-schema.tsx
+msgid "Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data"
+msgstr "Автоматично визначайте повні схеми таблиць з типами стовпців і обмеженнями на основі ваших табличних даних"
+
+#: routes/dataset/index.tsx
+#: routes/dataset/infer.tsx
+msgid "Automatically infer dataset metadata, table resources, and the overall structure from your raw data files"
+msgstr "Автоматично визначайте метадані набору даних, ресурси таблиці та загальну структуру з ваших необроблених файлів даних"
+
+#: routes/file/infer-dialect.tsx
+msgid "Automatically infer file formats, encoding specifications, and dialect parameters"
+msgstr "Автоматично визначайте формати файлів, специфікації кодування та параметри діалекту"
+
+#: routes/index.tsx
+msgid "Built by"
+msgstr "Розроблено компанією"
+
+#: components/layout/Language.tsx
+msgid "Change Language"
+msgstr "Змінити мову"
+
+#: components/layout/Theme.tsx
+msgid "Change Theme"
+msgstr "Змінити тему"
+
+#: routes/data/index.tsx
+msgid "Check data values against schema specifications for quality, consistency, and constraint violations"
+msgstr "Перевірте значення даних відповідно до специфікацій схеми для забезпечення якості, узгодженості та відсутності порушень обмежень"
+
+#: components/result/Result.tsx
+msgid "Close"
+msgstr "Закрити"
+
+#: components/layout/Close.tsx
+msgid "Close Application"
+msgstr "Закрити застосунок"
+
+#: components/report/Error.tsx
+msgid "Column"
+msgstr "Стовпець"
+
+#: components/layout/Toc.tsx
+msgid "Contents"
+msgstr "Зміст"
+
+#: components/layout/Theme.tsx
+msgid "Dark Theme"
+msgstr "Темна тема"
+
+#: components/layout/Menu.tsx
+#: routes/data/index.tsx
+#: routes/data/infer-schema.tsx
+#: routes/data/validate.tsx
+#: routes/index.tsx
+msgid "Data"
+msgstr "Дані"
+
+#: components/report/Error.tsx
+msgid "Data error at"
+msgstr "Помилка даних у"
+
+#: components/layout/Logo.tsx
+msgid "Data management application"
+msgstr "Додаток для керування даними"
+
+#: components/layout/Menu.tsx
+#: routes/dataset/index.tsx
+#: routes/dataset/validate.tsx
+#: routes/index.tsx
+msgid "Dataset"
+msgstr "Набір даних"
+
+#: routes/dataset/infer.tsx
+msgid "Dataset Inferred"
+msgstr "Набір даних визначено"
+
+#: routes/index.tsx
+msgid "Datist — Software development, end to end."
+msgstr "Datist — Розробка програмного забезпечення під ключ."
+
+#: routes/file/index.tsx
+#: routes/file/validate.tsx
+#: routes/index.tsx
+msgid "Describe file contents and structure in detail, and automatically infer file formats and encoding specifications"
+msgstr "Опишіть вміст і структуру файлу детально та автоматично визначте формати файлів і специфікації кодування"
+
+#: routes/data/index.tsx
+#: routes/file/index.tsx
+#: routes/table/index.tsx
+msgid "Detect file formats, encoding specifications, delimiters, and other dialect parameters automatically"
+msgstr "Автоматично визначайте формати файлів, специфікації кодування, роздільники та інші параметри діалекту"
+
+#: routes/table/infer-schema.tsx
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Dialect"
+msgstr "Діалект"
+
+#: routes/file/infer-dialect.tsx
+msgid "Dialect Inferred"
+msgstr "Діалект визначено"
+
+#: components/report/Error.tsx
+msgid "do not reference existing values"
+msgstr "не відповідають існуючим значенням"
+
+#: components/report/Error.tsx
+msgid "does not match the"
+msgstr "не відповідає"
+
+#: components/layout/Maximize.tsx
+msgid "Enter Fullscreen"
+msgstr "Увійти в повноекранний режим"
+
+#: routes/file/validate.tsx
+msgid "Enter hash value"
+msgstr "Введіть значення хеша"
+
+#: components/layout/Maximize.tsx
+msgid "Exit Fullscreen"
+msgstr "Вийти з повноекранного режиму"
+
+#: routes/dataset/infer.tsx
+msgid "Failed to Infer Dataset"
+msgstr "Не вдалося визначити набір даних"
+
+#: routes/file/infer-dialect.tsx
+msgid "Failed to Infer Dialect"
+msgstr "Не вдалося визначити діалект"
+
+#: routes/data/infer-schema.tsx
+#: routes/table/infer-schema.tsx
+msgid "Failed to Infer Schema"
+msgstr "Не вдалося визначити схему"
+
+#: routes/table/preview.tsx
+msgid "Failed to Load Preview"
+msgstr "Не вдалося завантажити попередній перегляд"
+
+#: components/layout/Logo.tsx
+msgid "Fairspec Application"
+msgstr "Додаток Fairspec"
+
+#: components/layout/Menu.tsx
+#: routes/file/index.tsx
+#: routes/file/infer-dialect.tsx
+#: routes/file/validate.tsx
+#: routes/index.tsx
+msgid "File"
+msgstr "Файл"
+
+#: components/report/Error.tsx
+msgid "File hash"
+msgstr "Хеш файлу"
+
+#: components/report/Error.tsx
+msgid "File is expected to be textual with utf-8 encoding but it is"
+msgstr "Очікується, що файл буде текстовим з кодуванням utf-8, але він"
+
+#: components/report/Error.tsx
+msgid "Foreign key constraint violated as cells"
+msgstr "Порушено обмеження зовнішнього ключа, оскільки клітини"
+
+#: components/report/Error.tsx
+msgid "has less than"
+msgstr "має менше ніж"
+
+#: components/report/Error.tsx
+msgid "has more than"
+msgstr "має більше ніж"
+
+#: routes/file/validate.tsx
+msgid "Hash"
+msgstr "Хеш"
+
+#: components/report/Error.tsx
+msgid "in column"
+msgstr "у стовпці"
+
+#: components/report/Error.tsx
+msgid "in resource"
+msgstr "у ресурсі"
+
+#: routes/data/infer-schema.tsx
+#: routes/dataset/infer.tsx
+#: routes/file/infer-dialect.tsx
+#: routes/table/infer-schema.tsx
+msgid "Infer"
+msgstr "Вивести"
+
+#: routes/data/infer-schema.tsx
+msgid "Infer Data Schema"
+msgstr "Визначити схему даних"
+
+#: components/layout/Menu.tsx
+#: routes/dataset/index.tsx
+#: routes/dataset/infer.tsx
+msgid "Infer Dataset"
+msgstr "Вивести набір даних"
+
+#: components/layout/Menu.tsx
+#: routes/data/index.tsx
+#: routes/file/index.tsx
+#: routes/file/infer-dialect.tsx
+#: routes/table/index.tsx
+msgid "Infer Dialect"
+msgstr "Вивести діалект"
+
+#: components/layout/Menu.tsx
+#: routes/data/index.tsx
+#: routes/table/index.tsx
+msgid "Infer Schema"
+msgstr "Вивести схему"
+
+#: routes/table/infer-schema.tsx
+msgid "Infer Table Schema"
+msgstr "Визначити схему таблиці"
+
+#: routes/dataset/infer.tsx
+msgid "Inferring Dataset..."
+msgstr "Визначення набору даних..."
+
+#: routes/file/infer-dialect.tsx
+msgid "Inferring Dialect..."
+msgstr "Визначення діалекту..."
+
+#: routes/data/infer-schema.tsx
+#: routes/table/infer-schema.tsx
+msgid "Inferring Schema..."
+msgstr "Визначення схеми..."
+
+#: routes/data/validate.tsx
+msgid "Invalid Data"
+msgstr "Некоректні дані"
+
+#: routes/dataset/validate.tsx
+msgid "Invalid Dataset"
+msgstr "Некоректний набір даних"
+
+#: routes/file/validate.tsx
+msgid "Invalid File"
+msgstr "Некоректний файл"
+
+#: routes/table/validate.tsx
+msgid "Invalid Table"
+msgstr "Некоректна таблиця"
+
+#: components/report/Error.tsx
+msgid "is expected to be"
+msgstr "має бути"
+
+#: components/report/Error.tsx
+msgid "is greater or equal to"
+msgstr "більше або дорівнює"
+
+#: components/report/Error.tsx
+msgid "is less or equal to"
+msgstr "менше або дорівнює"
+
+#: components/report/Error.tsx
+msgid "is less than"
+msgstr "менше ніж"
+
+#: components/report/Error.tsx
+msgid "is missing"
+msgstr "відсутній"
+
+#: components/report/Error.tsx
+msgid "is missing, but expected"
+msgstr "відсутній, але очікується"
+
+#: components/report/Error.tsx
+msgid "is more than"
+msgstr "більше ніж"
+
+#: components/report/Error.tsx
+msgid "is not"
+msgstr "не є"
+
+#: components/report/Error.tsx
+msgid "is not a multiple of"
+msgstr "не є кратним"
+
+#: components/report/Error.tsx
+msgid "is not allowed value"
+msgstr "не дозволене значення"
+
+#: components/report/Error.tsx
+msgid "is not in the allowed values"
+msgstr "не входить до дозволених значень"
+
+#: components/report/Error.tsx
+msgid "is not unique"
+msgstr "не унікальний"
+
+#: components/report/Error.tsx
+msgid "items"
+msgstr "елементи"
+
+#: components/layout/Language.tsx
+msgid "Language"
+msgstr "Мова"
+
+#: components/report/Error.tsx
+msgid "Length of the cell"
+msgstr "Довжина клітини"
+
+#: components/layout/Theme.tsx
+msgid "Light Theme"
+msgstr "Світла тема"
+
+#: routes/table/preview.tsx
+msgid "Load and preview your data table"
+msgstr "Завантажте та перегляньте вашу таблицю даних"
+
+#: routes/table/index.tsx
+#: routes/table/preview.tsx
+msgid "Load tabular data from your files and preview rows, columns, and overall structure to inspect contents"
+msgstr "Завантажуйте табличні дані з ваших файлів і переглядайте рядки, стовпці та загальну структуру для перевірки вмісту"
+
+#: routes/table/preview.tsx
+msgid "Loading Preview..."
+msgstr "Завантаження попереднього перегляду..."
+
+#: components/report/Error.tsx
+msgid "of row"
+msgstr "рядка"
+
+#: routes/table/preview.tsx
+msgid "Preview"
+msgstr "Попередній перегляд"
+
+#: components/layout/Menu.tsx
+#: routes/table/index.tsx
+#: routes/table/preview.tsx
+msgid "Preview Table"
+msgstr "Попередній перегляд таблиці"
+
+#: routes/table/index.tsx
+msgid "Preview, validate, and infer schemas for tabular data"
+msgstr "Попередній перегляд, валідація та визначення схем для табличних даних"
+
+#: components/report/Error.tsx
+msgid "Required column"
+msgstr "Обов'язковий стовпець"
+
+#: components/report/Error.tsx
+msgid "Resource"
+msgstr "Ресурс"
+
+#: components/report/Error.tsx
+msgid "Row"
+msgstr "Рядок"
+
+#: routes/data/infer-schema.tsx
+#: routes/dataset/infer.tsx
+#: routes/file/infer-dialect.tsx
+#: routes/table/infer-schema.tsx
+msgid "Save"
+msgstr "Зберегти"
+
+#: routes/data/validate.tsx
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Schema"
+msgstr "Схема"
+
+#: routes/data/infer-schema.tsx
+#: routes/table/infer-schema.tsx
+msgid "Schema Inferred"
+msgstr "Схему визначено"
+
+#: routes/file/validate.tsx
+msgid "Select hash algorithm and enter hash value"
+msgstr "Оберіть алгоритм хешування та введіть значення хеша"
+
+#: components/layout/Menu.tsx
+#: routes/dataset/infer.tsx
+#: routes/index.tsx
+#: routes/table/index.tsx
+#: routes/table/infer-schema.tsx
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Table"
+msgstr "Таблиця"
+
+#: routes/table/preview.tsx
+msgid "Table Preview"
+msgstr "Попередній перегляд таблиці"
+
+#: routes/index.tsx
+msgid "Technical preview"
+msgstr "Технічний попередній перегляд"
+
+#: components/layout/Menu.tsx
+msgid "Tools"
+msgstr "Інструменти"
+
+#: components/form/FileOrPathField.tsx
+msgid "Upload"
+msgstr "Завантажити"
+
+#: routes/data/infer-schema.tsx
+msgid "Upload a data file or provide a URL to a data file"
+msgstr "Завантажте файл з даними або вкажіть URL до файлу даних"
+
+#: routes/table/infer-schema.tsx
+msgid "Upload a dialect or provide a URL to a dialect"
+msgstr "Завантажте діалект або вкажіть URL-адресу діалекту"
+
+#: routes/data/validate.tsx
+msgid "Upload a file or provide a URL to a data file"
+msgstr "Завантажте файл або вкажіть URL до файлу даних"
+
+#: routes/data/validate.tsx
+msgid "Upload a file or provide a URL to a data schema"
+msgstr "Завантажте файл або вкажіть URL до схеми даних"
+
+#: routes/dataset/validate.tsx
+msgid "Upload a file or provide a URL to a dataset"
+msgstr "Завантажте файл або вкажіть URL-адресу набору даних"
+
+#: routes/file/infer-dialect.tsx
+#: routes/file/validate.tsx
+msgid "Upload a file or provide a URL to a file"
+msgstr "Завантажте файл або вкажіть URL до файлу"
+
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Upload a file or provide a URL to a table dialect"
+msgstr "Завантажте файл або вкажіть URL до діалекту таблиці"
+
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Upload a file or provide a URL to a table schema"
+msgstr "Завантажте файл або вкажіть URL до схеми таблиці"
+
+#: routes/dataset/infer.tsx
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Upload a file or provide a URL to a tabular data file"
+msgstr "Завантажте файл або вкажіть URL до табличного файлу даних"
+
+#: routes/table/infer-schema.tsx
+msgid "Upload a table or provide a URL to a table"
+msgstr "Завантажте таблицю або вкажіть URL до таблиці"
+
+#: routes/data/validate.tsx
+msgid "Valid Data"
+msgstr "Коректні дані"
+
+#: routes/dataset/validate.tsx
+msgid "Valid Dataset"
+msgstr "Коректний набір даних"
+
+#: routes/file/validate.tsx
+msgid "Valid File"
+msgstr "Коректний файл"
+
+#: routes/table/validate.tsx
+msgid "Valid Table"
+msgstr "Коректна таблиця"
+
+#: routes/data/validate.tsx
+#: routes/dataset/validate.tsx
+#: routes/file/validate.tsx
+#: routes/table/validate.tsx
+msgid "Validate"
+msgstr "Перевірити"
+
+#: components/layout/Menu.tsx
+#: routes/data/index.tsx
+#: routes/data/validate.tsx
+msgid "Validate Data"
+msgstr "Перевірити дані"
+
+#: routes/data/validate.tsx
+#: routes/index.tsx
+msgid "Validate data quality, check for inconsistencies and errors, and automatically infer comprehensive data schemas from your datasets"
+msgstr "Перевіряйте якість даних, виявляйте невідповідності та помилки й автоматично виводьте комплексні схеми даних із ваших наборів даних"
+
+#: routes/data/index.tsx
+msgid "Validate data values and infer JSON Schemas from your datasets"
+msgstr "Валідуйте значення даних і визначайте JSON-схеми з ваших наборів даних"
+
+#: components/layout/Menu.tsx
+#: routes/dataset/index.tsx
+#: routes/dataset/validate.tsx
+msgid "Validate Dataset"
+msgstr "Перевірити набір даних"
+
+#: routes/dataset/index.tsx
+#: routes/dataset/validate.tsx
+#: routes/index.tsx
+msgid "Validate dataset metadata against specifications and automatically infer dataset structure from your data files"
+msgstr "Перевіряйте метадані набору даних відповідно до специфікацій і автоматично виводьте структуру набору даних із ваших файлів даних"
+
+#: routes/dataset/index.tsx
+msgid "Validate dataset metadata and infer dataset descriptors from your data files"
+msgstr "Валідуйте метадані наборів даних і визначайте дескриптори наборів даних з ваших файлів"
+
+#: components/layout/Menu.tsx
+#: routes/file/index.tsx
+#: routes/file/validate.tsx
+msgid "Validate File"
+msgstr "Перевірити файл"
+
+#: routes/file/index.tsx
+msgid "Validate files and infer their dialects"
+msgstr "Валідуйте файли і визначайте їх діалекти"
+
+#: components/layout/Menu.tsx
+#: routes/table/index.tsx
+#: routes/table/validate.tsx
+msgid "Validate Table"
+msgstr "Перевірити таблицю"
+
+#: routes/index.tsx
+#: routes/table/validate.tsx
+msgid "Validate table structure for correctness and compliance, and automatically infer table schema definitions from your tabular data"
+msgstr "Перевіряйте структуру таблиці на коректність і відповідність, а також автоматично виводьте визначення схем таблиці з ваших табличних даних"
+
+#: routes/table/index.tsx
+#: routes/table/validate.tsx
+msgid "Validate table structure for correctness and compliance, and automatically infer table schema from your tabular data"
+msgstr "Перевірте структуру таблиці на правильність і відповідність та автоматично визначте схему з ваших табличних даних"
+
+#: routes/data/validate.tsx
+msgid "Validating Data..."
+msgstr "Перевірка даних..."
+
+#: routes/dataset/validate.tsx
+msgid "Validating Dataset..."
+msgstr "Перевірка набору даних..."
+
+#: routes/file/validate.tsx
+msgid "Validating File..."
+msgstr "Перевірка файлу..."
+
+#: routes/table/validate.tsx
+msgid "Validating Table..."
+msgstr "Перевірка таблиці..."
+
+#: components/report/Error.tsx
+msgid "Value of the cell"
+msgstr "Значення клітини"
+
+#: components/report/Error.tsx
+msgid "violates JSON schema at"
+msgstr "порушує схему JSON на"
+
+#: components/report/Error.tsx
+msgid "violates primary key constraint on columns"
+msgstr "порушує обмеження первинного ключа на стовпцях"
+
+#: components/report/Error.tsx
+msgid "violates unique key constraint on columns"
+msgstr "порушує обмеження унікального ключа на стовпцях"
+
+#: routes/index.tsx
+msgid "Visual tool for managing and validating tabular and structured data"
+msgstr "Візуальний інструмент для керування та перевірки табличних і структурованих даних"

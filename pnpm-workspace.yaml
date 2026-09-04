@@ -1,17 +1,11 @@
 saveExact: true
 
-packages:
-  - desktop
-  - engine
-  - logger
-  - website
-
 allowBuilds:
   "@parcel/watcher": true
   electron: true
   electron-winstaller: true
   esbuild: true
   lefthook: true
-  msw: true
+  msw: set this to true or false
   sharp: true
-  workerd: true
+  workerd: set this to true or false

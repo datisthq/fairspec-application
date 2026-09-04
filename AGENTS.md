@@ -5,7 +5,7 @@ This file provides guidance to coding agents when working with code in this repo
 ## General
 
 - Never commit code to git!
-- Don't change shadcn code in @website/elements
+- Don't change shadcn code in `elements/`
 - Prioritize using LSP capabilities if possible
 - When resolving a TODO, follow its instructions literally
 - Run type checking as part of your tasks
@@ -17,10 +17,30 @@ This file provides guidance to coding agents when working with code in this repo
 - Run `pnpm lint` to lint the code
 - Run `pnpm format` to auto-fix formatting issues
 - Run `pnpm type` to check TypeScript types
-- Run `pnpm -F <name> type` to check types for a specific package
 - Run `pnpm test` to run the full test suite including linting, type checking, and tests
 - Run `pnpm unit` to run only the Vitest tests
 - Run `pnpm exec vitest run -t "test name"` or `pnpm exec vitest run path/to/test.ts` to run a single test
+
+## Structure
+
+- The renderer (React SPA) lives flat at the repository root: `routes/`, `components/`,
+  `elements/`, `hooks/`, `helpers/`, `services/`, `constants/`, `styles/`, `locales/`
+- Electron process code lives under `processes/main/` and `processes/preload/`
+- `models/` holds the zod schemas shared by the renderer and the engine — the oRPC wire contract
+- The renderer must never import from `#processes/*`, `electron` or `node:*`; the only legal
+  crossing is the type-only `Router` import in `services/engine.ts` (enforced by oxlint)
+
+## i18n
+
+- Any change that adds or edits a user-facing string must run `pnpm extract` and then fill
+  `msgstr` for every new or changed message in all seven non-source catalogues
+- `pt` is European Portuguese, never Brazilian
+- `lingui extract` reports a Total count that **includes obsolete entries**. A `#~ msgid` whose
+  string no longer exists still counts, and grepping `^msgstr ""` will never find it because the
+  line is `#~ msgstr ""`. Parse with `@lingui/format-po`'s own `parse()` to see what is genuinely
+  untranslated, or run `pnpm extract --clean` to drop obsolete entries
+- Long msgids wrap across lines in the PO, so naive text replacement silently misses them. Fill
+  those through the same parser and `serialize()` rather than string surgery
 
 ## Formats
 
