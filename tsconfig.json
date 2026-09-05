@@ -1,8 +1,20 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
 
-  "include": ["${configDir}/**/*.ts", "${configDir}/**/*.tsx"],
-  "exclude": ["${configDir}/**/build/", "${configDir}/**/generated/"],
+  "include": [
+    "${configDir}/**/*.ts",
+    "${configDir}/**/*.tsx",
+    "${configDir}/.livemark/**/*.ts",
+    "${configDir}/.livemark/**/*.tsx"
+  ],
+  "exclude": [
+    "${configDir}/**/build/",
+    "${configDir}/**/generated/",
+    "${configDir}/.livemark/build/",
+    "${configDir}/compile/",
+    "${configDir}/coverage/",
+    "${configDir}/.tanstack/"
+  ],
 
   "compilerOptions": {
     "target": "ES2022",

@@ -1,0 +1,602 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-01-23 09:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: pt\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: components/report/Error.tsx
+msgid ", but it is"
+msgstr ", mas é"
+
+#: components/report/Error.tsx
+msgid "A required cell in column"
+msgstr "Uma célula obrigatória na coluna"
+
+#: components/report/Report.tsx
+msgid "All Errors"
+msgstr "Todos os Erros"
+
+#: components/report/Error.tsx
+msgid "at"
+msgstr "em"
+
+#: routes/data/index.tsx
+msgid "Automatically derive a comprehensive JSON Schema definition from your data's structure and values"
+msgstr "Derive automaticamente uma definição completa de JSON Schema a partir da estrutura e dos valores dos seus dados"
+
+#: routes/data/infer-schema.tsx
+msgid "Automatically infer comprehensive data schemas from your datasets"
+msgstr "Inferir automaticamente esquemas de dados abrangentes a partir dos seus conjuntos de dados"
+
+#: routes/table/index.tsx
+#: routes/table/infer-schema.tsx
+msgid "Automatically infer comprehensive table schema definitions with column types and constraints from your tabular data"
+msgstr "Inferir automaticamente definições abrangentes de esquemas de tabela com tipos de colunas e restrições a partir dos seus dados tabulares"
+
+#: routes/dataset/index.tsx
+#: routes/dataset/infer.tsx
+msgid "Automatically infer dataset metadata, table resources, and the overall structure from your raw data files"
+msgstr "Inferir automaticamente metadados de datasets, recursos de tabela e a estrutura geral a partir dos seus arquivos de dados brutos"
+
+#: routes/file/infer-dialect.tsx
+msgid "Automatically infer file formats, encoding specifications, and dialect parameters"
+msgstr "Inferir automaticamente formatos de arquivos, especificações de codificação e parâmetros de dialeto"
+
+#: routes/index.tsx
+msgid "Built by"
+msgstr "Desenvolvido por"
+
+#: components/layout/Language.tsx
+msgid "Change Language"
+msgstr "Mudar idioma"
+
+#: components/layout/Theme.tsx
+msgid "Change Theme"
+msgstr "Mudar tema"
+
+#: routes/data/index.tsx
+msgid "Check data values against schema specifications for quality, consistency, and constraint violations"
+msgstr "Verifique os valores dos dados em relação às especificações do esquema quanto à qualidade, consistência e violações de restrições"
+
+#: components/result/Result.tsx
+msgid "Close"
+msgstr "Fechar"
+
+#: components/layout/Close.tsx
+msgid "Close Application"
+msgstr "Fechar Aplicação"
+
+#: components/report/Error.tsx
+msgid "Column"
+msgstr "Coluna"
+
+#: components/layout/Toc.tsx
+msgid "Contents"
+msgstr "Conteúdo"
+
+#: components/layout/Theme.tsx
+msgid "Dark Theme"
+msgstr "Tema Escuro"
+
+#: components/layout/Menu.tsx
+#: routes/data/index.tsx
+#: routes/data/infer-schema.tsx
+#: routes/data/validate.tsx
+#: routes/index.tsx
+msgid "Data"
+msgstr "Dados"
+
+#: components/report/Error.tsx
+msgid "Data error at"
+msgstr "Erro de dados em"
+
+#: components/layout/Logo.tsx
+msgid "Data management application"
+msgstr "Aplicativo de gestão de dados"
+
+#: components/layout/Menu.tsx
+#: routes/dataset/index.tsx
+#: routes/dataset/validate.tsx
+#: routes/index.tsx
+msgid "Dataset"
+msgstr "Conjunto de dados"
+
+#: routes/dataset/infer.tsx
+msgid "Dataset Inferred"
+msgstr "Conjunto de Dados Inferido"
+
+#: routes/index.tsx
+msgid "Datist — Software development, end to end."
+msgstr "Datist — Desenvolvimento de software, de ponta a ponta."
+
+#: routes/file/index.tsx
+#: routes/file/validate.tsx
+#: routes/index.tsx
+msgid "Describe file contents and structure in detail, and automatically infer file formats and encoding specifications"
+msgstr "Descreva o conteúdo e a estrutura do arquivo em detalhe e infira automaticamente os formatos de arquivo e especificações de codificação"
+
+#: routes/data/index.tsx
+#: routes/file/index.tsx
+#: routes/table/index.tsx
+msgid "Detect file formats, encoding specifications, delimiters, and other dialect parameters automatically"
+msgstr "Detecte automaticamente formatos de arquivo, especificações de codificação, delimitadores e outros parâmetros de dialeto"
+
+#: routes/table/infer-schema.tsx
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Dialect"
+msgstr "Dialeto"
+
+#: routes/file/infer-dialect.tsx
+msgid "Dialect Inferred"
+msgstr "Dialeto Inferido"
+
+#: components/report/Error.tsx
+msgid "do not reference existing values"
+msgstr "não fazem referência a valores existentes"
+
+#: components/report/Error.tsx
+msgid "does not match the"
+msgstr "não corresponde ao"
+
+#: components/layout/Maximize.tsx
+msgid "Enter Fullscreen"
+msgstr "Entrar em tela cheia"
+
+#: routes/file/validate.tsx
+msgid "Enter hash value"
+msgstr "Digite o valor de hash"
+
+#: components/layout/Maximize.tsx
+msgid "Exit Fullscreen"
+msgstr "Sair da tela cheia"
+
+#: routes/dataset/infer.tsx
+msgid "Failed to Infer Dataset"
+msgstr "Falha ao Inferir o Conjunto de Dados"
+
+#: routes/file/infer-dialect.tsx
+msgid "Failed to Infer Dialect"
+msgstr "Falha ao Inferir o Dialeto"
+
+#: routes/data/infer-schema.tsx
+#: routes/table/infer-schema.tsx
+msgid "Failed to Infer Schema"
+msgstr "Falha ao Inferir o Esquema"
+
+#: routes/table/preview.tsx
+msgid "Failed to Load Preview"
+msgstr "Falha ao Carregar Pré-visualização"
+
+#: components/layout/Logo.tsx
+msgid "Fairspec Application"
+msgstr "Aplicativo Fairspec"
+
+#: components/layout/Menu.tsx
+#: routes/file/index.tsx
+#: routes/file/infer-dialect.tsx
+#: routes/file/validate.tsx
+#: routes/index.tsx
+msgid "File"
+msgstr "Arquivo"
+
+#: components/report/Error.tsx
+msgid "File hash"
+msgstr "Hash do arquivo"
+
+#: components/report/Error.tsx
+msgid "File is expected to be textual with utf-8 encoding but it is"
+msgstr "Espera-se que o arquivo seja textual com codificação utf-8, mas é"
+
+#: components/report/Error.tsx
+msgid "Foreign key constraint violated as cells"
+msgstr "Restrição de chave estrangeira violada pois as células"
+
+#: components/report/Error.tsx
+msgid "has less than"
+msgstr "possui menos que"
+
+#: components/report/Error.tsx
+msgid "has more than"
+msgstr "possui mais que"
+
+#: routes/file/validate.tsx
+msgid "Hash"
+msgstr "Hash"
+
+#: components/report/Error.tsx
+msgid "in column"
+msgstr "na coluna"
+
+#: components/report/Error.tsx
+msgid "in resource"
+msgstr "no recurso"
+
+#: routes/data/infer-schema.tsx
+#: routes/dataset/infer.tsx
+#: routes/file/infer-dialect.tsx
+#: routes/table/infer-schema.tsx
+msgid "Infer"
+msgstr "Inferir"
+
+#: routes/data/infer-schema.tsx
+msgid "Infer Data Schema"
+msgstr "Inferir Esquema de Dados"
+
+#: components/layout/Menu.tsx
+#: routes/dataset/index.tsx
+#: routes/dataset/infer.tsx
+msgid "Infer Dataset"
+msgstr "Inferir Conjunto de Dados"
+
+#: components/layout/Menu.tsx
+#: routes/data/index.tsx
+#: routes/file/index.tsx
+#: routes/file/infer-dialect.tsx
+#: routes/table/index.tsx
+msgid "Infer Dialect"
+msgstr "Inferir Dialeto"
+
+#: components/layout/Menu.tsx
+#: routes/data/index.tsx
+#: routes/table/index.tsx
+msgid "Infer Schema"
+msgstr "Inferir Esquema"
+
+#: routes/table/infer-schema.tsx
+msgid "Infer Table Schema"
+msgstr "Inferir Esquema da Tabela"
+
+#: routes/dataset/infer.tsx
+msgid "Inferring Dataset..."
+msgstr "Inferindo Conjunto de Dados..."
+
+#: routes/file/infer-dialect.tsx
+msgid "Inferring Dialect..."
+msgstr "Inferindo Dialeto..."
+
+#: routes/data/infer-schema.tsx
+#: routes/table/infer-schema.tsx
+msgid "Inferring Schema..."
+msgstr "Inferindo Esquema..."
+
+#: routes/data/validate.tsx
+msgid "Invalid Data"
+msgstr "Dados Inválidos"
+
+#: routes/dataset/validate.tsx
+msgid "Invalid Dataset"
+msgstr "Conjunto de Dados Inválido"
+
+#: routes/file/validate.tsx
+msgid "Invalid File"
+msgstr "Arquivo Inválido"
+
+#: routes/table/validate.tsx
+msgid "Invalid Table"
+msgstr "Tabela Inválida"
+
+#: components/report/Error.tsx
+msgid "is expected to be"
+msgstr "espera-se que seja"
+
+#: components/report/Error.tsx
+msgid "is greater or equal to"
+msgstr "é maior ou igual a"
+
+#: components/report/Error.tsx
+msgid "is less or equal to"
+msgstr "é menor ou igual a"
+
+#: components/report/Error.tsx
+msgid "is less than"
+msgstr "é menor que"
+
+#: components/report/Error.tsx
+msgid "is missing"
+msgstr "está ausente"
+
+#: components/report/Error.tsx
+msgid "is missing, but expected"
+msgstr "está ausente, mas é esperado"
+
+#: components/report/Error.tsx
+msgid "is more than"
+msgstr "é mais que"
+
+#: components/report/Error.tsx
+msgid "is not"
+msgstr "não é"
+
+#: components/report/Error.tsx
+msgid "is not a multiple of"
+msgstr "não é múltiplo de"
+
+#: components/report/Error.tsx
+msgid "is not allowed value"
+msgstr "não é um valor permitido"
+
+#: components/report/Error.tsx
+msgid "is not in the allowed values"
+msgstr "não está nos valores permitidos"
+
+#: components/report/Error.tsx
+msgid "is not unique"
+msgstr "não é único"
+
+#: components/report/Error.tsx
+msgid "items"
+msgstr "itens"
+
+#: components/layout/Language.tsx
+msgid "Language"
+msgstr "Idioma"
+
+#: components/report/Error.tsx
+msgid "Length of the cell"
+msgstr "Comprimento da célula"
+
+#: components/layout/Theme.tsx
+msgid "Light Theme"
+msgstr "Tema Claro"
+
+#: routes/table/preview.tsx
+msgid "Load and preview your data table"
+msgstr "Carregue e visualize sua tabela de dados"
+
+#: routes/table/index.tsx
+#: routes/table/preview.tsx
+msgid "Load tabular data from your files and preview rows, columns, and overall structure to inspect contents"
+msgstr "Carregue dados tabulares dos seus arquivos e visualize linhas, colunas e a estrutura geral para inspecionar o conteúdo"
+
+#: routes/table/preview.tsx
+msgid "Loading Preview..."
+msgstr "Carregando Pré-visualização..."
+
+#: components/report/Error.tsx
+msgid "of row"
+msgstr "da linha"
+
+#: routes/table/preview.tsx
+msgid "Preview"
+msgstr "Pré-visualizar"
+
+#: components/layout/Menu.tsx
+#: routes/table/index.tsx
+#: routes/table/preview.tsx
+msgid "Preview Table"
+msgstr "Pré-visualizar Tabela"
+
+#: routes/table/index.tsx
+msgid "Preview, validate, and infer schemas for tabular data"
+msgstr "Visualize, valide e infira esquemas para dados tabulares"
+
+#: components/report/Error.tsx
+msgid "Required column"
+msgstr "Coluna obrigatória"
+
+#: components/report/Error.tsx
+msgid "Resource"
+msgstr "Recurso"
+
+#: components/report/Error.tsx
+msgid "Row"
+msgstr "Linha"
+
+#: routes/data/infer-schema.tsx
+#: routes/dataset/infer.tsx
+#: routes/file/infer-dialect.tsx
+#: routes/table/infer-schema.tsx
+msgid "Save"
+msgstr "Salvar"
+
+#: routes/data/validate.tsx
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Schema"
+msgstr "Esquema"
+
+#: routes/data/infer-schema.tsx
+#: routes/table/infer-schema.tsx
+msgid "Schema Inferred"
+msgstr "Esquema Inferido"
+
+#: routes/file/validate.tsx
+msgid "Select hash algorithm and enter hash value"
+msgstr "Selecione o algoritmo de hash e digite o valor de hash"
+
+#: components/layout/Menu.tsx
+#: routes/dataset/infer.tsx
+#: routes/index.tsx
+#: routes/table/index.tsx
+#: routes/table/infer-schema.tsx
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Table"
+msgstr "Tabela"
+
+#: routes/table/preview.tsx
+msgid "Table Preview"
+msgstr "Pré-visualização da Tabela"
+
+#: routes/index.tsx
+msgid "Technical preview"
+msgstr "Prévia técnica"
+
+#: components/layout/Menu.tsx
+msgid "Tools"
+msgstr "Ferramentas"
+
+#: components/form/FileOrPathField.tsx
+msgid "Upload"
+msgstr "Enviar"
+
+#: routes/data/infer-schema.tsx
+msgid "Upload a data file or provide a URL to a data file"
+msgstr "Envie um arquivo de dados ou forneça uma URL para um arquivo de dados"
+
+#: routes/table/infer-schema.tsx
+msgid "Upload a dialect or provide a URL to a dialect"
+msgstr "Envie um dialeto ou forneça uma URL para um dialeto"
+
+#: routes/data/validate.tsx
+msgid "Upload a file or provide a URL to a data file"
+msgstr "Envie um arquivo ou forneça uma URL para um arquivo de dados"
+
+#: routes/data/validate.tsx
+msgid "Upload a file or provide a URL to a data schema"
+msgstr "Envie um arquivo ou forneça uma URL para um esquema de dados"
+
+#: routes/dataset/validate.tsx
+msgid "Upload a file or provide a URL to a dataset"
+msgstr "Envie um arquivo ou forneça uma URL para um conjunto de dados"
+
+#: routes/file/infer-dialect.tsx
+#: routes/file/validate.tsx
+msgid "Upload a file or provide a URL to a file"
+msgstr "Envie um arquivo ou forneça uma URL para um arquivo"
+
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Upload a file or provide a URL to a table dialect"
+msgstr "Envie um arquivo ou forneça uma URL para um dialeto de tabela"
+
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Upload a file or provide a URL to a table schema"
+msgstr "Envie um arquivo ou forneça uma URL para um esquema de tabela"
+
+#: routes/dataset/infer.tsx
+#: routes/table/preview.tsx
+#: routes/table/validate.tsx
+msgid "Upload a file or provide a URL to a tabular data file"
+msgstr "Envie um arquivo ou forneça uma URL para um arquivo de dados tabular"
+
+#: routes/table/infer-schema.tsx
+msgid "Upload a table or provide a URL to a table"
+msgstr "Envie uma tabela ou forneça uma URL para uma tabela"
+
+#: routes/data/validate.tsx
+msgid "Valid Data"
+msgstr "Dados Válidos"
+
+#: routes/dataset/validate.tsx
+msgid "Valid Dataset"
+msgstr "Conjunto de Dados Válido"
+
+#: routes/file/validate.tsx
+msgid "Valid File"
+msgstr "Arquivo Válido"
+
+#: routes/table/validate.tsx
+msgid "Valid Table"
+msgstr "Tabela Válida"
+
+#: routes/data/validate.tsx
+#: routes/dataset/validate.tsx
+#: routes/file/validate.tsx
+#: routes/table/validate.tsx
+msgid "Validate"
+msgstr "Validar"
+
+#: components/layout/Menu.tsx
+#: routes/data/index.tsx
+#: routes/data/validate.tsx
+msgid "Validate Data"
+msgstr "Validar Dados"
+
+#: routes/data/validate.tsx
+#: routes/index.tsx
+msgid "Validate data quality, check for inconsistencies and errors, and automatically infer comprehensive data schemas from your datasets"
+msgstr "Valide a qualidade dos dados, verifique inconsistências e erros e infira automaticamente esquemas de dados abrangentes dos seus conjuntos de dados"
+
+#: routes/data/index.tsx
+msgid "Validate data values and infer JSON Schemas from your datasets"
+msgstr "Valide valores de dados e infira JSON Schemas a partir dos seus conjuntos de dados"
+
+#: components/layout/Menu.tsx
+#: routes/dataset/index.tsx
+#: routes/dataset/validate.tsx
+msgid "Validate Dataset"
+msgstr "Validar Conjunto de Dados"
+
+#: routes/dataset/index.tsx
+#: routes/dataset/validate.tsx
+#: routes/index.tsx
+msgid "Validate dataset metadata against specifications and automatically infer dataset structure from your data files"
+msgstr "Valide os metadados do conjunto de dados conforme as especificações e infira automaticamente a estrutura do conjunto de dados a partir dos seus arquivos de dados"
+
+#: routes/dataset/index.tsx
+msgid "Validate dataset metadata and infer dataset descriptors from your data files"
+msgstr "Valide os metadados do conjunto de dados e infira descritores de conjunto de dados a partir dos seus arquivos de dados"
+
+#: components/layout/Menu.tsx
+#: routes/file/index.tsx
+#: routes/file/validate.tsx
+msgid "Validate File"
+msgstr "Validar Arquivo"
+
+#: routes/file/index.tsx
+msgid "Validate files and infer their dialects"
+msgstr "Valide arquivos e infira seus dialetos"
+
+#: components/layout/Menu.tsx
+#: routes/table/index.tsx
+#: routes/table/validate.tsx
+msgid "Validate Table"
+msgstr "Validar Tabela"
+
+#: routes/index.tsx
+#: routes/table/validate.tsx
+msgid "Validate table structure for correctness and compliance, and automatically infer table schema definitions from your tabular data"
+msgstr "Valide a estrutura da tabela quanto à exatidão e conformidade e infira automaticamente as definições de esquemas de tabela a partir dos seus dados tabulares"
+
+#: routes/table/index.tsx
+#: routes/table/validate.tsx
+msgid "Validate table structure for correctness and compliance, and automatically infer table schema from your tabular data"
+msgstr "Valide a estrutura da tabela para correção e conformidade e infira automaticamente o esquema da tabela a partir dos seus dados tabulares"
+
+#: routes/data/validate.tsx
+msgid "Validating Data..."
+msgstr "Validando Dados..."
+
+#: routes/dataset/validate.tsx
+msgid "Validating Dataset..."
+msgstr "Validando Conjunto de Dados..."
+
+#: routes/file/validate.tsx
+msgid "Validating File..."
+msgstr "Validando Arquivo..."
+
+#: routes/table/validate.tsx
+msgid "Validating Table..."
+msgstr "Validando Tabela..."
+
+#: components/report/Error.tsx
+msgid "Value of the cell"
+msgstr "Valor da célula"
+
+#: components/report/Error.tsx
+msgid "violates JSON schema at"
+msgstr "viola o esquema JSON em"
+
+#: components/report/Error.tsx
+msgid "violates primary key constraint on columns"
+msgstr "viola a restrição de chave primária nas colunas"
+
+#: components/report/Error.tsx
+msgid "violates unique key constraint on columns"
+msgstr "viola a restrição de chave única nas colunas"
+
+#: routes/index.tsx
+msgid "Visual tool for managing and validating tabular and structured data"
+msgstr "Ferramenta visual para gerenciar e validar dados tabulares e estruturados"
