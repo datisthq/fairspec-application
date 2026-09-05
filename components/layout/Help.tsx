@@ -110,7 +110,6 @@ function HelpBody(props: { entry: HelpEntry; onNavigate?: () => void }) {
       >
         <icons.Book className="size-3.5" />
         {entry.link.label}
-        <icons.ExternalLink className="size-3" />
       </a>
     </div>
   )
