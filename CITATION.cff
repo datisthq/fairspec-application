@@ -6,7 +6,7 @@ abstract: Fairspec Application is a visual tool for managing and validating tabu
 authors:
   - family-names: Karev
     given-names: Evgeny
-    email: eskarev@gmail.com
+    email: evgeny.karev@datist.io
 url: "https://application.fairspec.org"
 repository-code: "https://github.com/datisthq/fairspec-application"
 license: MIT
