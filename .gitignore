@@ -70,6 +70,7 @@ messages.js
 .user/
 tmuxp.yaml
 .tanstack/
+.livemark/build/
 .mastra/
 .claude/settings.local.json
 .playwright-mcp/

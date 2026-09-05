@@ -20,6 +20,7 @@ This file provides guidance to coding agents when working with code in this repo
 - Run `pnpm test` to run the full test suite including linting, type checking, and tests
 - Run `pnpm unit` to run only the Vitest tests
 - Run `pnpm exec vitest run -t "test name"` or `pnpm exec vitest run path/to/test.ts` to run a single test
+- Run `pnpm docs:start` to serve the landing site and `pnpm docs:build` to build it
 
 ## Structure
 
@@ -29,6 +30,10 @@ This file provides guidance to coding agents when working with code in this repo
 - `models/` holds the zod schemas shared by the renderer and the engine — the oRPC wire contract
 - The renderer must never import from `#processes/*`, `electron` or `node:*`; the only legal
   crossing is the type-only `Router` import in `services/engine.ts` (enforced by oxlint)
+- `.livemark/` is the landing site published at application.fairspec.org, built with livemark and
+  deployed to Cloudflare as static assets. It is independent of the Electron app, is English-only
+  and outside the i18n workflow, and its dependencies must stay in `devDependencies` so they never
+  reach the installer
 
 ## i18n
 

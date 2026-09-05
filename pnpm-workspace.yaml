@@ -6,6 +6,6 @@ allowBuilds:
   electron-winstaller: true
   esbuild: true
   lefthook: true
-  msw: set this to true or false
+  msw: false
   sharp: true
-  workerd: set this to true or false
+  workerd: true

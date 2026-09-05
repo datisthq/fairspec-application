@@ -28,6 +28,8 @@ jobs:
         run: pnpm test
       - name: Build Project
         run: pnpm build
+      - name: Build Landing Site
+        run: pnpm docs:build
 
   release-draft:
     needs: [test]

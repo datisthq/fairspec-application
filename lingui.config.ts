@@ -15,6 +15,7 @@ export default defineConfig({
         "**/build/**",
         "**/compile/**",
         "**/processes/**",
+        "**/.livemark/**",
         "**/actions/**",
         "**/endpoints/**",
         "**/middlewares/**",

@@ -1,7 +1,13 @@
 import { basename, dirname, join } from "node:path"
 import { coverageConfigDefaults, defineConfig } from "vite-plus"
 
-const ignorePatterns = ["**/*.d.ts", "**/*.gen.*", "**/generated/**"]
+const ignorePatterns = [
+  "**/*.d.ts",
+  "**/*.gen.*",
+  "**/generated/**",
+  "**/.livemark/build/**",
+  "**/.tanstack/**",
+]
 
 export default defineConfig({
   fmt: {
@@ -51,7 +57,7 @@ export default defineConfig({
   },
   test: {
     include: ["**/*.unit.(ts|tsx)"],
-    exclude: ["**/node_modules/**", "**/build/**", "**/compile/**"],
+    exclude: ["**/node_modules/**", "**/build/**", "**/compile/**", "**/.livemark/**"],
     env: { NODE_OPTIONS: "--no-warnings" },
     testTimeout: 60 * 1000,
     passWithNoTests: true,
@@ -66,6 +72,7 @@ export default defineConfig({
         "**/build/**",
         "**/compile/**",
         "**/coverage/**",
+        "**/.livemark/**",
         "**/locales/**",
         "**/examples/**",
         "**/generated/**",
