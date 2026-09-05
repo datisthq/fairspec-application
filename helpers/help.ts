@@ -31,8 +31,7 @@ export function useHelp(): HelpEntry | undefined {
   const { t } = useLingui()
   const pathname = useLocation({ select: location => normalizePath(location.pathname) })
 
-  const specs = t`Specification`
-  const overview = t`Overview`
+  const docs = t`Read more`
 
   const upload = {
     dataset: t`Choose a file or provide a URL to a dataset`,
@@ -46,15 +45,15 @@ export function useHelp(): HelpEntry | undefined {
 
   const entries: Record<string, HelpEntry> = {
     "/": {
-      summary: t`Visual tool for managing and validating tabular and structured data`,
+      summary: t`Fairspec describes datasets, tabular data and files with plain JSON descriptors, so that data can be published with enough structure to be checked. This application validates those descriptors and the data they point at, and infers them from data you already have, all on your own machine`,
       fields: {},
-      link: { url: "https://fairspec.org/overview/", label: overview },
+      link: { url: "https://fairspec.org/overview/", label: docs },
     },
 
     "/dataset": {
       summary: t`Validate dataset metadata and infer dataset descriptors from your data files`,
       fields: {},
-      link: { url: "https://fairspec.org/specs/dataset/", label: specs },
+      link: { url: "https://fairspec.org/specs/dataset/", label: docs },
     },
     "/dataset/validate": {
       summary: t`Checks a dataset descriptor against the Fairspec specification and confirms that every resource it references is consistent`,
@@ -73,7 +72,7 @@ export function useHelp(): HelpEntry | undefined {
           required: true,
         },
       },
-      link: { url: "https://fairspec.org/specs/dataset/", label: specs },
+      link: { url: "https://fairspec.org/specs/dataset/", label: docs },
     },
     "/dataset/infer": {
       summary: t`Builds a dataset descriptor from a tabular file, inferring the resource, its schema and its dialect`,
@@ -92,13 +91,13 @@ export function useHelp(): HelpEntry | undefined {
           required: true,
         },
       },
-      link: { url: "https://fairspec.org/specs/dataset/", label: specs },
+      link: { url: "https://fairspec.org/specs/dataset/", label: docs },
     },
 
     "/table": {
       summary: t`Preview, validate, and infer schemas for tabular data`,
       fields: {},
-      link: { url: "https://fairspec.org/specs/table-schema/", label: specs },
+      link: { url: "https://fairspec.org/specs/table-schema/", label: docs },
     },
     "/table/preview": {
       summary: t`Shows how a tabular file is parsed, with the start of the data and the table schema used to read it`,
@@ -129,7 +128,7 @@ export function useHelp(): HelpEntry | undefined {
           fileType: "dialect",
         },
       },
-      link: { url: "https://fairspec.org/specs/table-schema/", label: specs },
+      link: { url: "https://fairspec.org/specs/table-schema/", label: docs },
     },
     "/table/validate": {
       summary: t`Checks tabular data against a table schema, optionally with an explicit file dialect`,
@@ -160,7 +159,7 @@ export function useHelp(): HelpEntry | undefined {
           fileType: "dialect",
         },
       },
-      link: { url: "https://fairspec.org/specs/table-schema/", label: specs },
+      link: { url: "https://fairspec.org/specs/table-schema/", label: docs },
     },
     "/table/infer-schema": {
       summary: t`Derives a table schema from a tabular file, with field names, types and constraints`,
@@ -185,13 +184,13 @@ export function useHelp(): HelpEntry | undefined {
           fileType: "dialect",
         },
       },
-      link: { url: "https://fairspec.org/specs/table-schema/", label: specs },
+      link: { url: "https://fairspec.org/specs/table-schema/", label: docs },
     },
 
     "/data": {
       summary: t`Validate data values and infer JSON Schemas from your datasets`,
       fields: {},
-      link: { url: "https://fairspec.org/specs/data-schema/", label: specs },
+      link: { url: "https://fairspec.org/specs/data-schema/", label: docs },
     },
     "/data/validate": {
       summary: t`Checks structured data against a data schema`,
@@ -216,7 +215,7 @@ export function useHelp(): HelpEntry | undefined {
           fileType: "schema",
         },
       },
-      link: { url: "https://fairspec.org/specs/data-schema/", label: specs },
+      link: { url: "https://fairspec.org/specs/data-schema/", label: docs },
     },
     "/data/infer-schema": {
       summary: t`Derives a JSON Schema from a data sample`,
@@ -235,13 +234,13 @@ export function useHelp(): HelpEntry | undefined {
           required: true,
         },
       },
-      link: { url: "https://fairspec.org/specs/data-schema/", label: specs },
+      link: { url: "https://fairspec.org/specs/data-schema/", label: docs },
     },
 
     "/file": {
       summary: t`Validate files and infer their dialects`,
       fields: {},
-      link: { url: "https://fairspec.org/specs/file-dialect/", label: specs },
+      link: { url: "https://fairspec.org/specs/file-dialect/", label: docs },
     },
     "/file/infer-dialect": {
       summary: t`Detects how a tabular file is formatted by sampling its contents`,
@@ -260,7 +259,7 @@ export function useHelp(): HelpEntry | undefined {
           required: true,
         },
       },
-      link: { url: "https://fairspec.org/specs/file-dialect/", label: specs },
+      link: { url: "https://fairspec.org/specs/file-dialect/", label: docs },
     },
     "/file/validate": {
       summary: t`Verifies a file against an expected checksum`,
@@ -279,7 +278,7 @@ export function useHelp(): HelpEntry | undefined {
           required: true,
         },
       },
-      link: { url: "https://fairspec.org/specs/dataset/#integrity", label: specs },
+      link: { url: "https://fairspec.org/specs/dataset/#integrity", label: docs },
     },
   }
 

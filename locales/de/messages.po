@@ -285,6 +285,10 @@ msgstr "Die Fehler werden nach Fehlertyp gruppiert, sodass das vorherrschende Pr
 msgid "Fairspec Application"
 msgstr "Fairspec-Anwendung"
 
+#: helpers/help.ts
+msgid "Fairspec describes datasets, tabular data and files with plain JSON descriptors, so that data can be published with enough structure to be checked. This application validates those descriptors and the data they point at, and infers them from data you already have, all on your own machine"
+msgstr "Fairspec beschreibt Datensätze, tabellarische Daten und Dateien mit einfachen JSON-Deskriptoren, damit Daten mit genügend Struktur veröffentlicht werden können, um prüfbar zu sein. Diese Anwendung validiert diese Deskriptoren und die Daten, auf die sie verweisen, und leitet sie aus vorhandenen Daten ab – alles auf Ihrem eigenen Rechner"
+
 #: components/layout/Menu.tsx
 #: helpers/help.ts
 #: routes/file/index.tsx
@@ -497,10 +501,6 @@ msgid "Open"
 msgstr "Öffnen"
 
 #: helpers/help.ts
-msgid "Overview"
-msgstr "Überblick"
-
-#: helpers/help.ts
 msgid "Pick the algorithm matching that checksum"
 msgstr "Wählen Sie den zu dieser Prüfsumme passenden Algorithmus"
 
@@ -542,6 +542,10 @@ msgstr "Tabelle Vorschau"
 #: routes/table/index.tsx
 msgid "Preview, validate, and infer schemas for tabular data"
 msgstr "Vorschau, Validierung und Ableitung von Schemata für tabellarische Daten"
+
+#: helpers/help.ts
+msgid "Read more"
+msgstr "Mehr erfahren"
 
 #: components/report/Error.tsx
 msgid "Required column"
@@ -598,10 +602,6 @@ msgstr "Hash-Algorithmus auswählen und Hash-Wert eingeben"
 #: helpers/help.ts
 msgid "Shows how a tabular file is parsed, with the start of the data and the table schema used to read it"
 msgstr "Zeigt, wie eine Tabellendatei geparst wird – mit dem Anfang der Daten und dem zum Lesen verwendeten Tabellenschema"
-
-#: helpers/help.ts
-msgid "Specification"
-msgstr "Spezifikation"
 
 #: helpers/help.ts
 msgid "Supply a dialect when the delimiter or header row of the file are being misdetected"
@@ -768,7 +768,6 @@ msgstr "verstößt gegen die Primärschlüsselbedingung in Spalten"
 msgid "violates unique key constraint on columns"
 msgstr "verstößt gegen die Eindeutigkeitsbedingung in Spalten"
 
-#: helpers/help.ts
 #: routes/index.tsx
 msgid "Visual tool for managing and validating tabular and structured data"
 msgstr "Visuelles Werkzeug zur Verwaltung und Validierung von tabellarischen und strukturierten Daten"

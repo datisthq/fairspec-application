@@ -285,6 +285,10 @@ msgstr "Failures are grouped by error type, so the problem that dominates is vis
 msgid "Fairspec Application"
 msgstr "Fairspec Application"
 
+#: helpers/help.ts
+msgid "Fairspec describes datasets, tabular data and files with plain JSON descriptors, so that data can be published with enough structure to be checked. This application validates those descriptors and the data they point at, and infers them from data you already have, all on your own machine"
+msgstr "Fairspec describes datasets, tabular data and files with plain JSON descriptors, so that data can be published with enough structure to be checked. This application validates those descriptors and the data they point at, and infers them from data you already have, all on your own machine"
+
 #: components/layout/Menu.tsx
 #: helpers/help.ts
 #: routes/file/index.tsx
@@ -497,10 +501,6 @@ msgid "Open"
 msgstr "Open"
 
 #: helpers/help.ts
-msgid "Overview"
-msgstr "Overview"
-
-#: helpers/help.ts
 msgid "Pick the algorithm matching that checksum"
 msgstr "Pick the algorithm matching that checksum"
 
@@ -542,6 +542,10 @@ msgstr "Preview Table"
 #: routes/table/index.tsx
 msgid "Preview, validate, and infer schemas for tabular data"
 msgstr "Preview, validate, and infer schemas for tabular data"
+
+#: helpers/help.ts
+msgid "Read more"
+msgstr "Read more"
 
 #: components/report/Error.tsx
 msgid "Required column"
@@ -598,10 +602,6 @@ msgstr "Select hash algorithm and enter hash value"
 #: helpers/help.ts
 msgid "Shows how a tabular file is parsed, with the start of the data and the table schema used to read it"
 msgstr "Shows how a tabular file is parsed, with the start of the data and the table schema used to read it"
-
-#: helpers/help.ts
-msgid "Specification"
-msgstr "Specification"
 
 #: helpers/help.ts
 msgid "Supply a dialect when the delimiter or header row of the file are being misdetected"
@@ -768,7 +768,6 @@ msgstr "violates primary key constraint on columns"
 msgid "violates unique key constraint on columns"
 msgstr "violates unique key constraint on columns"
 
-#: helpers/help.ts
 #: routes/index.tsx
 msgid "Visual tool for managing and validating tabular and structured data"
 msgstr "Visual tool for managing and validating tabular and structured data"

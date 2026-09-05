@@ -285,6 +285,10 @@ msgstr "Los fallos se agrupan por tipo de error, de modo que el problema predomi
 msgid "Fairspec Application"
 msgstr "Aplicación Fairspec"
 
+#: helpers/help.ts
+msgid "Fairspec describes datasets, tabular data and files with plain JSON descriptors, so that data can be published with enough structure to be checked. This application validates those descriptors and the data they point at, and infers them from data you already have, all on your own machine"
+msgstr "Fairspec describe conjuntos de datos, datos tabulares y archivos mediante sencillos descriptores JSON, de modo que los datos puedan publicarse con estructura suficiente para ser comprobados. Esta aplicación valida esos descriptores y los datos a los que apuntan, y los infiere a partir de datos que ya tiene, todo en su propia máquina"
+
 #: components/layout/Menu.tsx
 #: helpers/help.ts
 #: routes/file/index.tsx
@@ -497,10 +501,6 @@ msgid "Open"
 msgstr "Abrir"
 
 #: helpers/help.ts
-msgid "Overview"
-msgstr "Introducción"
-
-#: helpers/help.ts
 msgid "Pick the algorithm matching that checksum"
 msgstr "Elija el algoritmo que corresponda a esa suma de comprobación"
 
@@ -542,6 +542,10 @@ msgstr "Vista previa de la tabla"
 #: routes/table/index.tsx
 msgid "Preview, validate, and infer schemas for tabular data"
 msgstr "Previsualice, valide e infiera esquemas para datos tabulares"
+
+#: helpers/help.ts
+msgid "Read more"
+msgstr "Leer más"
 
 #: components/report/Error.tsx
 msgid "Required column"
@@ -598,10 +602,6 @@ msgstr "Seleccione el algoritmo hash e ingrese el valor hash"
 #: helpers/help.ts
 msgid "Shows how a tabular file is parsed, with the start of the data and the table schema used to read it"
 msgstr "Muestra cómo se analiza un archivo tabular, con el inicio de los datos y el esquema de tabla usado para leerlo"
-
-#: helpers/help.ts
-msgid "Specification"
-msgstr "Especificación"
 
 #: helpers/help.ts
 msgid "Supply a dialect when the delimiter or header row of the file are being misdetected"
@@ -768,7 +768,6 @@ msgstr "viola la restricción de clave primaria en las columnas"
 msgid "violates unique key constraint on columns"
 msgstr "viola la restricción de clave única en las columnas"
 
-#: helpers/help.ts
 #: routes/index.tsx
 msgid "Visual tool for managing and validating tabular and structured data"
 msgstr "Herramienta visual para gestionar y validar datos tabulares y estructurados"

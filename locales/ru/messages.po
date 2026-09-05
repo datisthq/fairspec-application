@@ -285,6 +285,10 @@ msgstr "Ошибки группируются по типу, поэтому пр
 msgid "Fairspec Application"
 msgstr "Приложение Fairspec"
 
+#: helpers/help.ts
+msgid "Fairspec describes datasets, tabular data and files with plain JSON descriptors, so that data can be published with enough structure to be checked. This application validates those descriptors and the data they point at, and infers them from data you already have, all on your own machine"
+msgstr "Fairspec описывает наборы данных, табличные данные и файлы простыми JSON-дескрипторами, чтобы данные публиковались с достаточной структурой для проверки. Это приложение проверяет такие дескрипторы и данные, на которые они ссылаются, а также выводит их из уже имеющихся данных — всё на вашем собственном компьютере"
+
 #: components/layout/Menu.tsx
 #: helpers/help.ts
 #: routes/file/index.tsx
@@ -497,10 +501,6 @@ msgid "Open"
 msgstr "Открыть"
 
 #: helpers/help.ts
-msgid "Overview"
-msgstr "Обзор"
-
-#: helpers/help.ts
 msgid "Pick the algorithm matching that checksum"
 msgstr "Выберите алгоритм, соответствующий этой контрольной сумме"
 
@@ -542,6 +542,10 @@ msgstr "Просмотр таблицы"
 #: routes/table/index.tsx
 msgid "Preview, validate, and infer schemas for tabular data"
 msgstr "Просматривайте, проверяйте и выводите схемы для табличных данных"
+
+#: helpers/help.ts
+msgid "Read more"
+msgstr "Подробнее"
 
 #: components/report/Error.tsx
 msgid "Required column"
@@ -598,10 +602,6 @@ msgstr "Выберите алгоритм хеширования и введит
 #: helpers/help.ts
 msgid "Shows how a tabular file is parsed, with the start of the data and the table schema used to read it"
 msgstr "Показывает, как разбирается табличный файл: начало данных и схему таблицы, использованную для чтения"
-
-#: helpers/help.ts
-msgid "Specification"
-msgstr "Спецификация"
 
 #: helpers/help.ts
 msgid "Supply a dialect when the delimiter or header row of the file are being misdetected"
@@ -768,7 +768,6 @@ msgstr "нарушает ограничение первичного ключа 
 msgid "violates unique key constraint on columns"
 msgstr "нарушает ограничение уникального ключа по колонкам"
 
-#: helpers/help.ts
 #: routes/index.tsx
 msgid "Visual tool for managing and validating tabular and structured data"
 msgstr "Визуальный инструмент для управления и проверки табличных и структурированных данных"
