@@ -1,15 +1,15 @@
-import { useDomToc } from "#helpers/toc.ts"
-import { MobileToc, Toc } from "./Toc.tsx"
+import { useHelp } from "#helpers/help.ts"
+import { Help, MobileHelp } from "./Help.tsx"
 
 export function Content(props: { children: React.ReactNode }) {
-  const items = useDomToc()
+  const entry = useHelp()
 
   return (
     <>
-      <MobileToc items={items} />
+      <MobileHelp entry={entry} />
       <div className="flex flex-1 gap-10 p-4 pt-8 md:p-10">
         <div className="flex-1 min-w-0 mx-auto max-w-3xl">{props.children}</div>
-        <Toc items={items} />
+        <Help entry={entry} />
       </div>
     </>
   )

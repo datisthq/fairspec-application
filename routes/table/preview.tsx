@@ -7,6 +7,7 @@ import { createFileRoute } from "@tanstack/react-router"
 import { useState } from "react"
 import type * as z from "zod"
 import { useAppForm } from "#components/form/hooks.ts"
+import { useHelpFields } from "#helpers/help.ts"
 import { Result } from "#components/result/Result.tsx"
 import { Status, type StatusType } from "#components/result/Status.tsx"
 import { Table } from "#components/table/Table.tsx"
@@ -58,6 +59,7 @@ function Intro() {
 }
 
 function Form() {
+  const help = useHelpFields()
   const { t } = useLingui()
   const [error, setError] = useState<Error | undefined>()
   const [records, setRecords] = useState<Record<string, unknown>[] | undefined>()
@@ -116,37 +118,15 @@ function Form() {
       <FieldGroup>
         <form.AppField
           name="table"
-          children={field => (
-            <field.FileOrPathField
-              label={t`Table`}
-              description={t`Upload a file or provide a URL to a tabular data file`}
-              placeholder="https://example.com/table.csv"
-              fileType="table"
-              required
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("table")} />}
         />
         <form.AppField
           name="schema"
-          children={field => (
-            <field.FileOrPathField
-              label={t`Schema`}
-              description={t`Upload a file or provide a URL to a table schema`}
-              placeholder="https://example.com/table.schema.json"
-              fileType="schema"
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("schema")} />}
         />
         <form.AppField
           name="dialect"
-          children={field => (
-            <field.FileOrPathField
-              label={t`Dialect`}
-              description={t`Upload a file or provide a URL to a table dialect`}
-              placeholder="https://example.com/table.dialect.json"
-              fileType="dialect"
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("dialect")} />}
         />
         <form.Subscribe
           selector={state => state.values.table}

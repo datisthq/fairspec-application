@@ -86,8 +86,8 @@ export function FileOrPathField(props: {
             variant="secondary"
             disabled={props.disabled}
           >
-            <icons.Upload />
-            <Trans>Upload</Trans>
+            <icons.Open />
+            <Trans>Open</Trans>
           </InputGroupButton>
         </InputGroupAddon>
         {field.state.value && (

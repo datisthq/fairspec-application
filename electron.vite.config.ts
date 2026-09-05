@@ -37,7 +37,7 @@ export default defineConfig({
     envDir: root,
     publicDir: resolve(root, "public"),
     server: {
-      port: 8100,
+      port: 8050,
       watch: {
         ignored: [
           "**/build/**",

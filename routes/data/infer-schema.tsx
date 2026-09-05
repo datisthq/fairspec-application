@@ -7,6 +7,7 @@ import { useState } from "react"
 import type * as z from "zod"
 import { Json } from "#components/common/Json.tsx"
 import { useAppForm } from "#components/form/hooks.ts"
+import { useHelpFields } from "#helpers/help.ts"
 import { Result } from "#components/result/Result.tsx"
 import { Status, type StatusType } from "#components/result/Status.tsx"
 import { Button } from "#elements/button.tsx"
@@ -55,6 +56,7 @@ function Intro() {
 }
 
 function Form() {
+  const help = useHelpFields()
   const { t } = useLingui()
   const [error, setError] = useState<Error | undefined>()
   const [schema, setSchema] = useState<any>()
@@ -114,15 +116,7 @@ function Form() {
       <FieldGroup>
         <form.AppField
           name="data"
-          children={field => (
-            <field.FileOrPathField
-              label={t`Data`}
-              description={t`Upload a data file or provide a URL to a data file`}
-              placeholder="https://example.com/data.json"
-              fileType="data"
-              required
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("data")} />}
         />
         <form.Subscribe
           selector={state => state.values.data}

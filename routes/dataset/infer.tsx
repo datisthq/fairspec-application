@@ -7,6 +7,7 @@ import { useState } from "react"
 import type * as z from "zod"
 import { Json } from "#components/common/Json.tsx"
 import { useAppForm } from "#components/form/hooks.ts"
+import { useHelpFields } from "#helpers/help.ts"
 import { Result } from "#components/result/Result.tsx"
 import { Status, type StatusType } from "#components/result/Status.tsx"
 import { Button } from "#elements/button.tsx"
@@ -59,6 +60,7 @@ function Intro() {
 }
 
 function Form() {
+  const help = useHelpFields()
   const { t } = useLingui()
   const [error, setError] = useState<Error | undefined>()
   const [dataset, setDataset] = useState<any>()
@@ -118,15 +120,7 @@ function Form() {
       <FieldGroup>
         <form.AppField
           name="table"
-          children={field => (
-            <field.FileOrPathField
-              label={t`Table`}
-              description={t`Upload a file or provide a URL to a tabular data file`}
-              placeholder="https://example.com/file.csv"
-              fileType="table"
-              required
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("table")} />}
         />
         <form.Subscribe
           selector={state => state.values.table}
