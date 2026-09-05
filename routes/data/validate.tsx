@@ -7,6 +7,7 @@ import { createFileRoute } from "@tanstack/react-router"
 import { useState } from "react"
 import type * as z from "zod"
 import { useAppForm } from "#components/form/hooks.ts"
+import { useHelpFields } from "#helpers/help.ts"
 import { Report } from "#components/report/Report.tsx"
 import { Result } from "#components/result/Result.tsx"
 import { Status, type StatusType } from "#components/result/Status.tsx"
@@ -58,6 +59,7 @@ function Intro() {
 }
 
 function Form() {
+  const help = useHelpFields()
   const { t } = useLingui()
   const [error, setError] = useState<Error | undefined>()
   const [report, setReport] = useState<fairspec.Report | undefined>()
@@ -115,26 +117,11 @@ function Form() {
       <FieldGroup>
         <form.AppField
           name="data"
-          children={field => (
-            <field.FileOrPathField
-              label={t`Data`}
-              description={t`Upload a file or provide a URL to a data file`}
-              placeholder="https://example.com/data.csv"
-              fileType="table"
-              required
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("data")} />}
         />
         <form.AppField
           name="schema"
-          children={field => (
-            <field.FileOrPathField
-              label={t`Schema`}
-              description={t`Upload a file or provide a URL to a data schema`}
-              placeholder="https://example.com/data.schema.json"
-              fileType="schema"
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("schema")} />}
         />
         <form.Subscribe
           selector={state => state.values.data}

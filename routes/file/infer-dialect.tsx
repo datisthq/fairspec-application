@@ -7,6 +7,7 @@ import { useState } from "react"
 import type * as z from "zod"
 import { Json } from "#components/common/Json.tsx"
 import { useAppForm } from "#components/form/hooks.ts"
+import { useHelpFields } from "#helpers/help.ts"
 import { Result } from "#components/result/Result.tsx"
 import { Status, type StatusType } from "#components/result/Status.tsx"
 import { Button } from "#elements/button.tsx"
@@ -18,7 +19,7 @@ import { engineQuery } from "#services/engine.ts"
 export const Route = createFileRoute("/file/infer-dialect")({
   component: Component,
   head: () => {
-    const title = t`Infer Dialect`
+    const title = t`Infer File Dialect`
     const description = t`Automatically infer file formats, encoding specifications, and dialect parameters`
 
     return {
@@ -45,7 +46,7 @@ function Intro() {
   return (
     <div className="text-content">
       <h1 id="top">
-        <Trans>Infer Dialect</Trans>
+        <Trans>Infer File Dialect</Trans>
       </h1>
       <p>
         <Trans>
@@ -59,6 +60,7 @@ function Intro() {
 }
 
 function Form() {
+  const help = useHelpFields()
   const { t } = useLingui()
   const [error, setError] = useState<Error | undefined>()
   const [dialect, setDialect] = useState<any>()
@@ -118,15 +120,7 @@ function Form() {
       <FieldGroup>
         <form.AppField
           name="file"
-          children={field => (
-            <field.FileOrPathField
-              label={t`File`}
-              description={t`Upload a file or provide a URL to a file`}
-              placeholder="https://example.com/file.csv"
-              fileType="file"
-              required
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("file")} />}
         />
         <form.Subscribe
           selector={state => state.values.file}

@@ -153,7 +153,7 @@ const tools: Tool[] = [
     icon: ListOrdered,
     title: "Preview Table",
     description:
-      "Loads a tabular file and shows the first hundred rows alongside the table schema inferred from them, so you can inspect the contents and the detected structure side by side.",
+      "Loads a tabular file and shows the start of the data alongside the table schema inferred from it, so you can inspect the contents and the detected structure side by side.",
   },
   {
     icon: CheckCircle2,

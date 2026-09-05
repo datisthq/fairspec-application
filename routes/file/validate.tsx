@@ -7,6 +7,7 @@ import { createFileRoute } from "@tanstack/react-router"
 import { useState } from "react"
 import type * as z from "zod"
 import { useAppForm } from "#components/form/hooks.ts"
+import { useHelpFields } from "#helpers/help.ts"
 import { Report } from "#components/report/Report.tsx"
 import { Result } from "#components/result/Result.tsx"
 import { Status, type StatusType } from "#components/result/Status.tsx"
@@ -26,7 +27,7 @@ export const Route = createFileRoute("/file/validate")({
   component: Component,
   head: () => {
     const title = t`Validate File`
-    const description = t`Describe file contents and structure in detail, and automatically infer file formats and encoding specifications`
+    const description = t`Verify a file against an expected checksum to confirm that the bytes you received are the bytes that were published`
 
     return {
       meta: [
@@ -56,8 +57,8 @@ function Intro() {
       </h1>
       <p>
         <Trans>
-          Describe file contents and structure in detail, and automatically infer file
-          formats and encoding specifications
+          Verify a file against an expected checksum to confirm that the bytes you
+          received are the bytes that were published
         </Trans>
         .
       </p>
@@ -66,6 +67,7 @@ function Intro() {
 }
 
 function Form() {
+  const help = useHelpFields()
   const { t } = useLingui()
   const [error, setError] = useState<Error | undefined>()
   const [report, setReport] = useState<fairspec.Report | undefined>()
@@ -124,15 +126,7 @@ function Form() {
       <FieldGroup>
         <form.AppField
           name="file"
-          children={field => (
-            <field.FileOrPathField
-              label={t`File`}
-              description={t`Upload a file or provide a URL to a file`}
-              placeholder="https://example.com/file.csv"
-              fileType="file"
-              required
-            />
-          )}
+          children={field => <field.FileOrPathField {...help("file")} />}
         />
         <Field>
           <FieldLabel className="text-xl">
