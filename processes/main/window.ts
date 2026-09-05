@@ -1,5 +1,6 @@
 import { join } from "node:path"
 import { BrowserWindow, shell } from "electron"
+// electron-vite's ?asset query has no ambient type declaration
 // @ts-expect-error
 import iconPath from "#assets/logo.svg?asset"
 import * as settings from "#settings.ts"

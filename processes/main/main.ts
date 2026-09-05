@@ -1,5 +1,6 @@
 import { electronApp, optimizer } from "@electron-toolkit/utils"
 import { app, BrowserWindow, dialog } from "electron"
+// electron-vite's ?asset query has no ambient type declaration
 // @ts-expect-error
 import iconPath from "#assets/logo.svg?asset"
 import packageJson from "#package.json" with { type: "json" }
@@ -43,13 +44,13 @@ app.on("window-all-closed", () => {
 
 // For convinience, we catch all unhandled rejections here
 // instead of wrapping all individual async functions with try/catch
-process.on("unhandledRejection", async (error: any) => {
-  logger.error(error)
+process.on("unhandledRejection", async (error: unknown) => {
+  logger.error(String(error))
   await dialog.showMessageBox({
     type: "error",
     title: settings.APP_NAME,
     message: "Fatal error",
-    detail: error.toString(),
+    detail: String(error),
   })
   app.quit()
 })

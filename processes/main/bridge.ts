@@ -6,6 +6,10 @@ import { BrowserWindow, dialog, ipcMain } from "electron"
 import { store } from "#processes/main/store.ts"
 import * as settings from "#settings.ts"
 
+// Paths the user has picked in a save dialog. The renderer may only write to
+// these, so a write cannot be aimed at an arbitrary location on disk.
+const savedFilePaths = new Set<string>()
+
 export function createBridge() {
   ipcMain.on(settings.ENGINE_IPC, async event => {
     const [serverPort] = event.ports
@@ -66,6 +70,7 @@ export function createBridge() {
       const selectedFile = result.filePath
       const folderPath = dirname(selectedFile)
       store.set("lastOpenedFolder", folderPath)
+      savedFilePaths.add(selectedFile)
 
       return selectedFile
     },
@@ -74,6 +79,10 @@ export function createBridge() {
   ipcMain.handle(
     "file:write",
     async (_, options: { filePath: string; content: string }) => {
+      if (!savedFilePaths.has(options.filePath)) {
+        throw new Error("Refusing to write to a path the user did not choose")
+      }
+
       await writeFile(options.filePath, options.content, "utf-8")
       return options.filePath
     },

@@ -20,7 +20,7 @@ export interface DesktopAPI {
   getTheme: () => Promise<"light" | "dark">
   setTheme: (theme: "light" | "dark") => Promise<"light" | "dark">
 
-  getLanguage: () => Promise<LanguageId>
+  getLanguage: () => Promise<LanguageId | undefined>
   setLanguage: (languageId: LanguageId) => Promise<LanguageId>
 
   toggleMaximize: () => Promise<void>

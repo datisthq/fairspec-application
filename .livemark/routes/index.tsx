@@ -13,6 +13,8 @@ import { buttonVariants } from "livemark/elements/button"
 import { useInView } from "livemark/hooks/in-view"
 import { cn } from "livemark/utils/style"
 
+// Livemark generates its route tree at build time, so this route id
+// is not known to the checker here.
 // @ts-ignore
 export const Route = createFileRoute("/")({
   component: ApplicationPage,

@@ -36,12 +36,24 @@ export async function prefetchFile(
     ? settings.DATA_MAX_BYTES
     : settings.METADATA_MAX_BYTES
 
-  const webStream =
-    typeof source === "string" ? (await fetch(source)).body : source.stream()
+  let webStream: ReadableStream<Uint8Array> | null
+  if (typeof source === "string") {
+    const response = await fetch(source)
+    if (!response.ok) {
+      throw new Error(
+        `Failed to fetch ${source}: ${response.status} ${response.statusText}`,
+      )
+    }
+    webStream = response.body
+  } else {
+    webStream = source.stream()
+  }
+
   if (!webStream) {
     throw new Error("Invalid file source")
   }
 
+  // Readable.fromWeb's types predate the global ReadableStream in Node 24
   // @ts-expect-error
   let stream = Readable.fromWeb(webStream)
   if (maxBytes) {
@@ -63,7 +75,8 @@ function limitStreamSize(inputStream: Readable, maxBytes: number) {
       transform(chunk, _encoding, callback) {
         if (total >= maxBytes) {
           inputStream.destroy()
-          throw new Error("File size exceeds the limit")
+          callback(new Error("File size exceeds the limit"))
+          return
         }
 
         total += chunk.length
