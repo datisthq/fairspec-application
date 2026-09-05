@@ -24,21 +24,23 @@ export function MobileHelp(props: { entry?: HelpEntry }) {
   useEffect(() => {
     if (!open) return
 
-    const handlePointerDown = (event: MouseEvent) => {
-      if (!wrapperRef.current?.contains(event.target as Node)) {
-        setOpen(false)
+    const handlePointerDown = (event: PointerEvent) => {
+      if (event.target instanceof Node && wrapperRef.current?.contains(event.target)) {
+        return
       }
+
+      setOpen(false)
     }
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") setOpen(false)
     }
 
-    document.addEventListener("mousedown", handlePointerDown)
+    document.addEventListener("pointerdown", handlePointerDown)
     document.addEventListener("keydown", handleKeyDown)
 
     return () => {
-      document.removeEventListener("mousedown", handlePointerDown)
+      document.removeEventListener("pointerdown", handlePointerDown)
       document.removeEventListener("keydown", handleKeyDown)
     }
   }, [open])
@@ -84,8 +86,8 @@ function HelpBody(props: { entry: HelpEntry; onNavigate?: () => void }) {
 
       {entry.steps && entry.steps.length > 0 && (
         <ol className="flex flex-col gap-2 list-decimal ps-4 marker:text-muted-foreground">
-          {entry.steps.map(step => (
-            <li key={step} className="text-muted-foreground leading-relaxed ps-1">
+          {entry.steps.map((step, index) => (
+            <li key={index} className="text-muted-foreground leading-relaxed ps-1">
               {step}.
             </li>
           ))}
