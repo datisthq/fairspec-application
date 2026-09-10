@@ -11,7 +11,7 @@ import type { ComponentType, ReactNode, SVGProps } from "react"
 import { useState } from "react"
 import { buttonVariants } from "livemark/elements/button"
 import { useInView } from "livemark/hooks/in-view"
-import { cn } from "livemark/utils/style"
+import { cn } from "cn"
 
 // Livemark generates its route tree at build time, so this route id
 // is not known to the checker here.

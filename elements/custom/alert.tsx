@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from "class-variance-authority"
-import { cn } from "#helpers/style.ts"
+import { cn } from "cn"
 import * as icons from "#icons.ts"
 
 const alertVariants = cva(

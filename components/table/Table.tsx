@@ -9,7 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from "#elements/table.tsx"
-import { cn } from "#helpers/style.ts"
+import { cn } from "cn"
 import { createColumnDefs } from "./columns.tsx"
 
 interface TableProps {
