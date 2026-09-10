@@ -16,7 +16,7 @@
     "build": "electron-vite build",
     "compile": "electron-builder --publish never",
     "coverage": "sensible-browser coverage/index.html",
-    "deps": "ncu -u",
+    "deps": "ncu -u --cooldown 7d",
     "docs:build": "livemark build",
     "docs:preview": "livemark preview",
     "docs:start": "livemark start",
@@ -81,7 +81,7 @@
     "@vitejs/plugin-react": "6.0.2",
     "@vitest/coverage-v8": "4.1.11",
     "class-variance-authority": "0.7.1",
-    "cn": "0.2.6",
+    "cn": "0.2.4",
     "conventional-changelog-conventionalcommits": "9.1.0",
     "electron": "42.2.0",
     "electron-builder": "26.8.1",
@@ -91,7 +91,7 @@
     "livemark": "0.20.0",
     "lucide-react": "0.555.0",
     "next-themes": "^0.4.6",
-    "npm-check-updates": "18.0.1",
+    "npm-check-updates": "23.1.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-flags-select": "2.5.0",
@@ -106,7 +106,7 @@
     "vaul": "^1.1.2",
     "vite": "8.2.2",
     "vite-plugin-svgr": "5.2.0",
-    "vite-plus": "0.3.1",
+    "vite-plus": "0.3.0",
     "wrangler": "4.90.0",
     "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
     "zod": "4.3.6"
@@ -125,5 +125,5 @@
     "node": "^24.0.0",
     "pnpm": "^11.0.0"
   },
-  "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499"
+  "packageManager": "pnpm@11.26.0+sha512.fc0e2bf890b9f983611f1ab68c0637bce914390653699f83c1a78b005ed25f2c81e77920c8fd8eee2ecf0b58b28cdcb00a84d97f69bcf7c56b2f344710238664"
 }
