@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.1](https://github.com/datisthq/fairspec-application/compare/v0.8.0...v0.8.1) (2026-09-11)
+
+
+### Bug Fixes
+
+* **release:** keep the v-prefixed tag format ([81b65e5](https://github.com/datisthq/fairspec-application/commit/81b65e5fddca668b01c549adaed8c4514db342c6))
+
 ## [0.8.0](https://github.com/datisthq/fairspec-application/compare/v0.7.0...v0.8.0) (2026-09-05)
 
 ### Features
