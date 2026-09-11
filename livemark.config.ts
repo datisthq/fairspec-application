@@ -33,7 +33,7 @@ export default defineConfig({
       title: "Changelog",
       prefix: "/changelog/",
       type: "changelog",
-      source: "https://github.com/datisthq/fairspec-application",
+      source: "CHANGELOG.md",
       version: true,
       icon: "history",
     },
