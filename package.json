@@ -32,7 +32,6 @@
     "type": "tsgo --noEmit",
     "ui": "shadcn",
     "unit": "vp test",
-    "vers": "pnpm version --no-git-tag-version --no-git-checks",
     "vulns": "semgrep --config=p/typescript --config=p/nodejs --config=p/owasp-top-ten --config=p/secrets --metrics=off"
   },
   "dependencies": {
@@ -61,7 +60,6 @@
     "@orpc/zod": "1.14.3",
     "@plausible-analytics/tracker": "0.4.5",
     "@rolldown/plugin-babel": "0.2.3",
-    "@semantic-release/exec": "7.1.0",
     "@tailwindcss/vite": "4.3.0",
     "@tanstack/react-devtools": "0.10.5",
     "@tanstack/react-form": "1.32.0",
@@ -82,7 +80,6 @@
     "@vitest/coverage-v8": "4.1.11",
     "class-variance-authority": "0.7.1",
     "cn": "0.2.4",
-    "conventional-changelog-conventionalcommits": "9.1.0",
     "electron": "42.2.0",
     "electron-builder": "26.8.1",
     "electron-vite": "5.0.0",
@@ -95,7 +92,6 @@
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-flags-select": "2.5.0",
-    "semantic-release": "24.2.9",
     "shadcn": "3.7.0",
     "sonner": "^2.0.7",
     "tailwindcss": "4.1.18",
